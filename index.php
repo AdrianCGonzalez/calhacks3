@@ -22,8 +22,7 @@
 	</head>
 
 	<body>
-		<div class="contentWrapper">
-			<nav>
+      			<nav>
 				<div class="nav-wrapper">
 					<a href="#" class="brand-logo">CalHacks</a>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -33,14 +32,16 @@
 					</ul>
 				</div>
 			</nav>
+		<div class="contentWrapper">
+
 
 			<div class="pageWrapper">
 				<div>
 					<span>
 						Inspiration
-                      		We all have seen those traveling ads where they promise you
+                      		We all have seen those traveling ads where they promise you affordable vacations to paradise on earth. Then you click, and then it turns out is not affordable at all. This is great prose. We have the bestest english. No more.
 						What it does
-                      							C14-Hacks that intends to facilitate travel planning using personalized information about the
+                      		C14-Hacks uses personalized information and data analysis to facilitate travel planning. Not only does it recommend affordable touri about the
 
 						How we built it
 						Challenges we ran into
@@ -150,3 +151,4 @@
 		inAnimate(myScroll);
 	</script>
 </html>
+st spots,
