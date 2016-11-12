@@ -4,7 +4,7 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name='viewport' content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0"/>
-		<meta http-equiv="refresh" content="5">
+<!--		<meta http-equiv="refresh" content="5"> -->
 		<meta name="apple-touch-fullscreen" content="yes" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<title>Vacation</title>
@@ -33,8 +33,7 @@
 				</div>
 			</nav>
 
-
-      <div id="index-banner" class="parallax-container">
+            <div id="index-banner" class="parallax-container">
 		<div class="section no-pad-bot">
 			<div class="container hide-on-med-and-up">
 				<br>
@@ -59,9 +58,9 @@
 
 			</div>
 		</div>
+
 		<div class="parallax"><img src="./image/house.svg" alt="Unsplashed background img 1"></div>
 	</div>
-
 
 		<div class="contentWrapper">
 
@@ -78,7 +77,7 @@
                           What it does
                               C14-Hacks uses personalized information and data analysis to facilitate travel planning. Not only does it recommend affordable and interesting tourist places that are affordabe to the user, it also offers a financial guidance for places that are not an option in the present.
                           How we built it
-                              Using Capital One api, Nessie, we gather financial information and
+                              Using Capital One api, Nessie, we gather financial information and use it together with Amadeous Traveling API to determine an optimal traveling spot for the user. Furthermore,
                               Using
                           Challenges we ran into
                           Accomplishments that we're proud of
