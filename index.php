@@ -294,19 +294,5 @@
         initializeAnimation();
         var myScroll = $(this).scrollTop();
         inAnimate(myScroll);
-        function graphSize()
-        {
-            console.log("in this bitch");
-            $("#myChart").height("0px");
-            $("#myChart2").height("0px");
-            $("#myChart").height($("#description1").height());
-            $("#myChart2").height($("#description2").height());
-            $("#myChart").width("100%");
-            $("#myChart2").width("100%");
-        }
-        graphSize();
-        $(window).resize(function(){
-            graphSize();
-        });
     </script>
 </html>
