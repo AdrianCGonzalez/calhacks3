@@ -171,7 +171,7 @@
                 </div>
 
 
-                 <div style="border-top:0px;border-right: 1px;border-left: 1px;border-bottom: 1px; border-color:#27c971; border-style: solid;  border-radius:5px 5px 0 0;"></div>
+                 <div style="border-bottom: 1px; border-color:#27c971; border-style: solid;  border-radius:1px 1px 0 0; margin-bottom:10px"></div>
 
                 <div class="row">
                     <div class="col s12 m4" id="description1">
@@ -187,7 +187,7 @@
 
                 </div>
 
-                 <div style="border-bottom: 1px; border-color:#27c971; border-style: solid;  border-radius:5px 5px 0 0; margin-bottom:10px"></div>
+                 <div style="border-bottom: 1px; border-color:#27c971; border-style: solid;  border-radius:1px 1px 0 0; margin-bottom:10px"></div>
 
                 <div class="row">
 
@@ -203,7 +203,7 @@
                 </div>
 
 
-                 <div style="border-top:0px;border-right: 1px;border-left: 1px;border-bottom: 1px; border-color:#27c971; border-style: solid;  border-radius:5px 5px 0 0;"></div>
+                 <div style="border-bottom: 1px; border-color:#27c971; border-style: solid;  border-radius:1px 1px 0 0; margin-bottom:10px"></div>
 
 
                 <h2 class="center-align">Empowering Users From Day 1</h2>
