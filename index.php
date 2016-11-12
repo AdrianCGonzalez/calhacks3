@@ -34,7 +34,7 @@
     </div>
   </nav>
 
-		<div class="pageWrapper">
+		<div class="contentWrapper">
 			<div>
 				<span>
                 	Inspiration
