@@ -51,7 +51,7 @@
 			<div class="container hide-on-med-and-up">
 				<br>
 				<br>
-				<div style="background-color: rgba(25, 25, 25, 0.5);">
+				<div style="background-color: rgba(25, 25, 25, 0.3);">
 					<h1 class="header center white-text text-lighten-2">CalHacks Team C14</h1>
 
 				</div>
@@ -61,10 +61,10 @@
 			<div class="container hide-on-small-only">
 				<br>
 				<br>
-				<div style="background-color: rgba(25, 25, 25, 0.5);">
+				<div style="background-color: rgba(25, 25, 25, 0.3);">
 					<h1 class="header center white-text text-lighten-2">CalHacks</h1>
 					<div class="row center">
-						<h4 class="header col s12 light">Team C14</h4>
+						<h4 class="header col s12 white-text light">Team C14</h4>
 					</div>
 				</div>
 				<br>
