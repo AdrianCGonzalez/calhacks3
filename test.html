@@ -31,7 +31,7 @@
 
     </head>
     <style>
-        hr{
+        .padMe{
             padding-top:10px;
             padding-bottom:10px;
         }
@@ -106,183 +106,6 @@
         <div class="contentWrapper">
             <div class="pageWrapper">
 
-<script>
-                var chart = new Chartist.Line('.ct-chart', {
-  labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
-  series: [
-    [12, 9, 7, 8, 5, 4, 6, 2, 3, 3, 4, 6],
-    [4,  5, 3, 7, 3, 5, 5, 3, 4, 4, 5, 5],
-    [5,  3, 4, 5, 6, 3, 3, 4, 5, 6, 3, 4],
-    [3,  4, 5, 6, 7, 6, 4, 5, 6, 7, 6, 3]
-  ]
-}, {
-  low: 0
-});
-
-// Let's put a sequence number aside so we can use it in the event callbacks
-var seq = 0,
-  delays = 80,
-  durations = 500;
-
-// Once the chart is fully created we reset the sequence
-chart.on('created', function() {
-  seq = 0;
-});
-
-// On each drawn element by Chartist we use the Chartist.Svg API to trigger SMIL animations
-chart.on('draw', function(data) {
-  seq++;
-
-  if(data.type === 'line') {
-    // If the drawn element is a line we do a simple opacity fade in. This could also be achieved using CSS3 animations.
-    data.element.animate({
-      opacity: {
-        // The delay when we like to start the animation
-        begin: seq * delays + 1000,
-        // Duration of the animation
-        dur: durations,
-        // The value where the animation should start
-        from: 0,
-        // The value where it should end
-        to: 1
-      }
-    });
-  } else if(data.type === 'label' && data.axis === 'x') {
-    data.element.animate({
-      y: {
-        begin: seq * delays,
-        dur: durations,
-        from: data.y + 100,
-        to: data.y,
-        // We can specify an easing function from Chartist.Svg.Easing
-        easing: 'easeOutQuart'
-      }
-    });
-  } else if(data.type === 'label' && data.axis === 'y') {
-    data.element.animate({
-      x: {
-        begin: seq * delays,
-        dur: durations,
-        from: data.x - 100,
-        to: data.x,
-        easing: 'easeOutQuart'
-      }
-    });
-  } else if(data.type === 'point') {
-    data.element.animate({
-      x1: {
-        begin: seq * delays,
-        dur: durations,
-        from: data.x - 10,
-        to: data.x,
-        easing: 'easeOutQuart'
-      },
-      x2: {
-        begin: seq * delays,
-        dur: durations,
-        from: data.x - 10,
-        to: data.x,
-        easing: 'easeOutQuart'
-      },
-      opacity: {
-        begin: seq * delays,
-        dur: durations,
-        from: 0,
-        to: 1,
-        easing: 'easeOutQuart'
-      }
-    });
-  } else if(data.type === 'grid') {
-    // Using data.axis we get x or y which we can use to construct our animation definition objects
-    var pos1Animation = {
-      begin: seq * delays,
-      dur: durations,
-      from: data[data.axis.units.pos + '1'] - 30,
-      to: data[data.axis.units.pos + '1'],
-      easing: 'easeOutQuart'
-    };
-
-    var pos2Animation = {
-      begin: seq * delays,
-      dur: durations,
-      from: data[data.axis.units.pos + '2'] - 100,
-      to: data[data.axis.units.pos + '2'],
-      easing: 'easeOutQuart'
-    };
-
-    var animations = {};
-    animations[data.axis.units.pos + '1'] = pos1Animation;
-    animations[data.axis.units.pos + '2'] = pos2Animation;
-    animations['opacity'] = {
-      begin: seq * delays,
-      dur: durations,
-      from: 0,
-      to: 1,
-      easing: 'easeOutQuart'
-    };
-
-    data.element.animate(animations);
-  }
-});
-
-// For the sake of the example we update the chart every time it's created with a delay of 10 seconds
-chart.on('created', function() {
-  if(window.__exampleAnimateTimeout) {
-    clearTimeout(window.__exampleAnimateTimeout);
-    window.__exampleAnimateTimeout = null;
-  }
-  window.__exampleAnimateTimeout = setTimeout(chart.update.bind(chart), 12000);
-});
-
-
-
-                </script>
-
-
-
-
-
-                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                <script type="text/javascript">
-                    google.charts.load('current', {'packages':['corechart']});
-                    google.charts.setOnLoadCallback(drawChart);
-
-                    function drawChart() {
-                        var data = google.visualization.arrayToDataTable([
-                            ['Year', 'Sales', 'Expenses'],
-                            ['2004',  1000,      400],
-                            ['2005',  1170,      460],
-                            ['2006',  660,       1120],
-                            ['2007',  1030,      540]
-                        ]);
-
-                        var options = {
-                            title: 'Company Performance',
-                            curveType: 'function',
-                            legend: { position: 'bottom' }
-                        };
-
-                        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-                        chart.draw(data, options);
-                    }
-                </script>
-
-                <div id="curve_chart" style="width: 900px; height: 500px"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -310,9 +133,9 @@ chart.on('created', function() {
 
 
                 </div>
-                <br>
-                <hr>
-                <br>
+
+                <hr class="padMe">
+
                 <div class="row" height="50vh">
 
                     <div class="col s12 m4" id="description2">
@@ -321,16 +144,17 @@ chart.on('created', function() {
                     </div>
 
                     <div class="col s12 m8">
-                        <canvas id="myChart2" width="100%" height="50%"></canvas>
+                        <div class="ct-chart ct-perfect-fourth"></div>
+                        <script src="js/animatedChart.ja"></script>
                     </div>
                 </div>
 
-                <hr>
+                <hr class="padMe">
 
 
                 <h1 class="center-align">Empowering Users From Day 1</h1>
 
-                <img align="middle" src="https://www.drift.com/wp-content/uploads/2016/10/icons.jpg">
+                <img align="middle" class="padMe" src="https://www.drift.com/wp-content/uploads/2016/10/icons.jpg">
             </div>
         </div>
         <div class="parallax-container valign-wrapper">
@@ -338,101 +162,20 @@ chart.on('created', function() {
         </div>
         <div class="contentWrapper">
             <div class="pageWrapper">
-                <h1>Here's how we're different.</h1>
-                <br>
-                <b>An intelligent messaging app.</b>
-                <br>
+                <h1 class="padMe">Here's how we're different.</h1>
+
+                <b class="padMe">An intelligent messaging app.</b>
+
                 <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
-                <b>An intelligent messaging app.</b>
-                <br>
+                <b class="padMe">An intelligent messaging app.</b>
+
                 <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
-                <b>An intelligent messaging app.</b>
-                <br>
+                <b class="padMe">An intelligent messaging app.</b>
+
                 <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
-                <br>
+
             </div>
         </div>
-        <script>
-
-            var ctx = document.getElementById("myChart");
-            var myChart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-                    datasets: [{
-                        label: '# of Votes',
-                        data: [12, 19, 3, 5, 2, 3],
-                        backgroundColor: [
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)'
-                        ],
-                        borderColor: [
-                            'rgba(255,99,132,1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)',
-                            'rgba(153, 102, 255, 1)',
-                            'rgba(255, 159, 64, 1)'
-                        ],
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero:true
-                            }
-                        }]
-                    }
-                }
-            });
-        </script>
-
-        <script>
-            var ctx = document.getElementById("myChart2");
-            var myChart = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-                    datasets: [{
-                        label: '# of Votes',
-                        data: [6, 1, 9, 5, 2, 3],
-                        backgroundColor: [
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)'
-                        ],
-                        borderColor: [
-                            'rgba(255,99,132,1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)',
-                            'rgba(153, 102, 255, 1)',
-                            'rgba(255, 159, 64, 1)'
-                        ],
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero:true
-                            }
-                        }]
-                    }
-                }
-            });
-        </script>
-
 
 
 
