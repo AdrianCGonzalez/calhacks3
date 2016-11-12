@@ -72,7 +72,7 @@
                 <i class="large material-icons">menu</i>
             </a>
             <ul>
-                <li><a class="btn-floating red" href="aboutUs.html"><i class="material-icons">perm_identity</i></a></li>
+                <li><a class="btn-floating red" href="aboutUs.php"><i class="material-icons">perm_identity</i></a></li>
                 <li><a class="btn-floating green" href="logIn.html"><i class="material-icons">vpn_key</i></a></li>
             </ul>
         </div>
@@ -170,9 +170,8 @@
 
                 </div>
 
-                <div>
-                    <p style="color:#9a2bf3;border-bottom: 1px solid rgba(154,43,243,0.2) padding-top:10px margin-bottom:10px"></p>
-                </div>
+
+                 <div style="border-top:0px;border-right: 1px;border-left: 1px;border-bottom: 1px; border-color:#27c971; border-style: solid;  border-radius:5px 5px 0 0;"></div>
 
                 <div class="row">
                     <div class="col s12 m4 a f" id="description1">
@@ -188,9 +187,7 @@
 
                 </div>
 
-                <div>
-                    <p style="color:#9a2bf3;border-bottom: 1px solid rgba(154,43,243,0.2) padding-top:10px margin-bottom:10px"></p>
-                </div>
+                 <div style="border-top:0px;border-right: 1px;border-left: 1px;border-bottom: 1px; border-color:#27c971; border-style: solid;  border-radius:5px 5px 0 0;"></div>
 
                 <div class="row">
 
@@ -205,9 +202,8 @@
                     </div>
                 </div>
 
-                <div>
-                    <p style="color:#9a2bf3;border-bottom: 1px solid rgba(154,43,243,0.2) padding-top:10px margin-bottom:10px"></p>
-                </div>
+
+                 <div style="border-top:0px;border-right: 1px;border-left: 1px;border-bottom: 1px; border-color:#27c971; border-style: solid;  border-radius:5px 5px 0 0;"></div>
 
 
                 <h2 class="center-align">Empowering Users From Day 1</h2>
