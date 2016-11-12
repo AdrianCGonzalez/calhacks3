@@ -74,18 +74,43 @@
             </div>
             <div class="parallax"><img src="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj3/cs194-fb/images/blurry_turtle.jpg" alt="Unsplashed background img 1"></div>
         </div>
+      <br>
+      <div>
+        CanIGoNow provides simple, responsive, clean and engaging user interface for individuals who wish to travel on a budget.
+      </div>
+      <br>
+      <hr>
+      <br>
         <div class="row" height="50vh">
-
-            <div class="col s12 m6">
+<div class="col s12 m4">
+  <br>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
+          </div>
+            <div class="col s12 m8">
                 <canvas id="myChart" width="100%" height="50%"></canvas>
             </div>
 
-            <div class="col s12 m6">
+
+        </div>
+      <br>
+      <hr>
+      <br>
+        <div class="row" height="50vh">
+
+<div class="col s12 m4">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
+          </div>
+
+            <div class="col s12 m8">
                 <canvas id="myChart2" width="100%" height="50%"></canvas>
             </div>
         </div>
-        <script>
-            var ctx = document.getElementById("myChart");
+      <br>
+      <hr>
+      <br>
+      <script>
+
+          var ctx = document.getElementById("myChart");
             var myChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
