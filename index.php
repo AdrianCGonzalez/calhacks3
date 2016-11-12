@@ -120,19 +120,20 @@
                     </div>
                 </div>
 
-                <div class="row hide-on-large-only">
-                    <div class="col s12 m7">
-                        <h2 style="padding-bottom:10px">Traveling has never been easier</h2>
+<div class="row hide-on-large-only">
+    <div class="row">
+        <div class="col s12 m7">
+            <h2 style="padding-bottom:10px">Traveling has never been easier</h2>
+        </div>
+        <div class="col s12 m5">
+            <img class="responsive-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Squirrel_posing.jpg">
+        </div>
+    </div>
+    <div class="col s12 m7">
+        <p>Nulla id ligula tortor. Quisque tincidunt neque purus, et aliquet arcu ullamcorper eu. Cras in arcu ac urna ultrices bibendum. Vestibulum rutrum diam leo, vitae pulvinar turpis facilisis ut. Morbi a ullamcorper quam. Praesent placerat ac augue vitae cursus. Maecenas semper nisi nibh, in maximus magna condimentum vitae. Curabitur nec vestibulum ex, in fringilla arcu. Curabitur nec elit eget tortor tristique fringilla in in massa. Suspendisse et porttitor est, in volutpat lorem. Nulla pulvinar quis velit quis facilisis. Sed leo dolor, feugiat ac est sed, semper mattis lectus. Maecenas suscipit ornare erat sed congue. Nullam volutpat neque id libero mattis scelerisque. Integer ac ante finibus, ultricies ante id, convallis lorem. Fusce rhoncus eros vitae magna tempor, sit amet hendrerit dui aliquet.</p>
+    </div>
 
-                      <div class="col s12 m5">
-                        <img class="responsive-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Squirrel_posing.jpg">
-                    </div>
-                  </div>
-                      <div class="col s12 m7">
-                        <p>Nulla id ligula tortor. Quisque tincidunt neque purus, et aliquet arcu ullamcorper eu. Cras in arcu ac urna ultrices bibendum. Vestibulum rutrum diam leo, vitae pulvinar turpis facilisis ut. Morbi a ullamcorper quam. Praesent placerat ac augue vitae cursus. Maecenas semper nisi nibh, in maximus magna condimentum vitae. Curabitur nec vestibulum ex, in fringilla arcu. Curabitur nec elit eget tortor tristique fringilla in in massa. Suspendisse et porttitor est, in volutpat lorem. Nulla pulvinar quis velit quis facilisis. Sed leo dolor, feugiat ac est sed, semper mattis lectus. Maecenas suscipit ornare erat sed congue. Nullam volutpat neque id libero mattis scelerisque. Integer ac ante finibus, ultricies ante id, convallis lorem. Fusce rhoncus eros vitae magna tempor, sit amet hendrerit dui aliquet.</p>
-                    </div>
-
-                </div>
+</div>
 
                 <hr class="padMe">
 
@@ -144,7 +145,7 @@
                     </div>
                     <div class="col s12 m8">
                         <div class="ct-chart ct-perfect-fourth"></div>
-                <script src="js/animatedChart.ja"></script>
+                <script src="js/animatedChart.js"></script>
                     </div>
 
 
@@ -161,7 +162,7 @@
 
                     <div class="col s12 m8">
                         <div class="ct-chart ct-perfect-fourth"></div>
-                <script src="js/animatedChart.ja"></script>
+                <script src="js/animatedChart.js"></script>
                     </div>
                 </div>
 
@@ -169,9 +170,10 @@
 
 
                 <h1 class="center-align">Empowering Users From Day 1</h1>
-
-                <img align="middle" class="padMe" src="https://www.drift.com/wp-content/uploads/2016/10/icons.jpg">
-            </div>
+<div class="col s12">
+                <img class="padMe center-align" src="https://www.drift.com/wp-content/uploads/2016/10/icons.jpg">
+              </div>
+              </div>
         </div>
         <div class="parallax-container valign-wrapper">
             <div class="parallax"><img src="http://fullhdpictures.com/wp-content/uploads/2016/01/Different-Turtle-Wallpaper.jpg" alt="Unsplashed background img 2"></div>
