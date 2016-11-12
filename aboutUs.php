@@ -205,7 +205,7 @@
 
                     <div class="col s12 m2" id="myChartcon"  style="height:50px">
                         <div class="ct-chart ct-perfect-fourth" id="myChart" style="height:50px"></div>
-                        <script>piChart("#piChart");</script>
+                        <script>pichart("#piChart");</script>
                     </div>
                 </div>
 
