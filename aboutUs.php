@@ -356,7 +356,7 @@
         $.ajax({
             url: 'http://api.reimaginebanking.com/customers/58279577360f81f104549283?key=e113f594b9615823b8d4262cf80a0d87',
             success: function(results){
-                $("#introduction").html("Welcome "+results.first_name+"!");
+                $("#introduction").html("Welcome "+results.first_name + " " +results.last_name+"!");
             }
         });
     </script>
