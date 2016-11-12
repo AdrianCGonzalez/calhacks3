@@ -77,7 +77,7 @@
       <div class="row" height="50vh">
 
       <div class="col s12 m6">
-      <canvas id="myChart" width="100%"></canvas>
+      <canvas id="myChart" width="100%" height="100%"></canvas>
       </div>
 
       <div class="col s12 m6">
