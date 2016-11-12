@@ -7,9 +7,7 @@
 
 		<meta name="apple-touch-fullscreen" content="yes" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<link rel="apple-touch-icon" href="/images/topNav/user.jpg"/>
-		<link rel="apple-touch-startup-image" href="/startup.png">
-		<title>Resume</title>
+		<title>Vacation</title>
 		<!--<meta http-equiv="refresh" content="3">-->
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
