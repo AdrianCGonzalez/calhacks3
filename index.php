@@ -34,6 +34,8 @@
     <body>
         <nav class="teal darken-2">
             <div class="nav-wrapper">
+              <div class="contentWrapper">
+            <div class="pageWrapper">
                 <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:13px;width:36px;height:36px"></a>
                 <a href="index.php" class="brand-logo" style="margin-left:40px">CalHacks</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -47,12 +49,13 @@
                     <li><a href="logIn.html">Log In</a></li>
                 </ul>
                 <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-
+              </div>
+              </div>
             </div>
         </nav>
 
 
-        <div class="fixed-action-btn">
+        <div class="fixed-action-btn hide-on-med-and-up">
             <a class="btn-floating btn-large red">
                 <i class="large material-icons">menu</i>
             </a>
@@ -235,7 +238,6 @@
                     }]
                 },
                 options: {
-                    responsive:false;
                     scales: {
                     yAxes: [{
                     ticks: {
@@ -375,9 +377,13 @@
         inAnimate(myScroll);
         function graphSize()
         {
-            console.log("in this bitch");
+          console.log("in this bitch");
+            $("#myChart").height("0px");
+             $("#myChart2").height("0px");
             $("#myChart").height($("#description1").height());
             $("#myChart2").height($("#description2").height());
+            $("#myChart").width("100%");
+            $("#myChart2").width("100%");
         }
         graphSize();
         $(window).resize(function(){
