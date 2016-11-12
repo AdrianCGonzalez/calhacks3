@@ -32,6 +32,37 @@
 					</ul>
 				</div>
 			</nav>
+
+
+      <div id="index-banner" class="parallax-container">
+		<div class="section no-pad-bot">
+			<div class="container hide-on-med-and-up">
+				<br>
+				<br>
+				<div style="background-color: rgba(25, 25, 25, 0.5);">
+					<h1 class="header center white-text text-lighten-2">CalHacks Team C14</h1>
+
+				</div>
+				<br>
+
+			</div>
+			<div class="container hide-on-small-only">
+				<br>
+				<br>
+				<div style="background-color: rgba(25, 25, 25, 0.5);">
+					<h1 class="header center white-text text-lighten-2">CalHacks</h1>
+					<div class="row center">
+						<h4 class="header col s12 light">Team C14</h4>
+					</div>
+				</div>
+				<br>
+
+			</div>
+		</div>
+		<div class="parallax"><img src="./image/house.svg" alt="Unsplashed background img 1"></div>
+	</div>
+
+
 		<div class="contentWrapper">
 
 
@@ -42,16 +73,16 @@
 					<div class="a afr  card-panel">
 						<div>
                           <span><pre>
-						Inspiration
-                      		We all have seen those traveling ads where they promise you affordable vacations to paradise on earth. Then you click, and then it turns out is not affordable at all. This is great prose. We have the bestest english. No more.
-						What it does
-                      		C14-Hacks uses personalized information and data analysis to facilitate travel planning. Not only does it recommend affordable and interesting tourist places that are affordabe to the user, it also offers a financial guid
-
-						How we built it
-						Challenges we ran into
-						Accomplishments that we're proud of
-						</pre>
-                            </span>
+                          Inspiration
+                              We all have seen those traveling ads where they promise you affordable vacations to paradise on earth. Then you click, and then it turns out is not affordable at all. This is great prose. We have the bestest english. No more.
+                          What it does
+                              C14-Hacks uses personalized information and data analysis to facilitate travel planning. Not only does it recommend affordable and interesting tourist places that are affordabe to the user, it also offers a financial guidance for places that are not an option in the present.
+                          How we built it
+                              Using Capital One api, Nessie, we gather financial information and
+                              Using
+                          Challenges we ran into
+                          Accomplishments that we're proud of
+                            </pre></span>
 						</div>
 					</div>
 				</div>
