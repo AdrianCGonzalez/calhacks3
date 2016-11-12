@@ -8,7 +8,7 @@
         <meta name="apple-touch-fullscreen" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <title>Vacation</title>
-<link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Donald_Trump_August_19,_2015_(cropped).jpg/220px-Donald_Trump_August_19,_2015_(cropped).jpg" />
+        <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Donald_Trump_August_19,_2015_(cropped).jpg/220px-Donald_Trump_August_19,_2015_(cropped).jpg" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
         <link rel="stylesheet" href="./css/style.css">
 
@@ -36,6 +36,9 @@
             padding-top:10px;
             padding-bottom:10px;
         }
+      img {
+        border-radius: 17px;
+      }
     </style>
 
     <body>
@@ -45,13 +48,12 @@
                     <div class="pageWrapper">
                         <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:13px;width:36px;height:36px"></a>
                         <a href="index.php" class="brand-logo hide-on-small-only" style="margin-left:40px">CalHacks</a>
-                        <ul id="nav-mobile" class="right hide-on-large-only">
+                        <ul id="nav-mobile" class="right">
                             <li><a href="aboutUs.html">About Us</a></li>
                             <li><a href="logIn.html">Log In</a></li>
                         </ul>
                         <ul id="nav-mobile" class="side-nav">
                             <li><a href="aboutUs.html">About Us</a></li>
-
                             <li><a href="logIn.html">Log In</a></li>
                         </ul>
                         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -71,10 +73,7 @@
             </ul>
         </div>
 
-
-
         <div id="index-banner" class="parallax-container">
-
             <div class="section no-pad-bot">
                 <div class="container hide-on-med-and-up">
                     <br>
@@ -144,7 +143,7 @@
 
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
                     </div>
-                    <div class="col s12 m8">
+                    <div class="col s12 m8" id="myChartcon">
                         <div class="ct-chart ct-perfect-fourth" id="myChart"></div>
 						<script>makeChart("#myChart");</script>
                     </div>
@@ -161,7 +160,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
                     </div>
 
-                    <div class="col s12 m8">
+                    <div class="col s12 m8" id="myChart2con">
                         <div class="ct-chart ct-perfect-fourth" id="myChart2"></div>
 						<script>makeChart("#myChart2");</script>
                     </div>
@@ -294,5 +293,19 @@
         initializeAnimation();
         var myScroll = $(this).scrollTop();
         inAnimate(myScroll);
+        function graphSize()
+        {
+            console.log("in this bitch");
+            $("#myChart").height("0px");
+            $("#myChart2").height("0px");
+            $("#myChart").height($("#description1").height());
+            $("#myChartcon").height($("#description1").height()+10);
+            $("#myChart2").height($("#description2").height());
+            $("#myChart2con").height($("#description2").height()+10);
+        }
+        graphSize();
+        $(window).resize(function(){
+            graphSize();
+        });
     </script>
 </html>
