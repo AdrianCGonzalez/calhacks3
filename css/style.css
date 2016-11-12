@@ -1,4 +1,5 @@
 .a {
+  margin: 5px;
   transition: All 2s ease;
   -webkit-transition: All 2s ease;
   -moz-transition: All 2s ease;
