@@ -68,7 +68,7 @@
             </a>
             <ul>
                 <li><a class="btn-floating red" href="aboutUs.php"><i class="material-icons">perm_identity</i></a></li>
-                <li><a class="btn-floating green" href="#modal1" data-target="modal1" class="modal-trigger"><i class="material-icons">vpn_key</i></a></li>
+                <li><li><a href="#modal1" data-target="modal1" class=" btn-floating red modal-trigger"><i class="material-icons">vpn_key</i></a></li>
             </ul>
         </div>
 
@@ -98,6 +98,7 @@
 <div style="text-align:center">
 <button id="signin" name="signin" class="btn waves-effect waves-light btn-success" type="submit">Sign In</button>
 </div>
+  <br>
 
 </div>
 </form>
