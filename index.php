@@ -74,14 +74,14 @@
             </div>
             <div class="parallax"><img src="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj3/cs194-fb/images/blurry_turtle.jpg" alt="Unsplashed background img 1"></div>
         </div>
-      <div class="row">
+      <div class="row" height="50vh">
 
       <div class="col s12 m6">
-      <canvas id="myChart" width="40vw"></canvas>
+      <canvas id="myChart" ></canvas>
       </div>
 
       <div class="col s12 m6">
-      <canvas id="myChart2" width="40vw"></canvas>
+      <canvas id="myChart2" ></canvas>
       </div>
       </div>
         <script>
@@ -113,6 +113,10 @@ var myChart = new Chart(ctx, {
         }]
     },
     options: {
+              title: {
+            display: true,
+            text: 'Thing1'
+        }
         scales: {
             yAxes: [{
                 ticks: {
@@ -153,6 +157,10 @@ var myChart = new Chart(ctx, {
         }]
     },
     options: {
+           title: {
+            display: true,
+            text: 'Thing2'
+        }
         scales: {
             yAxes: [{
                 ticks: {
