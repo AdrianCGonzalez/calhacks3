@@ -76,11 +76,11 @@
         </div>
       <div class="row" height="50vh">
 
-      <div class="col s12 m6">
+      <div class="col s12 m6" height="100%">
       <canvas id="myChart" width="100%" height="100%"></canvas>
       </div>
 
-      <div class="col s12 m6">
+      <div class="col s12 m6" height="100%">
       <canvas id="myChart2" width="100%" height="100%"></canvas>
       </div>
       </div>
