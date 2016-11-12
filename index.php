@@ -214,7 +214,7 @@
         </div>
         <div class="contentWrapper">
             <div class="pageWrapper">
-                <h1 class="padMe a f">Here's how we're different.</h1>
+                <h1 class="padMe">Here's how we're different.</h1>
                 <div class="holder repeat">
                     <div class="a f afl  card-panel">
                         <b class="padMe">An intelligent messaging app.</b>
