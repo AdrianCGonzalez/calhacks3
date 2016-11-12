@@ -30,7 +30,7 @@
     <body>
         <nav class="teal darken-2">
             <div class="nav-wrapper">
-              <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:5px;width:36px;height:36px">CalHacks</a>
+                <a href="index.php" class="brand-logo"><img src="http://www.calhacks.io/assets/img/sittingbear.png" style="width:36px;height:36px">CalHacks</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="aboutUs.html">About Us</a></li>
                     <li><a href="components.html">Components</a></li>
