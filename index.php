@@ -22,25 +22,26 @@
 	</head>
 
 	<body>
-		<nav>
-			<div class="nav-wrapper">
-				<a href="#" class="brand-logo">CalHacks</a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a href="sass.html">Sass</a></li>
-					<li><a href="badges.html">Components</a></li>
-					<li><a href="collapsible.html">JavaScript</a></li>
-				</ul>
-			</div>
-		</nav>
 		<div class="contentWrapper">
-
+			<nav>
+				<div class="nav-wrapper">
+					<a href="#" class="brand-logo">CalHacks</a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="sass.html">Sass</a></li>
+						<li><a href="badges.html">Components</a></li>
+						<li><a href="collapsible.html">JavaScript</a></li>
+					</ul>
+				</div>
+			</nav>
 
 			<div class="pageWrapper">
 				<div>
 					<span>
 						Inspiration
-						C14-Hacks is a website that intends to purpose is
+                      		We all have seen those traveling ads where they promise you
 						What it does
+                      							C14-Hacks that intends to facilitate travel planning using personalized information about the
+
 						How we built it
 						Challenges we ran into
 						Accomplishments that we're proud of
@@ -80,7 +81,7 @@
 			<div class="footer-copyright">
 				<div class="container center">
 					<span class="hide-on-small-only">Powered by: nessie, aMaDEUS, Microsoft Azure Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">CFF</a> </span>©2016 Code For Food<span class="hide-on-med-and-down">All rights reserved.</span>
-				</div>
+              </div>
 			</div>
 		</footer>
 	</body>
