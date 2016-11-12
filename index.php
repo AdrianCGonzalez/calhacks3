@@ -17,6 +17,10 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.10.1/chartist.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.10.1/chartist.min.js"></script>
+
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
         <script>
             $('.button-collapse').sideNav();
@@ -27,29 +31,31 @@
 
     </head>
     <style>
-        max-width: 100%;
-        max-height: 100%;
+        .padMe{
+            padding-top:10px;
+            padding-bottom:10px;
+        }
     </style>
 
     <body>
         <nav class="teal darken-2">
             <div class="nav-wrapper">
-              <div class="contentWrapper">
-            <div class="pageWrapper">
-                <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:13px;width:36px;height:36px"></a>
-                <a href="index.php" class="brand-logo" style="margin-left:40px">CalHacks</a>
-                <ul id="nav-mobile" class="right hide-on-large-only">
-                    <li><a href="aboutUs.html">About Us</a></li>
-                    <li><a href="logIn.html">Log In</a></li>
-                </ul>
-                <ul id="nav-mobile" class="side-nav">
-                    <li><a href="aboutUs.html">About Us</a></li>
+                <div class="contentWrapper">
+                    <div class="pageWrapper">
+                        <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:13px;width:36px;height:36px"></a>
+                        <a href="index.php" class="brand-logo hide-on-small-only" style="margin-left:40px">CalHacks</a>
+                        <ul id="nav-mobile" class="right hide-on-large-only">
+                            <li><a href="aboutUs.html">About Us</a></li>
+                            <li><a href="logIn.html">Log In</a></li>
+                        </ul>
+                        <ul id="nav-mobile" class="side-nav">
+                            <li><a href="aboutUs.html">About Us</a></li>
 
-                    <li><a href="logIn.html">Log In</a></li>
-                </ul>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-              </div>
-              </div>
+                            <li><a href="logIn.html">Log In</a></li>
+                        </ul>
+                        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+                    </div>
+                </div>
             </div>
         </nav>
 
@@ -73,7 +79,7 @@
                     <br>
                     <br>
                     <div style="background-color: rgba(25, 25, 25, 0.1);">
-                        <h1 class="header center white-text text-lighten-2">LittleJellyMan</h1>
+                        <h1 class="header center white-text text-lighten-2">CalHacks</h1>
                     </div>
                     <br>
 
@@ -83,7 +89,7 @@
                     <br>
                     <br>
                     <div style="background-color: rgba(25, 25, 25, 0.1);">
-                        <h1 class="header center white-text text-lighten-2">LittleJellyMan</h1>
+                        <h1 class="header center white-text text-lighten-2">CalHacks</h1>
                         <div class="row center">
                             <h4 class="header center white-text text-lighten-2">Team C14</h4>
                         </div>
@@ -106,37 +112,33 @@
 
 
 
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                <script type="text/javascript">
+                    google.charts.load('current', {'packages':['corechart']});
+                    google.charts.setOnLoadCallback(drawChart);
 
+                    function drawChart() {
+                        var data = google.visualization.arrayToDataTable([
+                            ['Year', 'Sales', 'Expenses'],
+                            ['2004',  1000,      400],
+                            ['2005',  1170,      460],
+                            ['2006',  660,       1120],
+                            ['2007',  1030,      540]
+                        ]);
 
+                        var options = {
+                            title: 'Company Performance',
+                            curveType: 'function',
+                            legend: { position: 'bottom' }
+                        };
 
-                  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
+                        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
-          ['2004',  1000,      400],
-          ['2005',  1170,      460],
-          ['2006',  660,       1120],
-          ['2007',  1030,      540]
-        ]);
+                        chart.draw(data, options);
+                    }
+                </script>
 
-        var options = {
-          title: 'Company Performance',
-          curveType: 'function',
-          legend: { position: 'bottom' }
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-        chart.draw(data, options);
-      }
-    </script>
-
-              <div id="curve_chart" style="width: 900px; height: 500px"></div>
-
+                <div id="curve_chart" style="width: 900px; height: 500px"></div>
 
 
 
@@ -147,16 +149,9 @@
 
 
 
-
-
-
-
-
-
-                <div class="row hide-on-small-only">
+                <div class="row">
                     <div class="col s12 m7">
-                        <h1>Traveling has never been easier</h1>
-                        <br>
+                        <h1 style="padding-bottom:10px">Traveling has never been easier</h1>
                         <p>Nulla id ligula tortor. Quisque tincidunt neque purus, et aliquet arcu ullamcorper eu. Cras in arcu ac urna ultrices bibendum. Vestibulum rutrum diam leo, vitae pulvinar turpis facilisis ut. Morbi a ullamcorper quam. Praesent placerat ac augue vitae cursus. Maecenas semper nisi nibh, in maximus magna condimentum vitae. Curabitur nec vestibulum ex, in fringilla arcu. Curabitur nec elit eget tortor tristique fringilla in in massa. Suspendisse et porttitor est, in volutpat lorem. Nulla pulvinar quis velit quis facilisis. Sed leo dolor, feugiat ac est sed, semper mattis lectus. Maecenas suscipit ornare erat sed congue. Nullam volutpat neque id libero mattis scelerisque. Integer ac ante finibus, ultricies ante id, convallis lorem. Fusce rhoncus eros vitae magna tempor, sit amet hendrerit dui aliquet.</p>
                     </div>
                     <div class="col s12 m5">
@@ -178,9 +173,9 @@
 
 
                 </div>
-                <br>
-                <hr>
-                <br>
+
+                <hr class="padMe">
+
                 <div class="row" height="50vh">
 
                     <div class="col s12 m4" id="description2">
@@ -192,14 +187,13 @@
                         <canvas id="myChart2" width="100%" height="50%"></canvas>
                     </div>
                 </div>
-                <br>
-                <hr>
-                <br>
+
+                <hr class="padMe">
+
 
                 <h1 class="center-align">Empowering Users From Day 1</h1>
-                <br>
-                <img align="middle" src="https://www.drift.com/wp-content/uploads/2016/10/icons.jpg">
-                <br>
+
+                <img align="middle" class="padMe" src="https://www.drift.com/wp-content/uploads/2016/10/icons.jpg">
             </div>
         </div>
         <div class="parallax-container valign-wrapper">
@@ -207,18 +201,18 @@
         </div>
         <div class="contentWrapper">
             <div class="pageWrapper">
-                <h1>Here's how we're different.</h1>
-                <br>
-                <b>An intelligent messaging app.</b>
-                <br>
+                <h1 class="padMe">Here's how we're different.</h1>
+
+                <b class="padMe">An intelligent messaging app.</b>
+
                 <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
-                <b>An intelligent messaging app.</b>
-                <br>
+                <b class="padMe">An intelligent messaging app.</b>
+
                 <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
-                <b>An intelligent messaging app.</b>
-                <br>
+                <b class="padMe">An intelligent messaging app.</b>
+
                 <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
-                <br>
+
             </div>
         </div>
         <script>
@@ -292,14 +286,14 @@
                 },
                 options: {
                     scales: {
-                    yAxes: [{
-                    ticks: {
-                    beginAtZero:true
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true
+                            }
+                        }]
+                    }
                 }
-            }]
-                                    }
-                                    }
-                                    });
+            });
         </script>
 
 
@@ -430,9 +424,9 @@
         inAnimate(myScroll);
         function graphSize()
         {
-          console.log("in this bitch");
+            console.log("in this bitch");
             $("#myChart").height("0px");
-             $("#myChart2").height("0px");
+            $("#myChart2").height("0px");
             $("#myChart").height($("#description1").height());
             $("#myChart2").height($("#description2").height());
             $("#myChart").width("100%");
