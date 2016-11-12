@@ -37,16 +37,24 @@
 
 			<div class="pageWrapper">
 				<div>
-					<span>
+
+                      <div class="holder repeat">
+					<div class="a afr  card-panel">
+						<div>
+                          <span>
 						Inspiration
                       		We all have seen those traveling ads where they promise you affordable vacations to paradise on earth. Then you click, and then it turns out is not affordable at all. This is great prose. We have the bestest english. No more.
 						What it does
-                      		C14-Hacks uses personalized information and data analysis to facilitate travel planning. Not only does it recommend affordable touri about the
+                      		C14-Hacks uses personalized information and data analysis to facilitate travel planning. Not only does it recommend affordable and interesting tourist places that are affordabe to the user, it also offers a financial guid
 
 						How we built it
 						Challenges we ran into
 						Accomplishments that we're proud of
-					</span>
+                            </span>
+						</div>
+					</div>
+				</div>
+
 				</div>
 				<div class="holder repeat">
 					<div class="a afl  card-panel">
@@ -61,14 +69,11 @@
 		<footer class="page-footer red lighten-2">
 			<div style="padding-left:20px;padding-right:20px;">
 				<div class="row">
-					<div class="col l5 hide-on-small-only">
+					<div class="col l9 hide-on-small-only">
 						<h5 class="white-text">Company Bio</h5>
 						<p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
 
 
-					</div>
-					<div class="col l4 s6">
-						<h5 class="white-text" style="text-align:center">Settings</h5>
 					</div>
 					<div class="col l3 s6">
 						<h5 class="white-text" style="text-align:center">Contact Us</h5>
@@ -81,7 +86,7 @@
 			</div>
 			<div class="footer-copyright">
 				<div class="container center">
-					<span class="hide-on-small-only">Powered by: nessie, aMaDEUS, Microsoft Azure Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">CFF</a> </span>©2016 Code For Food<span class="hide-on-med-and-down">All rights reserved.</span>
+					<span class="hide-on-small-only">Powered by: nessie, aMaDEUS, Microsoft Azure Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">CodeForFood</a> </span>©2016 Code For Food<span class="hide-on-med-and-down">All rights reserved.</span>
               </div>
 			</div>
 		</footer>
@@ -151,4 +156,3 @@
 		inAnimate(myScroll);
 	</script>
 </html>
-st spots,
