@@ -52,6 +52,5 @@ chart.on('created', function() {
     clearTimeout(window.__anim21278907124);
     window.__anim21278907124 = null;
   }
-  window.__anim21278907124 = setTimeout(chart.update.bind(chart), 10000);
 });
 }
