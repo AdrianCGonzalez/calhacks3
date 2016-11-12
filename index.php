@@ -76,7 +76,9 @@
         </div>
       <br>
       <div>
-        CanIGoNow provides simple, responsive, clean and engaging user interface for individuals who wish to travel on a budget.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc sollicitudin congue ante, hendrerit semper urna molestie a. Ut molestie ex nibh, sit amet iaculis ex aliquet a. Vestibulum vel ipsum fringilla, suscipit turpis eu, pretium quam. Integer laoreet volutpat tincidunt. Maecenas nec posuere felis. Mauris vitae ipsum et leo posuere maximus. Donec pharetra sapien a sollicitudin vehicula. Etiam at rutrum massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut mi orci, efficitur eget odio id, porttitor finibus massa. Aliquam eget rhoncus erat, sit amet mollis libero. Nam sit amet est quis risus euismod sagittis in ut justo. Nam at rutrum elit. Nunc vel elementum ante, id blandit metus. Phasellus ut mi augue.
       </div>
       <br>
       <hr>
