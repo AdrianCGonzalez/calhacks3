@@ -141,7 +141,7 @@
 
 
                             <div class="ct-chart ct-perfect-fourth" id="myPi"></div>
-                            <script>makepi("#myPi");</script>
+                            <script>makeChart("#myPi");</script>
 
                         </div>
                     </div>
