@@ -139,16 +139,9 @@
                     <div class ="col s12 m4">
                         <div class="card-panel">
 
-                            <div class="row">
-                                <div class="col s12 m4" id="description1">
-                                    <h1 class="padMe">Bar Chart</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
-                                </div>
-                                <div class="col s12 m8" id="myChartcon"  height="50px">
-                                    <div class="ct-chart ct-perfect-fourth" id="myPi"></div>
-                                    <script>makepi("#myPi");</script>
-                                </div>
-                            </div>
+
+                            <div class="ct-chart ct-perfect-fourth" id="myPi"></div>
+                            <script>makepi("#myPi");</script>
 
                         </div>
                     </div>
