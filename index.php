@@ -4,11 +4,10 @@
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name='viewport' content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0"/>
-        <!--		<meta http-equiv="refresh" content="5"> -->
+        <meta http-equiv="refresh" content="15">
         <meta name="apple-touch-fullscreen" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <title>Vacation</title>
-        <!--<meta http-equiv="refresh" content="3">-->
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
         <link rel="stylesheet" href="./css/style.css">
@@ -16,7 +15,8 @@
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
         <script>
             $('.button-collapse').sideNav();
@@ -30,16 +30,16 @@
     <body>
         <nav class="teal darken-2">
             <div class="nav-wrapper">
-                <a href="index.php" class="brand-logo"><img src="http://www.calhacks.io/assets/img/sittingbear.png" style="width:36px;height:36px">CalHacks</a>
+                <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:5px;width:36px;height:36px">CalHacks</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="aboutUs.html">About Us</a></li>
                     <li><a href="components.html">Components</a></li>
                     <li><a href="logIn.html">Log In</a></li>
                 </ul>
                 <ul id="nav-mobile" class="side-nav">
-                    <li><a href="sass.html">About Us</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">Log In</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="components.html">Components</a></li>
+                    <li><a href="logIn.html">Log In</a></li>
                 </ul>
                 <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 
@@ -53,8 +53,7 @@
                     <br>
                     <br>
                     <div style="background-color: rgba(25, 25, 25, 0.1);">
-                        <h1 class="header center white-text text-lighten-2">CalHacks Team C14</h1>
-
+                        <h1 class="header center white-text text-lighten-2">LittleJellyMan</h1>
                     </div>
                     <br>
 
@@ -63,7 +62,7 @@
                     <br>
                     <br>
                     <div style="background-color: rgba(25, 25, 25, 0.1);">
-                        <h1 class="header center white-text text-lighten-2">CalHacks</h1>
+                        <h1 class="header center white-text text-lighten-2">LittleJellyMan</h1>
                         <div class="row center">
                             <h4 class="header center white-text text-lighten-2">Team C14</h4>
                         </div>
@@ -75,9 +74,53 @@
             <div class="parallax"><img src="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj3/cs194-fb/images/blurry_turtle.jpg" alt="Unsplashed background img 1"></div>
         </div>
 
+
+        <canvas id="myChart" width="400" height="400"></canvas>
+        <script>
+            var ctx = document.getElementById("myChart");
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255,99,132,1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true
+                            }
+                        }]
+                    }
+                }
+            });
+        </script>
+
+
+
+
+
         <div class="contentWrapper">
-
-
             <div class="pageWrapper">
                 <div>
 
