@@ -28,7 +28,10 @@
             $(document).ready(function(){
                 $('.parallax').parallax();
             });
-
+        /*    $(document).ready(function(){
+                // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+                $('.modal-trigger').leanModal();
+            });*/
         </script>
 
     </head>
@@ -74,7 +77,7 @@
             </ul>
         </div>
 
-        <!-- Log In Modal -->
+        <!-- Log In Modal
         <div id="modal1" class="modal" style="overflow:hidden;">
             <div class="modal-content">
                 <h4 style="text-align:center">Sign In</h4>
@@ -106,7 +109,7 @@
             </div>
         </div>
 
-
+-->
         <div id="index-banner" class="parallax-container">
             <div class="section no-pad-bot">
                 <div class="container hide-on-med-and-up">
