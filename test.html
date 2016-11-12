@@ -21,6 +21,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.10.1/chartist.min.js"></script>
         <script src="js/animatedChart.js"></script>
         <script src="js/piChart.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/linq.js/2.2.0.2/linq.min.js"></script>
 
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
@@ -353,10 +354,25 @@
             graphSize();
         });
 
+        for(var i  =0;i<12;i++)
+        {
+            $.ajax({
+                url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
+                success: function(results){
+                    var queryResult = Enumerable.From(results)
+                    .Where(function (x) { return  x.Contains("2015-1-5")  })
+                    .OrderBy(function (x) { return x.purchase_date })
+                    .Select(function (x) { return x.amount})
+                    .ToArray();
+                    console.log(queryResult);
+                }
+            });
+        }
+
         $.ajax({
             url: 'http://api.reimaginebanking.com/customers/58279577360f81f104549283?key=e113f594b9615823b8d4262cf80a0d87',
             success: function(results){
-                $("#introduction").html("Welcome "+results.first_name+"!");
+                $("#introduction").html("Welcome "+results.first_name + " " +results.last_name+"!");
             }
         });
     </script>

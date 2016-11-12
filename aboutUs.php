@@ -76,22 +76,9 @@
                 <div class="card-panel">
                     <div class="col s12">
                         <h2 id="introduction"></h2>
+                      <p id="balance"></p>
                     </div>
                     <div class="row">
-                        <div class="col l3 m6 s12">
-                            <div class="card blue-grey darken-1">
-                                <div class="card-content white-text">
-                                    <span class="card-title">Thing 1</span>
-                                    <p>I am a very simple card. I am good at containing small bits of information.
-                                        I am convenient because I require little markup to use effectively.</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
-                                    <a href="#">This is a link</a>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="col l3 m6 s12">
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
@@ -109,7 +96,7 @@
                         <div class="col l3 m6 s12">
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
-                                    <span class="card-title">Pay A Bill</span>
+                                    <span class="card-title">Pay Bill</span>
                                     <p>I am a very simple card. I am good at containing small bits of information.
                                         I am convenient because I require little markup to use effectively.</p>
                                 </div>
@@ -124,6 +111,20 @@
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
                                     <span class="card-title">Transfer</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l3 m6 s12">
+                            <div class="card blue-grey darken-1">
+                                <div class="card-content white-text">
+                                    <span class="card-title">Travel</span>
                                     <p>I am a very simple card. I am good at containing small bits of information.
                                         I am convenient because I require little markup to use effectively.</p>
                                 </div>
@@ -148,25 +149,22 @@
                 <div class="card-panel">
 
                     <div class="row">
-                        <div class="col m2 hide-on-small-only">
-                            <div class="card-panel col s12">
-                                <p>BLah</p>
-                            </div>
-                            <div class="card-panel col s12">
-                                <p>BLah</p>
-                            </div>
-                            <div class="card-panel col s12">
-                                <p>BLah</p>
-                            </div>
-                        </div>
+                        <div class="card-panel">
+
+                    <div class="col s12 m8" id="myChartcon"  style="height:50px">
+                        <div class="ct-chart ct-perfect-fourth" id="myChart" style="height:50px"></div>
+                        <script>piChart("#piChart");</script>
+                    </div>
+                </div>
 
                         <div class="col s12 m10">
+                          <p>Deposits</p>
                             <table>
                                 <thead>
                                     <tr>
-                                        <th data-field="id">Name</th>
-                                        <th data-field="name">Item Name</th>
-                                        <th data-field="price">Item Price</th>
+                                        <th data-field="id">Amount</th>
+                                        <th data-field="name">Transaction Date</th>
+
                                     </tr>
                                 </thead>
 
@@ -181,11 +179,7 @@
                                         <td>Jellybean</td>
                                         <td>$3.76</td>
                                     </tr>
-                                    <tr>
-                                        <td>Jonathan</td>
-                                        <td>Lollipop</td>
-                                        <td>$7.00</td>
-                                    </tr>
+
                                 </tbody>
                             </table>
 
@@ -207,24 +201,22 @@
 
                 <div class="card-panel">
                     <div class="row">
-                        <div class="col m2 hide-on-small-only">
-                            <div class="card-panel col s12">
-                                <p>BLah</p>
-                            </div>
-                            <div class="card-panel col s12">
-                                <p>BLah</p>
-                            </div>
-                            <div class="card-panel col s12">
-                                <p>BLah</p>
-                            </div>
-                        </div>
+                        <div class="card-panel">
+
+                    <div class="col s12 m2" id="myChartcon"  style="height:50px">
+                        <div class="ct-chart ct-perfect-fourth" id="myChart" style="height:50px"></div>
+                        <script>piChart("#piChart");</script>
+                    </div>
+                </div>
+
                         <div class="col s12 m10">
+                          <p>Purchaces</p>
                             <table>
                                 <thead>
                                     <tr>
-                                        <th data-field="id">Name</th>
-                                        <th data-field="name">Item Name</th>
+                                        <th data-field="id">Description</th>
                                         <th data-field="price">Item Price</th>
+                                        <th data-field="date">Date Purchased</th>
                                     </tr>
                                 </thead>
 
@@ -353,10 +345,30 @@
             graphSize();
         });
 
+      	for(var i  =0;i<12;i++)
+        {
+            $.ajax({
+                url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
+                success: function(results){
+                    var queryResult = Enumerable.From(results)
+                    .Where(function (x) { return x.purchase_date == ("2015-1-5")  })
+                    .OrderBy(function (x) { return x.purchase_date })
+                    .Select(function (x) { return x.amount})
+                    .ToArray();
+                    console.log(queryResult);
+                }
+            });
+        }
         $.ajax({
-            url: 'http://api.reimaginebanking.com/customers/58279577360f81f104549283?key=e113f594b9615823b8d4262cf80a0d87',
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/customer?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
                 $("#introduction").html("Welcome "+results.first_name + " " +results.last_name+"!");
+            }
+        });
+      $.ajax({
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/customer?key=92d167a667478cadc9b5542720b5463d',
+            success: function(results){
+                $("#balance").html("Your balance is "+results.balance + " with " +results.rewards+" reward points!");
             }
         });
     </script>
