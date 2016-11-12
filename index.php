@@ -28,6 +28,10 @@
             $(document).ready(function(){
                 $('.parallax').parallax();
             });
+            $(document).ready(function(){
+                // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+                $('.modal-trigger').leanModal();
+            });
         </script>
 
     </head>
@@ -36,9 +40,9 @@
             padding-top:10px;
             padding-bottom:10px;
         }
-      img {
-        border-radius: 17px;
-      }
+        img {
+            border-radius: 17px;
+        }
     </style>
 
     <body>
@@ -49,12 +53,12 @@
                         <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:13px;width:36px;height:36px"></a>
                         <a href="index.php" class="brand-logo hide-on-small-only" style="margin-left:40px">CalHacks</a>
                         <ul id="nav-mobile" class="right hide-on-small-only">
-                            <li><a href="aboutUs.html">About Us</a></li>
-                            <li><a href="logIn.html">Log In</a></li>
+                            <li><a href="aboutUs.php">About Us</a></li>
+                            <li><a href="#modal1" data-target="modal1" class="modal-trigger">Log In</a></li>
                         </ul>
                         <ul id="nav-mobile" class="side-nav">
-                            <li><a href="aboutUs.html">About Us</a></li>
-                            <li><a href="logIn.html">Log In</a></li>
+                            <li><a href="aboutUs.php">About Us</a></li>
+                            <li><a href="#modal1" data-target="modal1" class="modal-trigger">Log In</a></li>
                         </ul>
                         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
                     </div>
@@ -73,6 +77,39 @@
             </ul>
         </div>
 
+        <!-- Log In Modal -->
+        <div id="modal1" class="modal" style="overflow:hidden;">
+            <div class="modal-content">
+                <h4 style="text-align:center">Sign In</h4>
+                <form class="col s12">
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">email</i>
+                            <input id="name" class="validate">
+                            <label for="name">Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">lock</i>
+                            <input id="comment" type="text" class="validate">
+                            <label for="comment">Password</label>
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <label class="control-label" for="signin"></label>
+
+                        <div style="text-align:center">
+                            <button id="signin" name="signin" class="btn waves-effect waves-light btn-success" type="submit">Sign In</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
         <div id="index-banner" class="parallax-container">
             <div class="section no-pad-bot">
                 <div class="container hide-on-med-and-up">
@@ -82,7 +119,6 @@
                         <h1 class="header center white-text text-lighten-2">CalHacks</h1>
                     </div>
                     <br>
-
                 </div>
 
                 <div class="container hide-on-small-only">
@@ -99,21 +135,20 @@
                 </div>
             </div>
 
-            <div class="parallax"><img src="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj3/cs194-fb/images/blurry_turtle.jpg" alt="Unsplashed background img 1"></div>
+            <div class="parallax" style="height:25vh">
+                <img src="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj3/cs194-fb/images/blurry_turtle.jpg" alt="Unsplashed background img 1"></div>
         </div>
 
         <br>
         <div class="contentWrapper">
             <div class="pageWrapper">
 
-
-
-
                 <div class="row hide-on-med-and-down">
                     <div class="col s12 m7">
                         <h1 style="padding-bottom:10px" >Personalized Traveling Based On Your Income</h1>
 
-                        <p>Nulla id ligula tortor. Quisque tincidunt neque purus, et aliquet arcu ullamcorper eu. Cras in arcu ac urna ultrices bibendum. Vestibulum rutrum diam leo, vitae pulvinar turpis facilisis ut. Morbi a ullamcorper quam. Praesent placerat ac augue vitae cursus. Maecenas semper nisi nibh, in maximus magna condimentum vitae. Curabitur nec vestibulum ex, in fringilla arcu. Curabitur nec elit eget tortor tristique fringilla in in massa. Suspendisse et porttitor est, in volutpat lorem. Nulla pulvinar quis velit quis facilisis. Sed leo dolor, feugiat ac est sed, semper mattis lectus. Maecenas suscipit ornare erat sed congue. Nullam volutpat neque id libero mattis scelerisque. Integer ac ante finibus, ultricies ante id, convallis lorem. Fusce rhoncus eros vitae magna tempor, sit amet hendrerit dui aliquet.</p>
+                        <p>Nulla id ligula tortor. Quisque tincidunt neque purus, et aliquet arcu ullamcorper eu. Cras in arcu ac urna ultrices bibendum. Vestibulum rutrum diam leo, vitae pulvinar turpis facilisis ut. Morbi a ullamcorper quam. Praesent placerat ac augue vitae cursus.
+                          <br>Maecenas semper nisi nibh, in maximus magna condimentum vitae. Curabitur nec vestibulum ex, in fringilla arcu. Curabitur nec elit eget tortor tristique fringilla in in massa. Suspendisse et porttitor est, in volutpat lorem. Nulla pulvinar quis velit quis facilisis. Sed leo dolor, feugiat ac est sed, semper mattis lectus. Maecenas suscipit ornare erat sed congue. Nullam volutpat neque id libero mattis scelerisque. Integer ac ante finibus, ultricies ante id, convallis lorem. Fusce rhoncus eros vitae magna tempor, sit amet hendrerit dui aliquet.</p>
                     </div>
                     <div class="col s12 m5">
                         <img style="border-radius: 17px;" class="responsive-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Squirrel_posing.jpg">
@@ -135,38 +170,44 @@
 
                 </div>
 
-                 <div style="color:#9a2bf3;border-bottom: 1px solid rgba(154,43,243,0.2) padding-top:10px margin-bottom:10px"></div>
+                <div>
+                    <p style="color:#9a2bf3;border-bottom: 1px solid rgba(154,43,243,0.2) padding-top:10px margin-bottom:10px"></p>
+                </div>
 
                 <div class="row">
-                    <div class="col s12 m4" id="description1">
+                    <div class="col s12 m4 a f" id="description1">
                         <h1 class="padMe">Bar Chart</h1>
 
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
                     </div>
-                    <div class="col s12 m8" id="myChartcon">
+                    <div class="col s12 m8 a f afr" id="myChartcon">
                         <div class="ct-chart ct-perfect-fourth" id="myChart"></div>
-						<script>makeChart("#myChart");</script>
+                        <script>makeChart("#myChart");</script>
                     </div>
 
 
                 </div>
 
-                  <div style="color:#9a2bf3;border-bottom: 1px solid rgba(154,43,243,0.2) padding-top:10px margin-bottom:10px"></div>
+                <div>
+                    <p style="color:#9a2bf3;border-bottom: 1px solid rgba(154,43,243,0.2) padding-top:10px margin-bottom:10px"></p>
+                </div>
 
                 <div class="row">
 
-                    <div class="col s12 m4" id="description2">
+                    <div class="col s12 m4 a f" id="description2">
                         <h1>Line Chart</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
                     </div>
 
-                    <div class="col s12 m8" id="myChart2con">
+                    <div class="col s12 m8 a f afr" id="myChart2con">
                         <div class="ct-chart ct-perfect-fourth" id="myChart2"></div>
-						<script>makeChart("#myChart2");</script>
+                        <script>makeChart("#myChart2");</script>
                     </div>
                 </div>
 
-              <div style="color:#9a2bf3;border-bottom: 1px solid rgba(154,43,243,0.2) padding-top:10px margin-bottom:10px"></div>
+                <div>
+                    <p style="color:#9a2bf3;border-bottom: 1px solid rgba(154,43,243,0.2) padding-top:10px margin-bottom:10px"></p>
+                </div>
 
 
                 <h2 class="center-align">Empowering Users From Day 1</h2>
@@ -180,27 +221,26 @@
         </div>
         <div class="contentWrapper">
             <div class="pageWrapper">
-                <h1 class="padMe">Here's how we're different.</h1>
-                <div class="holder repeat">
-                    <div class="a f afl  card-panel">
-                        <b class="padMe">An intelligent messaging app.</b>
+                <h1 class="padMe a f">Here's how we're different.</h1>
 
-                        <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
-                    </div>
+                <div class="a f afl  card-panel">
+                    <b class="padMe">An intelligent messaging app.</b>
+
+                    <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
                 </div>
-                <div class="holder repeat">
-                    <div class="a f afr  card-panel">
-                        <b class="padMe">An intelligent messaging app.</b>
+            </div>
+            <div class="holder repeat">
+                <div class="a f afr  card-panel">
+                    <b class="padMe">An intelligent messaging app.</b>
 
-                        <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
-                    </div>
+                    <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
                 </div>
-                <div class="holder repeat">
-                    <div class="a f afl  card-panel">
-                        <b class="padMe">An intelligent messaging app.</b>
+            </div>
+            <div class="holder repeat">
+                <div class="a f afl  card-panel">
+                    <b class="padMe">An intelligent messaging app.</b>
 
-                        <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
-                    </div>
+                    <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
                 </div>
             </div>
         </div>
