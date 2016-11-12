@@ -41,7 +41,7 @@
                       <div class="holder repeat">
 					<div class="a afr  card-panel">
 						<div>
-                          <span>
+                          <span><pre>
 						Inspiration
                       		We all have seen those traveling ads where they promise you affordable vacations to paradise on earth. Then you click, and then it turns out is not affordable at all. This is great prose. We have the bestest english. No more.
 						What it does
@@ -50,6 +50,7 @@
 						How we built it
 						Challenges we ran into
 						Accomplishments that we're proud of
+						</pre>
                             </span>
 						</div>
 					</div>
