@@ -75,10 +75,15 @@
             <div class="parallax"><img src="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj3/cs194-fb/images/blurry_turtle.jpg" alt="Unsplashed background img 1"></div>
         </div>
       <br>
-      <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.
+      <div class="row">
+        <div class="col s12 m8">
+          <h1>Traveling has never been easier</h1>
+          <br>
+          <p>With HarambeNeverDied your traveling options will be so simple that autistic kids can figure it out.</p>
+        </div>
+        <div class="col s12 m4">
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc sollicitudin congue ante, hendrerit semper urna molestie a. Ut molestie ex nibh, sit amet iaculis ex aliquet a. Vestibulum vel ipsum fringilla, suscipit turpis eu, pretium quam. Integer laoreet volutpat tincidunt. Maecenas nec posuere felis. Mauris vitae ipsum et leo posuere maximus. Donec pharetra sapien a sollicitudin vehicula. Etiam at rutrum massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut mi orci, efficitur eget odio id, porttitor finibus massa. Aliquam eget rhoncus erat, sit amet mollis libero. Nam sit amet est quis risus euismod sagittis in ut justo. Nam at rutrum elit. Nunc vel elementum ante, id blandit metus. Phasellus ut mi augue.
+        </div>
       </div>
       <br>
       <hr>
@@ -100,7 +105,7 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
       <br>
         <div class="row" height="50vh">
 
-<div class="col s12 m4">
+<div class="col s12 m4" id="description1">
   <h1>Bar Chart</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
           </div>
@@ -319,6 +324,11 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
         initializeAnimation();
         var myScroll = $(this).scrollTop();
         inAnimate(myScroll);
+        function graphSize()
+        {
+            $("#myChart").height($("#description1").height());
+        }
+
         $(window).resize(function(){
             initializeAnimation();
             var myScroll = $(this).scrollTop();
