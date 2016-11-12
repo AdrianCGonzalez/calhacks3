@@ -28,10 +28,6 @@
             $(document).ready(function(){
                 $('.parallax').parallax();
             });
-            $(document).ready(function(){
-                // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-                $('.modal-trigger').leanModal();
-            });
         </script>
 
     </head>
@@ -77,37 +73,6 @@
             </ul>
         </div>
 
-        <!-- Log In Modal -->
-        <div id="modal1" class="modal" style="overflow:hidden;">
-            <div class="modal-content">
-                <h4 style="text-align:center">Sign In</h4>
-                <form class="col s12">
-
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">email</i>
-                            <input id="name" class="validate">
-                            <label for="name">Name</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">lock</i>
-                            <input id="comment" type="text" class="validate">
-                            <label for="comment">Password</label>
-                        </div>
-                    </div>
-                    <div class="input-field">
-                        <label class="control-label" for="signin"></label>
-
-                        <div style="text-align:center"> 
-                            <button id="signin" name="signin" class="btn waves-effect waves-light btn-success" type="submit">Sign In</button>
-                        </div>
-
-                    </div>
-                </form>
-            </div>
-        </div>
 
 
         <div id="index-banner" class="parallax-container">
@@ -138,112 +103,52 @@
             <div class="parallax" style="height:25vh">
                 <img src="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj3/cs194-fb/images/blurry_turtle.jpg" alt="Unsplashed background img 1"></div>
         </div>
-
-        <br>
-        <div class="contentWrapper">
-            <div class="pageWrapper">
-
-                <div class="row hide-on-med-and-down">
-                    <div class="col s12 m7">
-                        <h1 style="padding-bottom:10px" >Personalized Traveling Based On Your Income</h1>
-
-                        <p>Nulla id ligula tortor. Quisque tincidunt neque purus, et aliquet arcu ullamcorper eu. Cras in arcu ac urna ultrices bibendum. Vestibulum rutrum diam leo, vitae pulvinar turpis facilisis ut. Morbi a ullamcorper quam. Praesent placerat ac augue vitae cursus. 
-                          <br>Maecenas semper nisi nibh, in maximus magna condimentum vitae. Curabitur nec vestibulum ex, in fringilla arcu. Curabitur nec elit eget tortor tristique fringilla in in massa. Suspendisse et porttitor est, in volutpat lorem. Nulla pulvinar quis velit quis facilisis. Sed leo dolor, feugiat ac est sed, semper mattis lectus. Maecenas suscipit ornare erat sed congue. Nullam volutpat neque id libero mattis scelerisque. Integer ac ante finibus, ultricies ante id, convallis lorem. Fusce rhoncus eros vitae magna tempor, sit amet hendrerit dui aliquet.</p>
-                    </div>
-                    <div class="col s12 m5">
-                        <img style="border-radius: 17px;" class="responsive-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Squirrel_posing.jpg">
-                    </div>
-                </div>
-
-                <div class="row hide-on-large-only">
-                    <div class="row">
-                        <div class="col s12 m7">
-                            <h1 style="padding-bottom:10px">Personalized Traveling Based On Your Income</h1>
-                        </div>
-                        <div class="col s12 m5">
-                            <img style="border-radius: 17px;" class="responsive-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Squirrel_posing.jpg">
-                        </div>
-                    </div>
-                    <div class="col s12 m7">
-                        <p>Nulla id ligula tortor. Quisque tincidunt neque purus, et aliquet arcu ullamcorper eu. Cras in arcu ac urna ultrices bibendum. Vestibulum rutrum diam leo, vitae pulvinar turpis facilisis ut. Morbi a ullamcorper quam. Praesent placerat ac augue vitae cursus. Maecenas semper nisi nibh, in maximus magna condimentum vitae. Curabitur nec vestibulum ex, in fringilla arcu. Curabitur nec elit eget tortor tristique fringilla in in massa. Suspendisse et porttitor est, in volutpat lorem. Nulla pulvinar quis velit quis facilisis. Sed leo dolor, feugiat ac est sed, semper mattis lectus. Maecenas suscipit ornare erat sed congue. Nullam volutpat neque id libero mattis scelerisque. Integer ac ante finibus, ultricies ante id, convallis lorem. Fusce rhoncus eros vitae magna tempor, sit amet hendrerit dui aliquet.</p>
-                    </div>
-
-                </div>
-
-                <div>
-                    <p style="color:#9a2bf3;border-bottom: 1px solid rgba(154,43,243,0.2) padding-top:10px margin-bottom:10px"></p>
-                </div>
-
-                <div class="row">
-                    <div class="col s12 m4 a f" id="description1">
-                        <h1 class="padMe">Bar Chart</h1>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
-                    </div>
-                    <div class="col s12 m8 a f afr" id="myChartcon">
-                        <div class="ct-chart ct-perfect-fourth" id="myChart"></div>
-                        <script>makeChart("#myChart");</script>
-                    </div>
-
-
-                </div>
-
-                <div>
-                    <p style="color:#9a2bf3;border-bottom: 1px solid rgba(154,43,243,0.2) padding-top:10px margin-bottom:10px"></p>
-                </div>
-
-                <div class="row">
-
-                    <div class="col s12 m4 a f" id="description2">
-                        <h1>Line Chart</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
-                    </div>
-
-                    <div class="col s12 m8 a f afr" id="myChart2con">
-                        <div class="ct-chart ct-perfect-fourth" id="myChart2"></div>
-                        <script>makeChart("#myChart2");</script>
-                    </div>
-                </div>
-
-                <div>
-                    <p style="color:#9a2bf3;border-bottom: 1px solid rgba(154,43,243,0.2) padding-top:10px margin-bottom:10px"></p>
-                </div>
-
-
-                <h2 class="center-align">Empowering Users From Day 1</h2>
-                <div class="col s12 center-align">
-                    <img class="padMe center-align" src="https://www.drift.com/wp-content/uploads/2016/10/icons.jpg">
-                </div>
+        <div class="col m2 hide-on-small-only">
+            <div class="card-panel col s12">
+                <p>BLah</p>
+            </div>
+            <div class="card-panel col s12">
+                <p>BLah</p>
+            </div>
+            <div class="card-panel col s12">
+                <p>BLah</p>
             </div>
         </div>
-        <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="http://www.planwallpaper.com/static/images/o-COOL-CAT-facebook.jpg" alt="Unsplashed background img 2"></div>
+        <div class="col s12 m10">
+            <table>
+                <thead>
+                    <tr>
+                        <th data-field="id">Name</th>
+                        <th data-field="name">Item Name</th>
+                        <th data-field="price">Item Price</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Alvin</td>
+                        <td>Eclair</td>
+                        <td>$0.87</td>
+                    </tr>
+                    <tr>
+                        <td>Alan</td>
+                        <td>Jellybean</td>
+                        <td>$3.76</td>
+                    </tr>
+                    <tr>
+                        <td>Jonathan</td>
+                        <td>Lollipop</td>
+                        <td>$7.00</td>
+                    </tr>
+                </tbody>
+            </table>
+
         </div>
-        <div class="contentWrapper">
-            <div class="pageWrapper">
-                <h1 class="padMe a f">Here's how we're different.</h1>
 
-                <div class="a f afl  card-panel">
-                    <b class="padMe">An intelligent messaging app.</b>
 
-                    <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
-                </div>
-            </div>
-            <div class="holder repeat">
-                <div class="a f afr  card-panel">
-                    <b class="padMe">An intelligent messaging app.</b>
 
-                    <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
-                </div>
-            </div>
-            <div class="holder repeat">
-                <div class="a f afl  card-panel">
-                    <b class="padMe">An intelligent messaging app.</b>
 
-                    <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
-                </div>
-            </div>
-        </div>
+
 
         <footer class="page-footer teal darken-2">
             <div style="padding-left:20px;padding-right:20px;">
