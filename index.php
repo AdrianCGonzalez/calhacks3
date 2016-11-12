@@ -38,9 +38,8 @@
             <div class="pageWrapper">
                 <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:13px;width:36px;height:36px"></a>
                 <a href="index.php" class="brand-logo" style="margin-left:40px">CalHacks</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <ul id="nav-mobile" class="right hide-on-large-only">
                     <li><a href="aboutUs.html">About Us</a></li>
-
                     <li><a href="logIn.html">Log In</a></li>
                 </ul>
                 <ul id="nav-mobile" class="side-nav">
@@ -100,6 +99,60 @@
         <br>
         <div class="contentWrapper">
             <div class="pageWrapper">
+
+
+
+
+
+
+
+
+
+
+                  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['2004',  1000,      400],
+          ['2005',  1170,      460],
+          ['2006',  660,       1120],
+          ['2007',  1030,      540]
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+              <div id="curve_chart" style="width: 900px; height: 500px"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <div class="row hide-on-small-only">
                     <div class="col s12 m7">
                         <h1>Traveling has never been easier</h1>
@@ -107,7 +160,7 @@
                         <p>Nulla id ligula tortor. Quisque tincidunt neque purus, et aliquet arcu ullamcorper eu. Cras in arcu ac urna ultrices bibendum. Vestibulum rutrum diam leo, vitae pulvinar turpis facilisis ut. Morbi a ullamcorper quam. Praesent placerat ac augue vitae cursus. Maecenas semper nisi nibh, in maximus magna condimentum vitae. Curabitur nec vestibulum ex, in fringilla arcu. Curabitur nec elit eget tortor tristique fringilla in in massa. Suspendisse et porttitor est, in volutpat lorem. Nulla pulvinar quis velit quis facilisis. Sed leo dolor, feugiat ac est sed, semper mattis lectus. Maecenas suscipit ornare erat sed congue. Nullam volutpat neque id libero mattis scelerisque. Integer ac ante finibus, ultricies ante id, convallis lorem. Fusce rhoncus eros vitae magna tempor, sit amet hendrerit dui aliquet.</p>
                     </div>
                     <div class="col s12 m5">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Squirrel_posing.jpg">
+                        <img class="responsive-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Squirrel_posing.jpg">
                     </div>
                 </div>
                 <br>
@@ -115,7 +168,7 @@
                 <br>
                 <div class="row" height="50vh">
                     <div class="col s12 m4" id="description1">
-                        <h1>Line Chart</h1>
+                        <h1>Bar Chart</h1>
                         <br>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
                     </div>
@@ -131,7 +184,7 @@
                 <div class="row" height="50vh">
 
                     <div class="col s12 m4" id="description2">
-                        <h1>Bar Chart</h1>
+                        <h1>Line Chart</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
                     </div>
 
