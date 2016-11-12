@@ -75,7 +75,7 @@
 
                 <div class="card-panel">
                     <div class="col s12">
-                        <p>Welcome Esteban!</p>
+                        <h2>Welcome Esteban!</h2>
                     </div>
                     <div class="row">
                         <div class="col l3 m6 s12">
@@ -95,7 +95,7 @@
                         <div class="col l3 m6 s12">
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
-                                    <span class="card-title">Thing 2</span>
+                                    <span class="card-title">Payments</span>
                                     <p>I am a very simple card. I am good at containing small bits of information.
                                         I am convenient because I require little markup to use effectively.</p>
                                 </div>
@@ -109,7 +109,7 @@
                         <div class="col l3 m6 s12">
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
-                                    <span class="card-title">Thing 3</span>
+                                    <span class="card-title">Pay A Bill</span>
                                     <p>I am a very simple card. I am good at containing small bits of information.
                                         I am convenient because I require little markup to use effectively.</p>
                                 </div>
@@ -123,7 +123,7 @@
                         <div class="col l3 m6 s12">
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
-                                    <span class="card-title">Thing 4</span>
+                                    <span class="card-title">Transfer</span>
                                     <p>I am a very simple card. I am good at containing small bits of information.
                                         I am convenient because I require little markup to use effectively.</p>
                                 </div>
@@ -136,11 +136,9 @@
                     </div>
                 </div>
 
-                    <div class ="col s12 m4">
-                        <div class="card-panel">
-
-
-                            <div class="ct-chart ct-perfect-fourth" id="myPi"></div>
+                        <div class ="col s12 m4">
+                        <div class="card-panel"  style="height:220px">
+                            <div style="height:200px" class="ct-chart ct-perfect-fourth" id="myPi"></div>
                             <script>makeChart("#myPi");</script>
 
                         </div>
@@ -188,7 +186,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <div class="col s12 right"><a class="waves-effect waves-light btn right">View Full Payment History</a></div>
+                            <div class="col s12 right"><a href="#"  class="waves-effect waves-light btn right">View Full Payment History</a></div>
                         </div>
 
                     </div>
