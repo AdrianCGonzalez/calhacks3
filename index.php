@@ -4,11 +4,11 @@
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name='viewport' content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0"/>
-        <meta http-equiv="refresh" content="15">
+        <meta http-equiv="refresh" content="45">
         <meta name="apple-touch-fullscreen" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <title>Vacation</title>
-
+<link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Donald_Trump_August_19,_2015_(cropped).jpg/220px-Donald_Trump_August_19,_2015_(cropped).jpg" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
         <link rel="stylesheet" href="./css/style.css">
 
@@ -138,7 +138,7 @@
 
                 <hr class="padMe">
 
-                <div class="row" height="50vh">
+                <div class="row">
                     <div class="col s12 m4" id="description1">
                         <h1 class="padMe">Bar Chart</h1>
 
@@ -154,7 +154,7 @@
 
                 <hr class="padMe">
 
-                <div class="row" height="50vh">
+                <div class="row">
 
                     <div class="col s12 m4" id="description2">
                         <h1>Line Chart</h1>
