@@ -153,7 +153,7 @@
 
                     <div class="col s12 m8" id="myChartcon"  style="height:50px">
                         <div class="ct-chart ct-perfect-fourth" id="myChart" style="height:50px"></div>
-                        <script>piChart("#piChart");</script>
+                        <script>makepi("#myChart");</script>
                     </div>
                 </div>
 
@@ -188,24 +188,13 @@
                     </div>
                 </div>
 
-
-                <div class="card-panel">
-
-                    <div class="col s12 m8" id="myChartcon"  style="height:50px">
-                        <div class="ct-chart ct-perfect-fourth" id="myChart" style="height:50px"></div>
-                        <script>makeChart("#myChart");</script>
-                    </div>
-                </div>
-
-
-
                 <div class="card-panel">
                     <div class="row">
                         <div class="card-panel">
 
                     <div class="col s12 m2" id="myChartcon"  style="height:50px">
-                        <div class="ct-chart ct-perfect-fourth" id="myChart" style="height:50px"></div>
-                        <script>pichart("#pichart");</script>
+                        <div class="ct-chart ct-perfect-fourth" id="myChart1" style="height:50px"></div>
+                        <script>makepi("#myChart1");</script>
                     </div>
                 </div>
 
