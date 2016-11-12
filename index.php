@@ -76,18 +76,18 @@
         </div>
       <div class="row" height="50vh">
 
-      <div class="col s12 m6" height="100%">
-      <canvas id="myChart" width="100%" height="100%"></canvas>
+      <div class="col s12 m6">
+      <canvas id="myChart" width="100%" width="50%"></canvas>
       </div>
 
-      <div class="col s12 m6" height="100%">
-      <canvas id="myChart2" width="100%" height="100%"></canvas>
+      <div class="col s12 m6">
+      <canvas id="myChart2" width="100%" widht="50%"></canvas>
       </div>
       </div>
         <script>
 var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
-    type: 'line',
+    type: 'bar',
     data: {
         labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
         datasets: [{
@@ -132,7 +132,7 @@ var myChart = new Chart(ctx, {
         labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
         datasets: [{
             label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            data: [6, 1, 9, 5, 2, 3],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
