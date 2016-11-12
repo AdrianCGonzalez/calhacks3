@@ -35,31 +35,15 @@
 
             <div id="index-banner" class="parallax-container">
 		<div class="section no-pad-bot">
-			<div class="container hide-on-med-and-up">
+
 				<br>
 				<br>
-				<div style="background-color: rgba(25, 25, 25, 0.5);">
 					<h1 class="header center white-text text-lighten-2">CalHacks Team C14</h1>
 
-				</div>
 				<br>
-
 			</div>
-			<div class="container hide-on-small-only">
-				<br>
-				<br>
-				<div style="background-color: rgba(25, 25, 25, 0.5);">
-					<h1 class="header center white-text text-lighten-2">CalHacks</h1>
-					<div class="row center">
-						<h4 class="header col s12 light">Team C14</h4>
-					</div>
-				</div>
-				<br>
 
-			</div>
-		</div>
-
-		<div class="parallax"><img src="./image/house.svg" alt="Unsplashed background img 1"></div>
+		<div class="parallax"><img src="house.svg" alt="Unsplashed background img 1"></div>
 	</div>
 
 		<div class="contentWrapper">
@@ -77,10 +61,11 @@
                           What it does
                               C14-Hacks uses personalized information and data analysis to facilitate travel planning. Not only does it recommend affordable and interesting tourist places that are affordabe to the user, it also offers a financial guidance for places that are not an option in the present.
                           How we built it
-                              Using Capital One api, Nessie, we gather financial information and use it together with Amadeous Traveling API to determine an optimal traveling spot for the user. Furthermore,
-                              Using
+                              Using Capital One api, Nessie, we gather financial information and use it together with Amadeous Traveling API to determine an optimal traveling spot for the user. Furthermore, we also offer requirements and a timeline if the user wants to go to a specific place out of reach for the moment. With us, you can finally achieve your dream vacation.
                           Challenges we ran into
+                          	We drank too much boba and felt bad. Furthermnore, we ran out of barbeque chips. Plz send more.
                           Accomplishments that we're proud of
+                          	We ate a lot of bananas
                             </pre></span>
 						</div>
 					</div>
