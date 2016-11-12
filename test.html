@@ -40,6 +40,11 @@
         img {
             border-radius: 17px;
         }
+        .card-panel
+        {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
     </style>
 
     <body>
@@ -55,18 +60,19 @@
             </div>
 
         </nav>
+        <div class="fixed-action-btn hide-on-med-and-up">
+            <a class="btn-floating btn-large red">
+                <i class="large material-icons">menu</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating red" href="aboutUs.html"><i class="material-icons">perm_identity</i></a></li>
+                <li><a class="btn-floating green" href="logIn.html"><i class="material-icons">vpn_key</i></a></li>
+            </ul>
+        </div>
         <div class="contentWrapper">
             <div class="pageWrapper">
 
-                <div class="fixed-action-btn hide-on-med-and-up">
-                    <a class="btn-floating btn-large red">
-                        <i class="large material-icons">menu</i>
-                    </a>
-                    <ul>
-                        <li><a class="btn-floating red" href="aboutUs.html"><i class="material-icons">perm_identity</i></a></li>
-                        <li><a class="btn-floating green" href="logIn.html"><i class="material-icons">vpn_key</i></a></li>
-                    </ul>
-                </div>
+
                 <div class="card-panel">
                     <div class="col s12">
                         <p>Welcome Esteban!</p>
@@ -129,115 +135,129 @@
                         </div>
                     </div>
                 </div>
+                <div class="card-panel">
 
-                <hr>
-
-                <div class="row">
-                    <div class="col m2 hide-on-small-only">
-                        <div class="card-panel col s12">
-                            <p>BLah</p>
+                    <div class="row">
+                        <div class="col s12 m4" id="description1">
+                            <h1 class="padMe">Bar Chart</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
                         </div>
-                        <div class="card-panel col s12">
-                            <p>BLah</p>
+                        <div class="col s12 m8" id="myChartcon"  height="50px">
+                            <div class="ct-chart ct-perfect-fourth" id="myPi"></div>
+                            <script>makepi("#myPi");</script>
                         </div>
-                        <div class="card-panel col s12">
-                            <p>BLah</p>
-                        </div>
-                    </div>
-                    <div class="col s12 m10">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th data-field="id">Name</th>
-                                    <th data-field="name">Item Name</th>
-                                    <th data-field="price">Item Price</th>
-                                </tr>
-                            </thead>
-
-                            <tbody>
-                                <tr>
-                                    <td>Alvin</td>
-                                    <td>Eclair</td>
-                                    <td>$0.87</td>
-                                </tr>
-                                <tr>
-                                    <td>Alan</td>
-                                    <td>Jellybean</td>
-                                    <td>$3.76</td>
-                                </tr>
-                                <tr>
-                                    <td>Jonathan</td>
-                                    <td>Lollipop</td>
-                                    <td>$7.00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
                     </div>
 
                 </div>
-                <hr>
-                <div class="row">
-                    <div class="col m2 hide-on-small-only">
-                        <div class="card-panel col s12">
-                            <p>BLah</p>
-                        </div>
-                        <div class="card-panel col s12">
-                            <p>BLah</p>
-                        </div>
-                        <div class="card-panel col s12">
-                            <p>BLah</p>
-                        </div>
-                    </div>
-                    <div class="col s12 m10">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th data-field="id">Name</th>
-                                    <th data-field="name">Item Name</th>
-                                    <th data-field="price">Item Price</th>
-                                </tr>
-                            </thead>
+                <div class="card-panel">
 
-                            <tbody>
-                                <tr>
-                                    <td>Alvin</td>
-                                    <td>Eclair</td>
-                                    <td>$0.87</td>
-                                </tr>
-                                <tr>
-                                    <td>Alan</td>
-                                    <td>Jellybean</td>
-                                    <td>$3.76</td>
-                                </tr>
-                                <tr>
-                                    <td>Jonathan</td>
-                                    <td>Lollipop</td>
-                                    <td>$7.00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
+                    <div class="row">
+                        <div class="col s12 m4" id="description1">
+                            <h1 class="padMe">Bar Chart</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
+                        </div>
+                        <div class="col s12 m8" id="myChartcon"  height="50px">
+                            <div class="ct-chart ct-perfect-fourth" id="myChart"></div>
+                            <script>makeChart("#myChart");</script>
+                        </div>
                     </div>
 
                 </div>
-                <hr>
 
+                <div class="card-panel">
+                    <div class="row">
+                        <div class="col m2 hide-on-small-only">
+                            <div class="card-panel col s12">
+                                <p>BLah</p>
+                            </div>
+                            <div class="card-panel col s12">
+                                <p>BLah</p>
+                            </div>
+                            <div class="card-panel col s12">
+                                <p>BLah</p>
+                            </div>
+                        </div>
+                        <div class="col s12 m10">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th data-field="id">Name</th>
+                                        <th data-field="name">Item Name</th>
+                                        <th data-field="price">Item Price</th>
+                                    </tr>
+                                </thead>
 
-                <div class="row">
-                    <div class="col s12 m4" id="description1">
-                        <h1 class="padMe">Bar Chart</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
-                    </div>
-                    <div class="col s12 m8" id="myChartcon"  height="50px">
-                        <div class="ct-chart ct-perfect-fourth" id="myPi"></div>
-                        <script>makepi("#myPi");</script>
+                                <tbody>
+                                    <tr>
+                                        <td>Alvin</td>
+                                        <td>Eclair</td>
+                                        <td>$0.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alan</td>
+                                        <td>Jellybean</td>
+                                        <td>$3.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jonathan</td>
+                                        <td>Lollipop</td>
+                                        <td>$7.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
                     </div>
                 </div>
+                <div class="card-panel">
+                    <div class="row">
+                        <div class="col m2 hide-on-small-only">
+                            <div class="card-panel col s12">
+                                <p>BLah</p>
+                            </div>
+                            <div class="card-panel col s12">
+                                <p>BLah</p>
+                            </div>
+                            <div class="card-panel col s12">
+                                <p>BLah</p>
+                            </div>
+                        </div>
+                        <div class="col s12 m10">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th data-field="id">Name</th>
+                                        <th data-field="name">Item Name</th>
+                                        <th data-field="price">Item Price</th>
+                                    </tr>
+                                </thead>
 
+                                <tbody>
+                                    <tr>
+                                        <td>Alvin</td>
+                                        <td>Eclair</td>
+                                        <td>$0.87</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alan</td>
+                                        <td>Jellybean</td>
+                                        <td>$3.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jonathan</td>
+                                        <td>Lollipop</td>
+                                        <td>$7.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
-
         <footer class="page-footer teal darken-2">
             <div style="padding-left:20px;padding-right:20px;">
                 <div class="row">
@@ -262,6 +282,7 @@
                 </div>
             </div>
         </footer>
+
     </body>
 
 
