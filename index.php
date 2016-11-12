@@ -74,52 +74,52 @@
             </div>
             <div class="parallax"><img src="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj3/cs194-fb/images/blurry_turtle.jpg" alt="Unsplashed background img 1"></div>
         </div>
-      <br>
-      <div class="row">
-        <div class="col s12 m8">
-          <h1>Traveling has never been easier</h1>
-          <br>
-          <p>With HarambeNeverDied your traveling options will be so simple that autistic kids can figure it out.</p>
-        </div>
-        <div class="col s12 m4">
+        <br>
+        <div class="row">
+            <div class="col s12 m8">
+                <h1>Traveling has never been easier</h1>
+                <br>
+                <p>With HarambeNeverDied your traveling options will be so simple that autistic kids can figure it out.</p>
+            </div>
+            <div class="col s12 m4">
 
+            </div>
         </div>
-      </div>
-      <br>
-      <hr>
-      <br>
+        <br>
+        <hr>
+        <br>
         <div class="row" height="50vh">
-<div class="col s12 m4">
-  <h1>Line Chart</h1>
-  <br>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
-          </div>
+            <div class="col s12 m4">
+                <h1>Line Chart</h1>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
+            </div>
             <div class="col s12 m8">
                 <canvas id="myChart" width="100%" height="50%"></canvas>
             </div>
 
 
         </div>
-      <br>
-      <hr>
-      <br>
+        <br>
+        <hr>
+        <br>
         <div class="row" height="50vh">
 
-<div class="col s12 m4" id="description1">
-  <h1>Bar Chart</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
-          </div>
+            <div class="col s12 m4" id="description1">
+                <h1>Bar Chart</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
+            </div>
 
             <div class="col s12 m8">
                 <canvas id="myChart2" width="100%" height="50%"></canvas>
             </div>
         </div>
-      <br>
-      <hr>
-      <br>
-      <script>
+        <br>
+        <hr>
+        <br>
+        <script>
 
-          var ctx = document.getElementById("myChart");
+            var ctx = document.getElementById("myChart");
             var myChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
