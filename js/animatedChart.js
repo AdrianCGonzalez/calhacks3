@@ -1,4 +1,5 @@
-var chart = new Chartist.Line('.ct-chart', {
+function makeChart(){
+var chart = new Chartist.Line('#myChart', {
   labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
   series: [
     [12, 9, 7, 8, 5, 4, 6, 2, 3, 3, 4, 6],
@@ -123,3 +124,4 @@ chart.on('created', function() {
   //window.__exampleAnimateTimeout = setTimeout(chart.update.bind(chart), 12000);
 });
 
+}

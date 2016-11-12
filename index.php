@@ -19,6 +19,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.10.1/chartist.min.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.10.1/chartist.min.js"></script>
+      	<script src="js/animatedChart.js"></script>
 
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
@@ -145,7 +146,7 @@
                     </div>
                     <div class="col s12 m8">
                         <div class="ct-chart ct-perfect-fourth"></div>
-                <script src="js/animatedChart.js"></script>
+
                     </div>
 
 
@@ -181,51 +182,28 @@
         <div class="contentWrapper">
             <div class="pageWrapper">
                 <h1 class="padMe">Here's how we're different.</h1>
-
+<div class="holder repeat">
+  <div class="a f afr  card-panel">
                 <b class="padMe">An intelligent messaging app.</b>
 
                 <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
-                <b class="padMe">An intelligent messaging app.</b>
+              </div>
+              </div>
+              <div class="holder repeat">
+                <div class="a f afr  card-panel">
+  <b class="padMe">An intelligent messaging app.</b>
 
                 <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
-                <b class="padMe">An intelligent messaging app.</b>
-
-                <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
-
-            </div>
-        </div>
-        <div class="contentWrapper">
-            <div class="pageWrapper">
-                <div>
-
-                    <div class="holder repeat">
-                        <div class="a f afr  card-panel">
-                            <div>
-                                <span><pre>
-                          Inspiration
-                              We all have seen those traveling ads where they promise you affordable vacations to paradise on earth. Then you click, and then it turns out is not affordable at all. This is great prose. We have the bestest english. No more.
-                          What it does
-                              C14-Hacks uses personalized information and data analysis to facilitate travel planning. Not only does it recommend affordable and interesting tourist places that are affordabe to the user, it also offers a financial guidance for places that are not an option in the present.
-                          How we built it
-                              Using Capital One api, Nessie, we gather financial information and use it together with Amadeous Traveling API to determine an optimal traveling spot for the user. Furthermore, we also offer requirements and a timeline if the user wants to go to a specific place out of reach for the moment. With us, you can finally achieve your dream vacation.
-                          Challenges we ran into
-                          	We drank too much boba and felt bad. Furthermnore, we ran out of barbeque chips. Plz send more.
-                          Accomplishments that we're proud of
-                          	We ate a lot of bananas
-                            </pre></span>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-                <div class="holder repeat">
-                    <div class="a f afl  card-panel">
-                        <div>
-                            test
-                        </div>
-                    </div>
+              </div>
+              <div class="holder repeat">
+                <div class="a f afr  card-panel">
+                <b class="padMe">An intelligent messaging app.</b>
+
+                <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
                 </div>
             </div>
+          </div>
         </div>
 
         <footer class="page-footer teal darken-2">
