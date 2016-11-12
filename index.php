@@ -4,7 +4,7 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name='viewport' content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0"/>
-        <meta http-equiv="refresh" content="5">
+		<meta http-equiv="refresh" content="5">
 		<meta name="apple-touch-fullscreen" content="yes" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<title>Vacation</title>
@@ -22,40 +22,41 @@
 	</head>
 
 	<body>
-      <div class="contentWrapper">
-   <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">CalHacks</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
-      </ul>
-    </div>
-  </nav>
-
-		<div class="contentWrapper">
-			<div>
-				<span>
-                	Inspiration
-                  		C14-Hacks is a website that intends to purpose is
-					What it does
-					How we built it
-					Challenges we ran into
-					Accomplishments that we're proud of
-				</span>
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">CalHacks</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="sass.html">Sass</a></li>
+					<li><a href="badges.html">Components</a></li>
+					<li><a href="collapsible.html">JavaScript</a></li>
+				</ul>
 			</div>
-			<div class="holder repeat">
-				<div class="a afl  card-panel">
-					<div>
-						test
+		</nav>
+		<div class="contentWrapper">
+
+
+			<div class="pageWrapper">
+				<div>
+					<span>
+						Inspiration
+						C14-Hacks is a website that intends to purpose is
+						What it does
+						How we built it
+						Challenges we ran into
+						Accomplishments that we're proud of
+					</span>
+				</div>
+				<div class="holder repeat">
+					<div class="a afl  card-panel">
+						<div>
+							test
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-      </div>
 
-      <footer class="page-footer red lighten-2">
+		<footer class="page-footer red lighten-2">
 			<div style="padding-left:20px;padding-right:20px;">
 				<div class="row">
 					<div class="col l5 hide-on-small-only">
