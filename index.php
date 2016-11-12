@@ -4,7 +4,7 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name='viewport' content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0"/>
-<!--		<meta http-equiv="refresh" content="5"> -->
+		<!--		<meta http-equiv="refresh" content="5"> -->
 		<meta name="apple-touch-fullscreen" content="yes" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<title>Vacation</title>
@@ -22,29 +22,45 @@
 	</head>
 
 	<body>
-      			<nav>
-				<div class="nav-wrapper">
-					<a href="#" class="brand-logo">CalHacks</a>
-					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li><a href="sass.html">Sass</a></li>
-						<li><a href="badges.html">Components</a></li>
-						<li><a href="collapsible.html">JavaScript</a></li>
-					</ul>
-				</div>
-			</nav>
-
-            <div id="index-banner" class="parallax-container">
-		<div class="section no-pad-bot">
-
-				<br>
-				<br>
-					<h1 class="header center white-text text-lighten-2">CalHacks Team C14</h1>
-
-				<br>
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo"> CalHacks</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="sass.html">Sass</a></li>
+					<li><a href="badges.html">Components</a></li>
+					<li><a href="collapsible.html">JavaScript</a></li>
+				</ul>
 			</div>
+		</nav>
 
-		<div class="parallax"><img src="house.svg" alt="Unsplashed background img 1"></div>
-	</div>
+		<div id="index-banner" class="parallax-container">
+
+			<div class="section no-pad-bot">
+				<div class="container hide-on-med-and-up">
+					<br>
+					<br>
+					<div style="background-color: rgba(25, 25, 25, 0.5);">
+						<h1 class="header center white-text text-lighten-2">CalHacks Team C14</h1>
+
+					</div>
+					<br>
+
+				</div>
+				<div class="container hide-on-small-only">
+					<br>
+					<br>
+					<div style="background-color: rgba(25, 25, 25, 0.5);">
+						<h1 class="header center white-text text-lighten-2">CalHacks</h1>
+						<div class="row center">
+							<h4 class="header col s12 light">Team C14</h4>
+						</div>
+					</div>
+					<br>
+
+				</div>
+			</div>
+			<div class="parallax"><img src="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj3/cs194-fb/images/blurry_turtle.jpg" alt="Unsplashed background img 1"></div>
+		</div>
 
 		<div class="contentWrapper">
 
@@ -52,10 +68,10 @@
 			<div class="pageWrapper">
 				<div>
 
-                      <div class="holder repeat">
-					<div class="a afr  card-panel">
-						<div>
-                          <span><pre>
+					<div class="holder repeat">
+						<div class="a f afr  card-panel">
+							<div>
+								<span><pre>
                           Inspiration
                               We all have seen those traveling ads where they promise you affordable vacations to paradise on earth. Then you click, and then it turns out is not affordable at all. This is great prose. We have the bestest english. No more.
                           What it does
@@ -67,13 +83,13 @@
                           Accomplishments that we're proud of
                           	We ate a lot of bananas
                             </pre></span>
+							</div>
 						</div>
 					</div>
-				</div>
 
 				</div>
 				<div class="holder repeat">
-					<div class="a afl  card-panel">
+					<div class="a f afl  card-panel">
 						<div>
 							test
 						</div>
@@ -103,7 +119,7 @@
 			<div class="footer-copyright">
 				<div class="container center">
 					<span class="hide-on-small-only">Powered by: nessie, aMaDEUS, Microsoft Azure Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">CodeForFood</a> </span>©2016 Code For Food<span class="hide-on-med-and-down">All rights reserved.</span>
-              </div>
+				</div>
 			</div>
 		</footer>
 	</body>
