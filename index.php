@@ -76,13 +76,13 @@
         </div>
       <br>
       <div class="row hide-on-small-only">
-        <div class="col s12 m8">
+        <div class="col s12 m7">
           <h1>Traveling has never been easier</h1>
           <br>
           <p>Nulla id ligula tortor. Quisque tincidunt neque purus, et aliquet arcu ullamcorper eu. Cras in arcu ac urna ultrices bibendum. Vestibulum rutrum diam leo, vitae pulvinar turpis facilisis ut. Morbi a ullamcorper quam. Praesent placerat ac augue vitae cursus. Maecenas semper nisi nibh, in maximus magna condimentum vitae. Curabitur nec vestibulum ex, in fringilla arcu. Curabitur nec elit eget tortor tristique fringilla in in massa. Suspendisse et porttitor est, in volutpat lorem. Nulla pulvinar quis velit quis facilisis. Sed leo dolor, feugiat ac est sed, semper mattis lectus. Maecenas suscipit ornare erat sed congue. Nullam volutpat neque id libero mattis scelerisque. Integer ac ante finibus, ultricies ante id, convallis lorem. Fusce rhoncus eros vitae magna tempor, sit amet hendrerit dui aliquet.</p>
         </div>
-        <div class="col s12 m4">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Squirrel_posing.jpg">
+        <div class="col s12 m5">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Squirrel_posing.jpg" style="width:100% height:100%">
         </div>
       </div>
       <br>
@@ -118,9 +118,27 @@
       <hr>
       <br>
 
-      <h1>Empowering Users From Day 1</h1>
+      <h1 class="center-align">Empowering Users From Day 1</h1>
       <br>
-      <img src="https://www.drift.com/wp-content/uploads/2016/10/icons.jpg">
+      <img class="center-align" src="https://www.drift.com/wp-content/uploads/2016/10/icons.jpg">
+    <br>
+      	<div class="parallax-container valign-wrapper">
+			<div class="section no-pad-bot">
+				<div class="container">
+					<div style="background-color: rgba(25, 25, 25, 0.4);">
+						<div class="row center">
+							<h5 class="header col s12 light">BlahBLahBLahBlah</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="parallax"><img src="http://wallpaperbackgrounds.com/Content/wallpapers/animal/turtle/124097-2678.jpg" alt="Unsplashed background img 2"></div>
+		</div>
+
+      <h1>Here's how we're different.</h1>
+      <br>
+      <b>An intelligent messaging app.</b>
+      <p></p>
       <script>
 
           var ctx = document.getElementById("myChart");
@@ -191,6 +209,7 @@
                     }]
                 },
                 options: {
+                  	responsive:false;
                     scales: {
                         yAxes: [{
                             ticks: {
@@ -332,6 +351,7 @@
         {
           console.log("in this bitch");
             $("#myChart").height($("#description1").height());
+$("#myChart2").height($("#description2").height());
         }
         graphSize();
         $(window).resize(function(){
