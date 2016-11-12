@@ -343,11 +343,11 @@
         inAnimate(myScroll);
         function graphSize()
         {
-   console.log("in this bitch");
+ /*  console.log("in this bitch");
             $("#myChart").height("0px");
             $("#myChart").height($("#description1").height());
             $("#myChartcon").height($("#description1").height()+10);
-        }
+       */ }
         graphSize();
         $(window).resize(function(){
             graphSize();
