@@ -171,7 +171,7 @@
 
 
                 <h1 class="center-align">Empowering Users From Day 1</h1>
-                <div class="col s12">
+                <div class="col s12 center-align">
                     <img class="padMe center-align" src="https://www.drift.com/wp-content/uploads/2016/10/icons.jpg">
                 </div>
             </div>

@@ -1,5 +1,5 @@
-function makeChart(){
-var chart = new Chartist.Line('#myChart', {
+function makeChart(id){
+var chart = new Chartist.Line(id, {
   labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
   series: [
     [12, 9, 7, 8, 5, 4, 6, 2, 3, 3, 4, 6],
