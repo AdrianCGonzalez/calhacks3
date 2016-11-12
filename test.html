@@ -34,18 +34,31 @@
                 <a href="index.php" class="brand-logo" style="margin-left:40px">CalHacks</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="aboutUs.html">About Us</a></li>
-                    <li><a href="components.html">Components</a></li>
+
                     <li><a href="logIn.html">Log In</a></li>
                 </ul>
                 <ul id="nav-mobile" class="side-nav">
                     <li><a href="aboutUs.html">About Us</a></li>
-                    <li><a href="components.html">Components</a></li>
+
                     <li><a href="logIn.html">Log In</a></li>
                 </ul>
                 <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 
             </div>
         </nav>
+
+
+        <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">menu</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red" href="aboutUs.html"><i class="material-icons">perm_identity</i></a></li>
+      <li><a class="btn-floating green" href="logIn.html"><i class="material-icons">vpn_key</i></a></li>
+    </ul>
+  </div>
+
+
 
         <div id="index-banner" class="parallax-container">
 
@@ -95,7 +108,7 @@
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
           </div>
             <div class="col s12 m8">
-                <canvas id="myChart" width="100%" ></canvas>
+                <canvas id="myChart" width="100%"></canvas>
             </div>
 
 
@@ -138,7 +151,16 @@
       <h1>Here's how we're different.</h1>
       <br>
       <b>An intelligent messaging app.</b>
-      <p></p>
+      <br>
+      <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
+      <b>An intelligent messaging app.</b>
+      <br>
+      <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
+      <b>An intelligent messaging app.</b>
+      <br>
+      <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
+      <br>
+
       <script>
 
           var ctx = document.getElementById("myChart");
@@ -209,7 +231,6 @@
                     }]
                 },
                 options: {
-                  	responsive:false,
                     scales: {
                         yAxes: [{
                             ticks: {
@@ -350,8 +371,12 @@
         function graphSize()
         {
           console.log("in this bitch");
+            $("#myChart").height("0px");
+             $("#myChart2").height("0px");
             $("#myChart").height($("#description1").height());
             $("#myChart2").height($("#description2").height());
+            $("#myChart").width("100%");
+            $("#myChart2").width("100%");
         }
         graphSize();
         $(window).resize(function(){

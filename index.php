@@ -26,6 +26,10 @@
         </script>
 
     </head>
+    <style>
+        max-width: 100%;
+        max-height: 100%;
+    </style>
 
     <body>
         <nav class="teal darken-2">
@@ -49,14 +53,14 @@
 
 
         <div class="fixed-action-btn">
-    <a class="btn-floating btn-large red">
-      <i class="large material-icons">menu</i>
-    </a>
-    <ul>
-      <li><a class="btn-floating red" href="aboutUs.html"><i class="material-icons">perm_identity</i></a></li>
-      <li><a class="btn-floating green" href="logIn.html"><i class="material-icons">vpn_key</i></a></li>
-    </ul>
-  </div>
+            <a class="btn-floating btn-large red">
+                <i class="large material-icons">menu</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating red" href="aboutUs.html"><i class="material-icons">perm_identity</i></a></li>
+                <li><a class="btn-floating green" href="logIn.html"><i class="material-icons">vpn_key</i></a></li>
+            </ul>
+        </div>
 
 
 
@@ -72,6 +76,7 @@
                     <br>
 
                 </div>
+
                 <div class="container hide-on-small-only">
                     <br>
                     <br>
@@ -85,85 +90,84 @@
 
                 </div>
             </div>
+
             <div class="parallax"><img src="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj3/cs194-fb/images/blurry_turtle.jpg" alt="Unsplashed background img 1"></div>
         </div>
-      <br>
-      <div class="row hide-on-small-only">
-        <div class="col s12 m7">
-          <h1>Traveling has never been easier</h1>
-          <br>
-          <p>Nulla id ligula tortor. Quisque tincidunt neque purus, et aliquet arcu ullamcorper eu. Cras in arcu ac urna ultrices bibendum. Vestibulum rutrum diam leo, vitae pulvinar turpis facilisis ut. Morbi a ullamcorper quam. Praesent placerat ac augue vitae cursus. Maecenas semper nisi nibh, in maximus magna condimentum vitae. Curabitur nec vestibulum ex, in fringilla arcu. Curabitur nec elit eget tortor tristique fringilla in in massa. Suspendisse et porttitor est, in volutpat lorem. Nulla pulvinar quis velit quis facilisis. Sed leo dolor, feugiat ac est sed, semper mattis lectus. Maecenas suscipit ornare erat sed congue. Nullam volutpat neque id libero mattis scelerisque. Integer ac ante finibus, ultricies ante id, convallis lorem. Fusce rhoncus eros vitae magna tempor, sit amet hendrerit dui aliquet.</p>
-        </div>
-        <div class="col s12 m5">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Squirrel_posing.jpg" style="width:100% height:100%">
-        </div>
-      </div>
-      <br>
-      <hr>
-      <br>
-        <div class="row" height="50vh">
-<div class="col s12 m4" id="description1">
-  <h1>Line Chart</h1>
-  <br>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
-          </div>
-            <div class="col s12 m8">
-                <canvas id="myChart" width="100%" height="50%"></canvas>
+
+        <br>
+        <div class="contentWrapper">
+            <div class="pageWrapper">
+                <div class="row hide-on-small-only">
+                    <div class="col s12 m7">
+                        <h1>Traveling has never been easier</h1>
+                        <br>
+                        <p>Nulla id ligula tortor. Quisque tincidunt neque purus, et aliquet arcu ullamcorper eu. Cras in arcu ac urna ultrices bibendum. Vestibulum rutrum diam leo, vitae pulvinar turpis facilisis ut. Morbi a ullamcorper quam. Praesent placerat ac augue vitae cursus. Maecenas semper nisi nibh, in maximus magna condimentum vitae. Curabitur nec vestibulum ex, in fringilla arcu. Curabitur nec elit eget tortor tristique fringilla in in massa. Suspendisse et porttitor est, in volutpat lorem. Nulla pulvinar quis velit quis facilisis. Sed leo dolor, feugiat ac est sed, semper mattis lectus. Maecenas suscipit ornare erat sed congue. Nullam volutpat neque id libero mattis scelerisque. Integer ac ante finibus, ultricies ante id, convallis lorem. Fusce rhoncus eros vitae magna tempor, sit amet hendrerit dui aliquet.</p>
+                    </div>
+                    <div class="col s12 m5">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Squirrel_posing.jpg">
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div class="row" height="50vh">
+                    <div class="col s12 m4" id="description1">
+                        <h1>Line Chart</h1>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
+                    </div>
+                    <div class="col s12 m8">
+                        <canvas id="myChart" width="100%" height="50%"></canvas>
+                    </div>
+
+
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div class="row" height="50vh">
+
+                    <div class="col s12 m4" id="description2">
+                        <h1>Bar Chart</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
+                    </div>
+
+                    <div class="col s12 m8">
+                        <canvas id="myChart2" width="100%" height="50%"></canvas>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <br>
+
+                <h1 class="center-align">Empowering Users From Day 1</h1>
+                <br>
+                <img class="center-align" src="https://www.drift.com/wp-content/uploads/2016/10/icons.jpg">
+                <br>
             </div>
-
-
         </div>
-      <br>
-      <hr>
-      <br>
-        <div class="row" height="50vh">
-
-<div class="col s12 m4" id="description2">
-  <h1>Bar Chart</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
-          </div>
-
-            <div class="col s12 m8">
-                <canvas id="myChart2" width="100%" height="50%"></canvas>
+        <div class="parallax-container valign-wrapper">
+            <div class="parallax"><img src="http://wallpaperbackgrounds.com/Content/wallpapers/animal/turtle/124097-2678.jpg" alt="Unsplashed background img 2"></div>
+        </div>
+        <div class="contentWrapper">
+            <div class="pageWrapper">
+                <h1>Here's how we're different.</h1>
+                <br>
+                <b>An intelligent messaging app.</b>
+                <br>
+                <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
+                <b>An intelligent messaging app.</b>
+                <br>
+                <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
+                <b>An intelligent messaging app.</b>
+                <br>
+                <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
+                <br>
             </div>
         </div>
-      <br>
-      <hr>
-      <br>
+        <script>
 
-      <h1 class="center-align">Empowering Users From Day 1</h1>
-      <br>
-      <img class="center-align" src="https://www.drift.com/wp-content/uploads/2016/10/icons.jpg">
-    <br>
-      	<div class="parallax-container valign-wrapper">
-			<div class="section no-pad-bot">
-				<div class="container">
-					<div style="background-color: rgba(25, 25, 25, 0.4);">
-						<div class="row center">
-							<h5 class="header col s12 light">BlahBLahBLahBlah</h5>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="parallax"><img src="http://wallpaperbackgrounds.com/Content/wallpapers/animal/turtle/124097-2678.jpg" alt="Unsplashed background img 2"></div>
-		</div>
-
-      <h1>Here's how we're different.</h1>
-      <br>
-      <b>An intelligent messaging app.</b>
-      <br>
-      <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
-      <b>An intelligent messaging app.</b>
-      <br>
-      <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
-      <b>An intelligent messaging app.</b>
-      <br>
-      <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
-      <br>
-
-      <script>
-
-          var ctx = document.getElementById("myChart");
+            var ctx = document.getElementById("myChart");
             var myChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
@@ -231,16 +235,16 @@
                     }]
                 },
                 options: {
-                  	responsive:false;
+                    responsive:false;
                     scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero:true
-                            }
-                        }]
-                    }
+                    yAxes: [{
+                    ticks: {
+                    beginAtZero:true
                 }
-            });
+            }]
+                                    }
+                                    }
+                                    });
         </script>
 
 
@@ -371,9 +375,9 @@
         inAnimate(myScroll);
         function graphSize()
         {
-          console.log("in this bitch");
+            console.log("in this bitch");
             $("#myChart").height($("#description1").height());
-$("#myChart2").height($("#description2").height());
+            $("#myChart2").height($("#description2").height());
         }
         graphSize();
         $(window).resize(function(){
