@@ -187,7 +187,7 @@
 
                 </div>
 
-                 <div style="border-top:0px;border-right: 1px;border-left: 1px;border-bottom: 1px; border-color:#27c971; border-style: solid;  border-radius:5px 5px 0 0;"></div>
+                 <div style="border-bottom: 1px; border-color:#27c971; border-style: solid;  border-radius:5px 5px 0 0; margin-bottom:10px"></div>
 
                 <div class="row">
 
