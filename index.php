@@ -77,11 +77,11 @@
       <div class="row" height="50vh">
 
       <div class="col s12 m6">
-      <canvas id="myChart" ></canvas>
+      <canvas id="myChart" width="100%"></canvas>
       </div>
 
       <div class="col s12 m6">
-      <canvas id="myChart2" ></canvas>
+      <canvas id="myChart2" width="100%"></canvas>
       </div>
       </div>
         <script>
@@ -113,10 +113,6 @@ var myChart = new Chart(ctx, {
         }]
     },
     options: {
-              title: {
-            display: true,
-            text: 'Thing1'
-        }
         scales: {
             yAxes: [{
                 ticks: {
@@ -157,10 +153,6 @@ var myChart = new Chart(ctx, {
         }]
     },
     options: {
-           title: {
-            display: true,
-            text: 'Thing2'
-        }
         scales: {
             yAxes: [{
                 ticks: {
