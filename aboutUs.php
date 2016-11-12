@@ -75,7 +75,7 @@
 
                 <div class="card-panel">
                     <div class="col s12">
-                        <h2>Welcome Esteban!</h2>
+                        <h2 id="introduction"></h2>
                     </div>
                     <div class="row">
                         <div class="col l3 m6 s12">
@@ -136,18 +136,18 @@
                     </div>
                 </div>
 
-                        <div class ="col s12 m4">
-                        <div class="card-panel"  style="height:220px">
-                            <div style="height:200px" class="ct-chart ct-perfect-fourth" id="myPi"></div>
-                            <script>makeChart("#myPi");</script>
+                <div class ="col s12 m4">
+                    <div class="card-panel"  style="height:220px">
+                        <div style="height:200px" class="ct-chart ct-perfect-fourth" id="myPi"></div>
+                        <script>makeChart("#myPi");</script>
 
-                        </div>
                     </div>
+                </div>
 
 
                 <div class="card-panel">
 
-                  <div class="row">
+                    <div class="row">
                         <div class="col m2 hide-on-small-only">
                             <div class="card-panel col s12">
                                 <p>BLah</p>
@@ -190,18 +190,18 @@
                             </table>
 
                         </div>
-<div class="col s12 right"><a href="#"  class="waves-effect waves-light btn right">View Full Payment History</a></div>
+                        <div class="col s12 right"><a href="#"  class="waves-effect waves-light btn right">View Full Payment History</a></div>
                     </div>
                 </div>
 
 
                 <div class="card-panel">
 
-                        <div class="col s12 m8" id="myChartcon"  style="height:50px">
-                            <div class="ct-chart ct-perfect-fourth" id="myChart" style="height:50px"></div>
-                            <script>makeChart("#myChart");</script>
-                        </div>
-        </div>
+                    <div class="col s12 m8" id="myChartcon"  style="height:50px">
+                        <div class="ct-chart ct-perfect-fourth" id="myChart" style="height:50px"></div>
+                        <script>makeChart("#myChart");</script>
+                    </div>
+                </div>
 
 
 
@@ -247,7 +247,7 @@
                                 </tbody>
                             </table>
                         </div>
-<div class="col s12 right"><a href="#"  class="waves-effect waves-light btn right">View Full Payment History</a></div>
+                        <div class="col s12 right"><a href="#"  class="waves-effect waves-light btn right">View Full Payment History</a></div>
                     </div>
                 </div>
             </div>
@@ -343,7 +343,7 @@
         inAnimate(myScroll);
         function graphSize()
         {
- /*  console.log("in this bitch");
+            /*  console.log("in this bitch");
             $("#myChart").height("0px");
             $("#myChart").height($("#description1").height());
             $("#myChartcon").height($("#description1").height()+10);
@@ -351,6 +351,13 @@
         graphSize();
         $(window).resize(function(){
             graphSize();
+        });
+
+        $.ajax({
+            url: 'http://api.reimaginebanking.com/customers/58279577360f81f104549283?key=e113f594b9615823b8d4262cf80a0d87',
+            success: function(results){
+                $("#introduction").html("Welcome "+results.first_name+"!");
+            }
         });
     </script>
 </html>
