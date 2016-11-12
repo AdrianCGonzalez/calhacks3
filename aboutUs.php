@@ -45,8 +45,7 @@
     <body>
         <nav class="teal darken-2">
             <div class="nav-wrapper">
-                <div class="contentWrapper">
-                    <div class="pageWrapper">
+
                         <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:13px;width:36px;height:36px"></a>
                         <a href="index.php" class="brand-logo hide-on-med-and-down" style="margin-left:40px">CalHacks</a>
                         <ul id="nav-mobile" class="right hide-on-small-only">
@@ -54,10 +53,10 @@
                             <li><a href="#modal1" data-target="modal1" class="modal-trigger">Log Out</a></li>
                         </ul>
                     </div>
-                </div>
-            </div>
-        </nav>
 
+        </nav>
+<div class="contentWrapper">
+                    <div class="pageWrapper">
 
         <div class="fixed-action-btn hide-on-med-and-up">
             <a class="btn-floating btn-large red">
@@ -236,7 +235,8 @@
                 </div>
             </div>
 
-
+   </div>
+            </div>
 
         <footer class="page-footer teal darken-2">
             <div style="padding-left:20px;padding-right:20px;">
