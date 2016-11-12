@@ -19,7 +19,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.10.1/chartist.min.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.10.1/chartist.min.js"></script>
-      	<script src="js/animatedChart.js"></script>
+        <script src="js/animatedChart.js"></script>
 
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
@@ -121,20 +121,20 @@
                     </div>
                 </div>
 
-<div class="row hide-on-large-only">
-    <div class="row">
-        <div class="col s12 m7">
-            <h2 style="padding-bottom:10px">Traveling has never been easier</h2>
-        </div>
-        <div class="col s12 m5">
-            <img class="responsive-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Squirrel_posing.jpg">
-        </div>
-    </div>
-    <div class="col s12 m7">
-        <p>Nulla id ligula tortor. Quisque tincidunt neque purus, et aliquet arcu ullamcorper eu. Cras in arcu ac urna ultrices bibendum. Vestibulum rutrum diam leo, vitae pulvinar turpis facilisis ut. Morbi a ullamcorper quam. Praesent placerat ac augue vitae cursus. Maecenas semper nisi nibh, in maximus magna condimentum vitae. Curabitur nec vestibulum ex, in fringilla arcu. Curabitur nec elit eget tortor tristique fringilla in in massa. Suspendisse et porttitor est, in volutpat lorem. Nulla pulvinar quis velit quis facilisis. Sed leo dolor, feugiat ac est sed, semper mattis lectus. Maecenas suscipit ornare erat sed congue. Nullam volutpat neque id libero mattis scelerisque. Integer ac ante finibus, ultricies ante id, convallis lorem. Fusce rhoncus eros vitae magna tempor, sit amet hendrerit dui aliquet.</p>
-    </div>
+                <div class="row hide-on-large-only">
+                    <div class="row">
+                        <div class="col s12 m7">
+                            <h2 style="padding-bottom:10px">Traveling has never been easier</h2>
+                        </div>
+                        <div class="col s12 m5">
+                            <img class="responsive-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Squirrel_posing.jpg">
+                        </div>
+                    </div>
+                    <div class="col s12 m7">
+                        <p>Nulla id ligula tortor. Quisque tincidunt neque purus, et aliquet arcu ullamcorper eu. Cras in arcu ac urna ultrices bibendum. Vestibulum rutrum diam leo, vitae pulvinar turpis facilisis ut. Morbi a ullamcorper quam. Praesent placerat ac augue vitae cursus. Maecenas semper nisi nibh, in maximus magna condimentum vitae. Curabitur nec vestibulum ex, in fringilla arcu. Curabitur nec elit eget tortor tristique fringilla in in massa. Suspendisse et porttitor est, in volutpat lorem. Nulla pulvinar quis velit quis facilisis. Sed leo dolor, feugiat ac est sed, semper mattis lectus. Maecenas suscipit ornare erat sed congue. Nullam volutpat neque id libero mattis scelerisque. Integer ac ante finibus, ultricies ante id, convallis lorem. Fusce rhoncus eros vitae magna tempor, sit amet hendrerit dui aliquet.</p>
+                    </div>
 
-</div>
+                </div>
 
                 <hr class="padMe">
 
@@ -145,7 +145,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
                     </div>
                     <div class="col s12 m8">
-                        <div class="ct-chart ct-perfect-fourth"></div>
+                        <div class="ct-chart ct-perfect-fourth" id="myChart"></div>
 
                     </div>
 
@@ -163,7 +163,7 @@
 
                     <div class="col s12 m8">
                         <div class="ct-chart ct-perfect-fourth"></div>
-                <script src="js/animatedChart.js"></script>
+
                     </div>
                 </div>
 
@@ -171,10 +171,10 @@
 
 
                 <h1 class="center-align">Empowering Users From Day 1</h1>
-<div class="col s12">
-                <img class="padMe center-align" src="https://www.drift.com/wp-content/uploads/2016/10/icons.jpg">
-              </div>
-              </div>
+                <div class="col s12">
+                    <img class="padMe center-align" src="https://www.drift.com/wp-content/uploads/2016/10/icons.jpg">
+                </div>
+            </div>
         </div>
         <div class="parallax-container valign-wrapper">
             <div class="parallax"><img src="http://fullhdpictures.com/wp-content/uploads/2016/01/Different-Turtle-Wallpaper.jpg" alt="Unsplashed background img 2"></div>
@@ -182,28 +182,28 @@
         <div class="contentWrapper">
             <div class="pageWrapper">
                 <h1 class="padMe">Here's how we're different.</h1>
-<div class="holder repeat">
-  <div class="a f afr  card-panel">
-                <b class="padMe">An intelligent messaging app.</b>
+                <div class="holder repeat">
+                    <div class="a f afl  card-panel">
+                        <b class="padMe">An intelligent messaging app.</b>
 
-                <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
-              </div>
-              </div>
-              <div class="holder repeat">
-                <div class="a f afr  card-panel">
-  <b class="padMe">An intelligent messaging app.</b>
-
-                <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
+                        <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
+                    </div>
                 </div>
-              </div>
-              <div class="holder repeat">
-                <div class="a f afr  card-panel">
-                <b class="padMe">An intelligent messaging app.</b>
+                <div class="holder repeat">
+                    <div class="a f afr  card-panel">
+                        <b class="padMe">An intelligent messaging app.</b>
 
-                <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
+                        <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
+                    </div>
+                </div>
+                <div class="holder repeat">
+                    <div class="a f afl  card-panel">
+                        <b class="padMe">An intelligent messaging app.</b>
+
+                        <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
+                    </div>
                 </div>
             </div>
-          </div>
         </div>
 
         <footer class="page-footer teal darken-2">
