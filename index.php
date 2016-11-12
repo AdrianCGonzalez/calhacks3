@@ -4,7 +4,7 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name='viewport' content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0"/>
-
+        <meta http-equiv="refresh" content="5">
 		<meta name="apple-touch-fullscreen" content="yes" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<title>Vacation</title>
@@ -22,8 +22,8 @@
 	</head>
 
 	<body>
-
-        <nav>
+      <div class="contentWrapper">
+   <nav>
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">CalHacks</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -37,10 +37,12 @@
 		<div class="pageWrapper">
 			<div>
 				<span>
-          yo
-        			asdfasdfasd hi victor
-          hi andres
-          Hi esteban
+                	Inspiration
+                  		C14-Hacks is a website that intends to purpose is
+					What it does
+					How we built it
+					Challenges we ran into
+					Accomplishments that we're proud of
 				</span>
 			</div>
 			<div class="holder repeat">
@@ -51,7 +53,43 @@
 				</div>
 			</div>
 		</div>
+      </div>
+
+      <footer class="page-footer red lighten-2">
+			<div style="padding-left:20px;padding-right:20px;">
+				<div class="row">
+					<div class="col l5 hide-on-small-only">
+						<h5 class="white-text">Company Bio</h5>
+						<p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+					</div>
+					<div class="col l4 s6">
+						<h5 class="white-text" style="text-align:center">Settings</h5>
+						<div class="row">
+							<img src="http://i2.mirror.co.uk/incoming/article8075004.ece/ALTERNATES/s615b/Harambe.jpg" align="left" style="padding-right:5px;">
+						</div>
+					</div>
+					<div class="col l3 s6">
+						<h5 class="white-text" style="text-align:center">Contact Us</h5>
+						<ul>
+							<li class="white-text" style="text-align:center">Tel: (415) 297-9046</li>
+							<li class="white-text" style="text-align:center">Email: abc123@abc123.com</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container center">
+					<span class="hide-on-small-only">Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">CFF</a> </span>©2016 Code For Food<span class="hide-on-med-and-down">All rights reserved.</span>
+				</div>
+			</div>
+		</footer>
 	</body>
+
+
+
+
 	<script>
 		function initializeAnimation()
 		{
