@@ -205,7 +205,7 @@
 
                     <div class="col s12 m2" id="myChartcon"  style="height:50px">
                         <div class="ct-chart ct-perfect-fourth" id="myChart" style="height:50px"></div>
-                        <script>pichart("#piChart");</script>
+                        <script>pichart("#pichart");</script>
                     </div>
                 </div>
 
@@ -366,7 +366,7 @@
             }
         });
       $.ajax({
-            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/customer?key=92d167a667478cadc9b5542720b5463d',
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
                 $("#balance").html("Your balance is "+results.balance + " with " +results.rewards+" reward points!");
             }
