@@ -67,9 +67,6 @@
 					</div>
 					<div class="col l4 s6">
 						<h5 class="white-text" style="text-align:center">Settings</h5>
-						<div class="row">
-							<img src="http://i2.mirror.co.uk/incoming/article8075004.ece/ALTERNATES/s615b/Harambe.jpg" align="left" style="padding-right:5px;">
-						</div>
 					</div>
 					<div class="col l3 s6">
 						<h5 class="white-text" style="text-align:center">Contact Us</h5>
@@ -82,7 +79,7 @@
 			</div>
 			<div class="footer-copyright">
 				<div class="container center">
-					<span class="hide-on-small-only">Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">CFF</a> </span>©2016 Code For Food<span class="hide-on-med-and-down">All rights reserved.</span>
+					<span class="hide-on-small-only">Powered by: nessie, aMaDEUS, Microsoft Azure Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">CFF</a> </span>©2016 Code For Food<span class="hide-on-med-and-down">All rights reserved.</span>
 				</div>
 			</div>
 		</footer>
