@@ -146,7 +146,8 @@
 
 
                 <div class="card-panel">
-                    <div class="row">
+
+                  <div class="row">
                         <div class="col m2 hide-on-small-only">
                             <div class="card-panel col s12">
                                 <p>BLah</p>
@@ -158,6 +159,7 @@
                                 <p>BLah</p>
                             </div>
                         </div>
+
                         <div class="col s12 m10">
                             <table>
                                 <thead>
@@ -186,9 +188,9 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <div class="col s12 right"><a href="#"  class="waves-effect waves-light btn right">View Full Payment History</a></div>
-                        </div>
 
+                        </div>
+<div class="col s12 right"><a href="#"  class="waves-effect waves-light btn right">View Full Payment History</a></div>
                     </div>
                 </div>
 
@@ -244,9 +246,8 @@
                                     </tr>
                                 </tbody>
                             </table>
- <div class="col s12 right"><a href="#" class="waves-effect waves-light btn right">View More Stuff</a></div>
                         </div>
-
+<div class="col s12 right"><a href="#"  class="waves-effect waves-light btn right">View Full Payment History</a></div>
                     </div>
                 </div>
             </div>
