@@ -198,12 +198,12 @@
 
                 <h1 class="center-align">Empowering Users From Day 1</h1>
                 <br>
-                <img class="center-align" src="https://www.drift.com/wp-content/uploads/2016/10/icons.jpg">
+                <img align="middle" src="https://www.drift.com/wp-content/uploads/2016/10/icons.jpg">
                 <br>
             </div>
         </div>
         <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="http://wallpaperbackgrounds.com/Content/wallpapers/animal/turtle/124097-2678.jpg" alt="Unsplashed background img 2"></div>
+            <div class="parallax"><img src="http://fullhdpictures.com/wp-content/uploads/2016/01/Different-Turtle-Wallpaper.jpg" alt="Unsplashed background img 2"></div>
         </div>
         <div class="contentWrapper">
             <div class="pageWrapper">
