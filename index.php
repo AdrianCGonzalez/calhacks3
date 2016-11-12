@@ -47,6 +47,20 @@
             </div>
         </nav>
 
+
+        <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">menu</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">perm_identity</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">vpn_key</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+    </ul>
+  </div>
+
+
+
         <div id="index-banner" class="parallax-container">
 
             <div class="section no-pad-bot">
@@ -138,7 +152,16 @@
       <h1>Here's how we're different.</h1>
       <br>
       <b>An intelligent messaging app.</b>
-      <p></p>
+      <br>
+      <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
+      <b>An intelligent messaging app.</b>
+      <br>
+      <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
+      <b>An intelligent messaging app.</b>
+      <br>
+      <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
+      <br>
+
       <script>
 
           var ctx = document.getElementById("myChart");
