@@ -34,12 +34,12 @@
                 <a href="index.php" class="brand-logo" style="margin-left:40px">CalHacks</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="aboutUs.html">About Us</a></li>
-                    <li><a href="components.html">Components</a></li>
+
                     <li><a href="logIn.html">Log In</a></li>
                 </ul>
                 <ul id="nav-mobile" class="side-nav">
                     <li><a href="aboutUs.html">About Us</a></li>
-                    <li><a href="components.html">Components</a></li>
+
                     <li><a href="logIn.html">Log In</a></li>
                 </ul>
                 <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -53,9 +53,8 @@
       <i class="large material-icons">menu</i>
     </a>
     <ul>
-      <li><a class="btn-floating red"><i class="material-icons">perm_identity</i></a></li>
-      <li><a class="btn-floating yellow darken-1"><i class="material-icons">vpn_key</i></a></li>
-      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating red" href="aboutUs.html"><i class="material-icons">perm_identity</i></a></li>
+      <li><a class="btn-floating green" href="logIn.html"><i class="material-icons">vpn_key</i></a></li>
     </ul>
   </div>
 
@@ -103,7 +102,7 @@
       <hr>
       <br>
         <div class="row" height="50vh">
-<div class="col s12 m4">
+<div class="col s12 m4" id="description1">
   <h1>Line Chart</h1>
   <br>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
@@ -119,7 +118,7 @@
       <br>
         <div class="row" height="50vh">
 
-<div class="col s12 m4" id="description1">
+<div class="col s12 m4" id="description2">
   <h1>Bar Chart</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
           </div>
