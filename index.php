@@ -74,9 +74,13 @@
             </div>
             <div class="parallax"><img src="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj3/cs194-fb/images/blurry_turtle.jpg" alt="Unsplashed background img 1"></div>
         </div>
-
-      <div class="col s12" style="height:40vh">
-      <canvas id="myChart"></canvas>
+<div class="row">
+      <div class="col s12 m6">
+      <canvas id="myChart" width="400" height="400"></canvas>
+      </div>
+  <div class="col s12 m6">
+      <canvas id="myChart" width="400" height="400"></canvas>
+      </div>
       </div>
         <script>
 var ctx = document.getElementById("myChart");
