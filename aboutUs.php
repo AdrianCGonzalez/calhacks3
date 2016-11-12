@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.10.1/chartist.min.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.10.1/chartist.min.js"></script>
         <script src="js/animatedChart.js"></script>
-      <script src="js/piChart.js"></script>
+        <script src="js/piChart.js"></script>
 
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
@@ -46,197 +46,197 @@
         <nav class="teal darken-2">
             <div class="nav-wrapper">
 
-                        <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:13px;width:36px;height:36px"></a>
-                        <a href="index.php" class="brand-logo hide-on-med-and-down" style="margin-left:40px">CalHacks</a>
-                        <ul id="nav-mobile" class="right hide-on-small-only">
-                            <li><a href="aboutUs.php">About Us</a></li>
-                            <li><a href="#modal1" data-target="modal1" class="modal-trigger">Log Out</a></li>
-                        </ul>
-                    </div>
+                <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:13px;width:36px;height:36px"></a>
+                <a href="index.php" class="brand-logo hide-on-med-and-down" style="margin-left:40px">CalHacks</a>
+                <ul id="nav-mobile" class="right hide-on-small-only">
+                    <li><a href="aboutUs.php">About Us</a></li>
+                    <li><a href="#modal1" data-target="modal1" class="modal-trigger">Log Out</a></li>
+                </ul>
+            </div>
 
         </nav>
-<div class="contentWrapper">
-                    <div class="pageWrapper">
+        <div class="contentWrapper">
+            <div class="pageWrapper">
 
-        <div class="fixed-action-btn hide-on-med-and-up">
-            <a class="btn-floating btn-large red">
-                <i class="large material-icons">menu</i>
-            </a>
-            <ul>
-                <li><a class="btn-floating red" href="aboutUs.html"><i class="material-icons">perm_identity</i></a></li>
-                <li><a class="btn-floating green" href="logIn.html"><i class="material-icons">vpn_key</i></a></li>
-            </ul>
+                <div class="fixed-action-btn hide-on-med-and-up">
+                    <a class="btn-floating btn-large red">
+                        <i class="large material-icons">menu</i>
+                    </a>
+                    <ul>
+                        <li><a class="btn-floating red" href="aboutUs.html"><i class="material-icons">perm_identity</i></a></li>
+                        <li><a class="btn-floating green" href="logIn.html"><i class="material-icons">vpn_key</i></a></li>
+                    </ul>
+                </div>
+                <div class="card-panel">
+                    <div class="col s12">
+                        <p>Welcome Esteban!</p>
+                    </div>
+                    <div class="row">
+                        <div class="col l3 m6 s12">
+                            <div class="card blue-grey darken-1">
+                                <div class="card-content white-text">
+                                    <span class="card-title">Thing 1</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l3 m6 s12">
+                            <div class="card blue-grey darken-1">
+                                <div class="card-content white-text">
+                                    <span class="card-title">Thing 2</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l3 m6 s12">
+                            <div class="card blue-grey darken-1">
+                                <div class="card-content white-text">
+                                    <span class="card-title">Thing 3</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l3 m6 s12">
+                            <div class="card blue-grey darken-1">
+                                <div class="card-content white-text">
+                                    <span class="card-title">Thing 4</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col m2 hide-on-small-only">
+                        <div class="card-panel col s12">
+                            <p>BLah</p>
+                        </div>
+                        <div class="card-panel col s12">
+                            <p>BLah</p>
+                        </div>
+                        <div class="card-panel col s12">
+                            <p>BLah</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m10">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-field="id">Name</th>
+                                    <th data-field="name">Item Name</th>
+                                    <th data-field="price">Item Price</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Alvin</td>
+                                    <td>Eclair</td>
+                                    <td>$0.87</td>
+                                </tr>
+                                <tr>
+                                    <td>Alan</td>
+                                    <td>Jellybean</td>
+                                    <td>$3.76</td>
+                                </tr>
+                                <tr>
+                                    <td>Jonathan</td>
+                                    <td>Lollipop</td>
+                                    <td>$7.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col m2 hide-on-small-only">
+                        <div class="card-panel col s12">
+                            <p>BLah</p>
+                        </div>
+                        <div class="card-panel col s12">
+                            <p>BLah</p>
+                        </div>
+                        <div class="card-panel col s12">
+                            <p>BLah</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m10">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-field="id">Name</th>
+                                    <th data-field="name">Item Name</th>
+                                    <th data-field="price">Item Price</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Alvin</td>
+                                    <td>Eclair</td>
+                                    <td>$0.87</td>
+                                </tr>
+                                <tr>
+                                    <td>Alan</td>
+                                    <td>Jellybean</td>
+                                    <td>$3.76</td>
+                                </tr>
+                                <tr>
+                                    <td>Jonathan</td>
+                                    <td>Lollipop</td>
+                                    <td>$7.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+                <hr>
+
+
+                <div class="row">
+                    <div class="col s12 m4" id="description1">
+                        <h1 class="padMe">Bar Chart</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
+                    </div>
+                    <div class="col s12 m8" id="myChartcon"  height="50px">
+                        <div class="ct-chart ct-perfect-fourth" id="myPi"></div>
+                        <script>makepi("#myPi");</script>
+                    </div>
+                </div>
+
+            </div>
         </div>
-<div class="card-panel">
-<div class="col s12">
-  <p>Welcome Esteban!</p>
-  </div>
-  <div class="row">
-  <div class="col l3 m6 s12">
-    <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Thing 1</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-      </div>
-
-    <div class="col l3 m6 s12">
-    <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Thing 2</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-      </div>
-
-    <div class="col l3 m6 s12">
-    <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Thing 3</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-      </div>
-
-    <div class="col l3 m6 s12">
-    <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Thing 4</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-      </div>
-  </div>
-  </div>
-
-  <hr>
-
-        <div class="row">
-            <div class="col m2 hide-on-small-only">
-                <div class="card-panel col s12">
-                    <p>BLah</p>
-                </div>
-                <div class="card-panel col s12">
-                    <p>BLah</p>
-                </div>
-                <div class="card-panel col s12">
-                    <p>BLah</p>
-                </div>
-            </div>
-            <div class="col s12 m10">
-                <table>
-                    <thead>
-                        <tr>
-                            <th data-field="id">Name</th>
-                            <th data-field="name">Item Name</th>
-                            <th data-field="price">Item Price</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>Alvin</td>
-                            <td>Eclair</td>
-                            <td>$0.87</td>
-                        </tr>
-                        <tr>
-                            <td>Alan</td>
-                            <td>Jellybean</td>
-                            <td>$3.76</td>
-                        </tr>
-                        <tr>
-                            <td>Jonathan</td>
-                            <td>Lollipop</td>
-                            <td>$7.00</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col m2 hide-on-small-only">
-                <div class="card-panel col s12">
-                    <p>BLah</p>
-                </div>
-                <div class="card-panel col s12">
-                    <p>BLah</p>
-                </div>
-                <div class="card-panel col s12">
-                    <p>BLah</p>
-                </div>
-            </div>
-            <div class="col s12 m10">
-                <table>
-                    <thead>
-                        <tr>
-                            <th data-field="id">Name</th>
-                            <th data-field="name">Item Name</th>
-                            <th data-field="price">Item Price</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>Alvin</td>
-                            <td>Eclair</td>
-                            <td>$0.87</td>
-                        </tr>
-                        <tr>
-                            <td>Alan</td>
-                            <td>Jellybean</td>
-                            <td>$3.76</td>
-                        </tr>
-                        <tr>
-                            <td>Jonathan</td>
-                            <td>Lollipop</td>
-                            <td>$7.00</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-        </div>
-        <hr>
-
-
- 			<div class="row">
-                <div class="col s12 m4" id="description1">
-                    <h1 class="padMe">Bar Chart</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
-                </div>
-                <div class="col s12 m8" id="myChartcon"  height="50px">
-                    <div class="ct-chart ct-perfect-fourth" id="myPi"></div>
-                    <script>makepi("#myPi");</script>
-                </div>
-            </div>
-
-   </div>
-            </div>
 
         <footer class="page-footer teal darken-2">
             <div style="padding-left:20px;padding-right:20px;">
