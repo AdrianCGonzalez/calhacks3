@@ -81,7 +81,7 @@
       </div>
 
       <div class="col s12 m6">
-      <canvas id="myChart2" width="100%"></canvas>
+      <canvas id="myChart2" width="100%" height="100%"></canvas>
       </div>
       </div>
         <script>
