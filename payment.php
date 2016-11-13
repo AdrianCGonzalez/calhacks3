@@ -82,7 +82,8 @@
                         <h3 id="introduction"></h3>
                         <p id="balance"></p>
                     </div>
-                     <div class="col l3 m6 s12">
+                    <div class="row">
+                        <div class="col l3 m6 s12">
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
                                     <span class="card-title">Payments</span>
@@ -137,9 +138,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                
+                 </div>
 <h3  style="text-align:center;color:#black;border-bottom: 1px solid rgba(221, 179, 8, 0.2);">Payment</h3>
                 <div class="row" style="padding:0px;">
                     <div class ="col s12 m6" style="padding:0px;">
