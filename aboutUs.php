@@ -80,7 +80,7 @@
                 <br><b>Michael Brooks</b>
 
                 <br>
-                <br>Doctoral Student, UC Merced Biological Engineering and Small-scale Technologies (BEST) Graduate Group<br>
+                <br>Undergraduate Student, Bioengineering 4th year<br><br>
 
                 Worked on optimizing endothelial fate from a new embryonic stem-cell line with dual endothelial and smooth muscle promoters under GFP and RFP for studying real time morphological vascular development and vascularization of tissues. She then progressed to a postdoctoral position at Washington University in St. Louis. </p>
         </div>
@@ -94,7 +94,7 @@
                 <br><b>Esteban Perez</b>
 
                 <br>
-                <br>Undergraduate Student, Computer Science And Engineering<br>
+                <br>Undergraduate Student, Computer Science And Engineering 4th year<br><br>
 
                 Worked on cardiac stem cell differentiation from embryonic stem cells. Her work won best oral presentation at our UC-Systemwide Bioengineering Symposium, 2009. She accepted a research staff position at Stanford University. </p>
         </div>
@@ -121,7 +121,7 @@
                 <br><b>Victor Gonzalez</b>
 
                 <br>
-                <br>Undergraduate Student, Computer Science And Engineering<br>
+                <br>Undergraduate Student, Computer Science And Engineering 4th year<br><br>
 
                 Worked on optimizing endothelial fate from a new embryonic stem-cell line with dual endothelial and smooth muscle promoters under GFP and RFP for studying real time morphological vascular development and vascularization of tissues. She then progressed to a postdoctoral position at Washington University in St. Louis. </p>
         </div>
@@ -135,7 +135,7 @@
                 <br><b>Adrian Gonzalezz</b>
 
                 <br>
-                <br>Undergraduate Student, Computer Science And Engineering<br>
+                <br>Undergraduate Student, Computer Science And Engineering 4th year<br><br>
 
                 Worked on cardiac stem cell differentiation from embryonic stem cells. Her work won best oral presentation at our UC-Systemwide Bioengineering Symposium, 2009. She accepted a research staff position at Stanford University. </p>
         </div>
