@@ -153,12 +153,8 @@
                     <div class="col s12">
                         <h1 style="padding-bottom:10px" >Personalized Traveling Based On Your Income</h1>
 
-                        <span>&nbsp;&nbsp;&nbsp;&nbsp;The world is a book, and those who do not travel read only a page.
-                            Of course, if books were as expensive as traveling is, they would be 100000%  more expensive (don't quote us on this). Nevertheless, traveling IS a lot of stress. It requires possibly coordinating vacation time for multiple people, school, money, responsibilities, children, and a mirad of things that can go wrong.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;Nevertheless, our entirly innacurate polls with few data points show<br>
-                            that traveling is still shows promingtly as the dream for a significant portion of Americans. Our objective is to make the process of planning this traveling easier. Using your bank information to extrapolate information about your socioeconomical status, we are able to give recommendations for places that you can afford to go and have a good time without worrying too much about money.<br>	 &nbsp;&nbsp;&nbsp;&nbsp;Don't worry though, we know sometimes life gets rough and SF train station may not be your dream destination. We include a way for you to set a goal, and using top machine learning algorithms (again, don't quote us) we produce a realistic timeline and recommendations that will allow you to achieve your dream vacation. We are Dreamcatcher. Thank you for your time :).
-
-                        </span>
+                        <span><pre>The world is a book, and those who do not travel read only a page. Of course, if books were as expensive as traveling is, no one would read. Nevertheless, traveling is a lot of stress. It requires possibly coordinating vacation time for multiple people, finances, and many responsibilities, not to mention a myriad of things that can go wrong.
+	Nevertheless, our quantitative data analysis on key data points show that traveling still shows promise even with sporadic finances. Our objective is to make the process of planning this traveling easier. Using your bank information to extrapolate information about your socioeconomic status, we are able to give recommendations for places that you can afford to go and have a good time; without worrying too much about money. We include a way for you to set a goal, and using machine learning we produce a realistic timeline and recommendations that will allow you to achieve your dream vacation.</pre></span>
                     </div>
                 </div>
             </div>
