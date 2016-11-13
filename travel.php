@@ -106,24 +106,31 @@
                         <h4>$1000.00</h4>
                         <p>Airline:</p>     <p>xxxxx</p>
                         <p> depart from:</p> <p>xxxxxxx</p>
-                        <p>Description:</p> <p> THis place is great cause its great. Words words words words words Nunc ullamcorper lacus nec mi porta, et feugiat diam tempus. Donec bibendum eros nisl, eget vestibulum enim suscipit pulvinar. Sed eget tempor libero. Vestibulum accumsan sed purus in congue. Proin finibus eleifend dolor in efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mauris f</p>
+                        <br>
+                        <p>Description:</p> 
+                        <br>
+                        <p> THis place is great cause its great. Words words words words words Nunc ullamcorper lacus nec mi porta, et feugiat diam tempus. Donec bibendum eros nisl, eget vestibulum enim suscipit pulvinar. Sed eget tempor libero. Vestibulum accumsan sed purus in congue. Proin finibus eleifend dolor in efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mauris f</p>
                         <hr>
-                        <h3 style="color:#1ab394;"> Name Of Place </h3>
-                        <h4>$1000.00</h4>
+                        <div class="col l12"><h3 style="color:#1ab394;"> Name Of Place </h3>
+                        <h4 class="right">$1000.00</h4>
+                            </div>
                         <div class="col l4 m6 s12">
-                            <b>Airline:</b>  
-                            <b> depart from:</b>
+                            <b>Airline:</b>   
+                            <br>
+                            <p>xxxxxxx</p>
+                            
                         </div>
                         <div class="col l4 m6 s12">  
-                            <p>xxxxxxx</p> 
+                            <b> depart from:</b>
+                            <br>
                             <p>xxxxx</p>
                         </div>
 
-                        <b>Description:</b> 
+                        <b>Description:</b><br> 
                         <p> THis place is great cause its great. Words words words words words Nunc ullamcorper lacus nec mi porta, et feugiat diam tempus. Donec bibendum eros nisl, eget vestibulum enim suscipit pulvinar. Sed eget tempor libero. Vestibulum accumsan sed purus in congue. Proin finibus eleifend dolor in efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mauris f</p>
                         <hr>
                     </div>
-                    <div class="col l3 m12 card-panel">
+                    <div class="col l2 m12">
                         <div class="col m12 card-panel">
 
                             <p>Current Balance:</p>
