@@ -140,7 +140,7 @@
             </div>
 
             <div class="parallax" style="height:25vh">
-                <img src="https://puu.sh/sgyfP/967d261f26.jpeg" alt="Unsplashed background img 1"></div>
+                <img src="aus.PNG" alt="Unsplashed background img 1"></div>
         </div>
 
         <br>
