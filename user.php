@@ -363,7 +363,7 @@
         $.ajax({
             url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/purchases?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
-
+ console.log("purchases");
                 for(var i  =0;i<12;i++)
                 {
                     var sumPurchase = 0;
@@ -374,7 +374,7 @@
                         }
                     }
                     purchaseMonth.push(sumPurchase*33);
-                   // console.log(sumPurchase);
+                    console.log(sumPurchase);
                 }
                 console.log(purchaseMonth);
                 $.ajax({
