@@ -462,9 +462,9 @@
             $.ajax({
                 url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/deposits?key=92d167a667478cadc9b5542720b5463d',
                 success: function(results){
-                    for(k=0;k<results.length;k++){
+                    for(u=0;u<results.length;u++){
                         var depositt = "";
-                    descriptionn += "<tr>" +"</td>"+"<td>"+results[k].amount + "</td>"+"<td>"+results[k].transaction_date + "</td>"+"</tr>";
+                    descriptionn += "<tr>"+"<td>"+results[u].amount + "</td>"+"<td>"+results[u].transaction_date + "</td>"+"</tr>";
                     $("#depositt").html($("#depositt").html()+descriptionn);
                 }
             }
