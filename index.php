@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.10.1/chartist.min.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.10.1/chartist.min.js"></script>
         <script src="js/animatedChart.js"></script>
-                <script src="js/piChart.js"></script>
+        <script src="js/piChart.js"></script>
         <script src="js/axis.js"></script>
         <script src="js/regression.js"></script>
 
@@ -336,7 +336,23 @@
             $("#myChart2").height($("#description2").height());
             $("#myChart2con").height($("#description2").height()+10);
         }
-
+        var purchaseMonth = [];
+        var depositMonth = [];
+        var netMonth = [];
+        var combineDP = [];
+        var minMon = 2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2;
+        var minNet = 2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2;
+        var curBal = 0;
+        $.ajax({
+            url: 'http://api.reimaginebanking.com/accounts/'+UserID+'?key=92d167a667478cadc9b5542720b5463d',
+            success: function(results){
+                curBal = results.balance;
+                console.log(curBal);
+                curBal /=100;
+                console.log(curBal);
+                $("#balance").html("Your balance is "+Math.round(curBal * 100) / 100 + " with " +results.rewards+" reward points!");
+            }
+        });
         $.ajax({
             url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549dde/purchases?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
