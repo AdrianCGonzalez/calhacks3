@@ -21,7 +21,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.10.1/chartist.min.js"></script>
         <script src="js/animatedChart.js"></script>
         <script src="js/piChart.js"></script>
-
+        <script src="js/axis.js"></script>
+        <script src="js/regression.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
         <script>
@@ -161,7 +162,7 @@
                 <div class="card-panel">
 
                     <div class="row">
-                        <div class="col s12 m2">
+                        <div class="col s12 m4">
 
                             <div id="myChartcon">
                                 <div class="ct-chart ct-perfect-fourth" id="myChart"></div>
@@ -169,7 +170,7 @@
                             </div>
                         </div>
 
-                        <div class="col s12 m10">
+                        <div class="col s12 m8">
                             <p>Deposits</p>
                             <table>
                                 <thead>
@@ -202,15 +203,14 @@
 
                 <div class="card-panel">
                     <div class="row">
-                        <div class="col s12 m2">
+                        <div class="col s12 m4">
 
                             <div id="myChartcon">
                                 <div class="ct-chart ct-perfect-fourth" id="myChart1"></div>
-                                <script>makepi("#myChart1",[5,10,15],['test','trst','ttst']);</script>
                             </div>
                         </div>
 
-                        <div class="col s12 m10">
+                        <div class="col s12 m8">
                             <p>Purchaces</p>
                             <table>
                                 <thead>
@@ -355,7 +355,8 @@
                 console.log(curBal);
                 curBal /=100;
                 console.log(curBal);
-                $("#balance").html("Your balance is "+curBal + " with " +results.rewards+" reward points!");
+
+                $("#balance").html("Your balance is "+Math.round(curBal * 100) / 100 + " with " +results.rewards+" reward points!");
             }
         });
         $.ajax({
@@ -372,9 +373,9 @@
                         }
                     }
                     purchaseMonth.push(sumPurchase*33);
-                    console.log(sumPurchase);
+                    //console.log(sumPurchase);
                 }
-                console.log(purchaseMonth);
+                //console.log(purchaseMonth);
                 $.ajax({
                     url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/deposits?key=92d167a667478cadc9b5542720b5463d',
                     success: function(results){
@@ -389,9 +390,9 @@
                                 }
                             }
                             depositMonth.push(sumDeposit);
-                            console.log(sumDeposit);
+                            //  console.log(sumDeposit);
                         }
-                        console.log(depositMonth);
+                        //  console.log(depositMonth);
                         for(var k = 0; k < 12 ; k++)
                         {
                             if(depositMonth[k] < minMon)
@@ -410,18 +411,38 @@
                             }
 
                         }
+
+                        var regre = [];
+                        for(var i =0;i<12;i++)
+                        {
+                            var temp1 = [];
+                            temp1.push(i);
+                            temp1.push(netMonth[i]);
+                            regre.push(temp1);
+                        }
+                        console.log(regre);
+
+                        var data = regre;
+                        var result = regression('linear', data);
+                        var slope = result.equation[0];
+                        var yIntercept = result.equation[1];
+                        console.log(slope);
+                        console.log(yIntercept);
+                        var plotreg = [];
+                        plotreg.push(yIntercept);
+                        for(var i = 1;i<12;i++)
+                        {
+                            plotreg.push(plotreg[i-1]+slope);
+                        }
+
                         var temp = [];
                         temp.push(netMonth);
-                        console.log(netMonth);
+                        temp.push(plotreg);
+                        //    console.log(netMonth);
                         combineDP.push(purchaseMonth);
-                        combineDP.push(temp);
-                        combineDP.push(temp);
-                        combineDP.push(temp);
-                        combineDP.push(temp);
                         combineDP.push(depositMonth);
                         makeChart("#myPi",combineDP,minMon);
                         makeChart("#myPi2",temp,minNet);
-
                     }
                 });
             }
@@ -430,12 +451,6 @@
             url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/customer?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
                 $("#introduction").html("Welcome "+results.first_name + " " +results.last_name+"!");
-            }
-        });
-        $.ajax({
-            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc?key=92d167a667478cadc9b5542720b5463d',
-            success: function(results){
-                $("#balance").html("Your balance is "+results.balance + " with " +results.rewards+" reward points!");
             }
         });
 
@@ -455,22 +470,24 @@
             success: function(results){
                 var items = [];
                 var iCount= [];
-                for(k=0;k<k.length;k++){
-                    if(items.includes(results[k].description))
+                for(k=0;k<results.length;k++){
+                    if(items.indexOf(results[k].description) >-1)
                     {
                         iCount[items.indexOf(results[k].description)]++;
+                        console.log("found it "+items);
                     }else
                     {
                         items.push(results[k].description);
                         iCount.push(1);
                     }
                 }
-                console.log(items);
+                console.log("description "+items);
                 console.log(iCount);
+                makepi("#myChart1",iCount,items);
             }
         });
 
-        for(k=0;k<3;k++){
+        /* for(k=0;k<3;k++){
             $.ajax({
                 url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/deposits?key=92d167a667478cadc9b5542720b5463d',
                 success: function(results){
@@ -478,7 +495,7 @@
                     $("#depositt").html($("#depositt").html()+descriptionn);
                 }
             });
-        }
+        }*/
 
 
     </script>

@@ -12,16 +12,16 @@ var options = {
 
 var responsiveOptions = [
   ['screen and (min-width: 640px)', {
-    chartPadding: 30,
-    labelOffset: 100,
+    chartPadding: 0,
+    labelOffset: 0,
     labelDirection: 'explode',
     labelInterpolationFnc: function(value) {
       return value;
     }
   }],
   ['screen and (min-width: 1024px)', {
-    labelOffset: 80,
-    chartPadding: 20
+    labelOffset: 0,
+    chartPadding: 0
   }]
 ];
 
