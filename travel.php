@@ -80,7 +80,7 @@
 
         <div class="contentWrapper">
             <div class="pageWrapper">
-                 <div class="card-panel">
+                <div class="card-panel">
                     <div class="col s12">
                         <h3 id="introduction"></h3>
                         <p id="balance"></p>
@@ -100,7 +100,7 @@
                             </div>
                         </div>
 
-                        <div class="col l4 m6 s12">
+                        <div class="col l3 m6 s12">
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
                                     <span class="card-title">Pay Bill</span>
@@ -115,7 +115,7 @@
                             </div>
                         </div>
 
-                        <div class="col l4 m6 s12">
+                        <div class="col l3 m6 s12">
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
                                     <span class="card-title">Transfer</span>
@@ -129,7 +129,7 @@
                             </div>
                         </div>
 
-                        <div class="col l4 m6 s12">
+                        <div class="col l3 m6 s12">
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
                                     <span class="card-title">Travel</span>
@@ -148,11 +148,11 @@
                     <div class="col l8 m12 card-panel">
                         <p>Places you can go</p>
 
-                       
+
                         <div class="row">
-                             <hr>
+                            
                             <div class="col l9">
-                                <h3 style="color:#1ab394;"> Name Of Place </h3>
+                            <hr>    <h3 style="color:#1ab394;"> Name Of Place </h3>
 
                             </div>
                             <div class="col l3">
@@ -173,13 +173,13 @@
                         <div class="col s12">
                             <b>Description:</b><br> 
                             <p> THis place is great cause its great. Words words words words words Nunc ullamcorper lacus nec mi porta, et feugiat diam tempus. Donec bibendum eros nisl, eget vestibulum enim suscipit pulvinar. Sed eget tempor libero. Vestibulum accumsan sed purus in congue. Proin finibus eleifend dolor in efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mauris f</p>
-                        
+
 
                         </div>
-                        <hr>
+                        
                         <div class="row">
                             <div class="col l9">
-                                <h3 style="color:#1ab394;"> Name Of Place </h3>
+                            <hr>    <h3 style="color:#1ab394;"> Name Of Place </h3>
 
                             </div>
                             <div class="col l3">
@@ -200,13 +200,13 @@
                         <div class="col s12">
                             <b>Description:</b><br> 
                             <p> THis place is great cause its great. Words words words words words Nunc ullamcorper lacus nec mi porta, et feugiat diam tempus. Donec bibendum eros nisl, eget vestibulum enim suscipit pulvinar. Sed eget tempor libero. Vestibulum accumsan sed purus in congue. Proin finibus eleifend dolor in efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mauris f</p>
-                        
+
 
                         </div>
-                        <hr>
+                        
                         <div class="row">
                             <div class="col l9">
-                                <h3 style="color:#1ab394;"> Name Of Place </h3>
+                             <hr>   <h3 style="color:#1ab394;"> Name Of Place </h3>
 
                             </div>
                             <div class="col l3">
@@ -227,13 +227,13 @@
                         <div class="col s12">
                             <b>Description:</b><br> 
                             <p> THis place is great cause its great. Words words words words words Nunc ullamcorper lacus nec mi porta, et feugiat diam tempus. Donec bibendum eros nisl, eget vestibulum enim suscipit pulvinar. Sed eget tempor libero. Vestibulum accumsan sed purus in congue. Proin finibus eleifend dolor in efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mauris f</p>
-                        
+
 
                         </div>
-                        <hr>
+                        
                         <div class="row">
                             <div class="col l9">
-                                <h3 style="color:#1ab394;"> Name Of Place </h3>
+                           <hr>     <h3 style="color:#1ab394;"> Name Of Place </h3>
 
                             </div>
                             <div class="col l3">
@@ -254,12 +254,12 @@
                         <div class="col s12">
                             <b>Description:</b><br> 
                             <p> THis place is great cause its great. Words words words words words Nunc ullamcorper lacus nec mi porta, et feugiat diam tempus. Donec bibendum eros nisl, eget vestibulum enim suscipit pulvinar. Sed eget tempor libero. Vestibulum accumsan sed purus in congue. Proin finibus eleifend dolor in efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mauris f</p>
-                        
+
 
                         </div>
-                        <hr>
+                        
                     </div>
-                    <div class="col l3 m12">
+                    <div class="col l4 m12">
                         <div class="col m12 card-panel">
 
                             <p>Current Balance:</p>
@@ -281,13 +281,13 @@
                         </div>
                         <div class="col m12 card-panel">
 
-                            <p>Support</p>
-                            <br><p>+1 (209) 722-8022</p>
+                            <p class="center-align">Support</p>
+                            <br><h4 style="color:teal">+1 (209) 722-8022</h4>
 
                             <p>Call us for support</p>
                         </div>
                     </div>
-<hr>
+                    
                 </div>
 
             </div>
