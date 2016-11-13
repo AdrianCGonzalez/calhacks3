@@ -235,42 +235,6 @@
       <!--  <div class="parallax-container valign-wrapper">
             <div class="parallax"><img src="https://puu.sh/sgyge/8b67b37aeb.jpg" alt="Unsplashed background img 2"></div>
         </div>-->
-        <div class="contentWrapper">
-            <div class="pageWrapper">
-                <h1 class="padMe">Here's how we're different.</h1>
-                <div class="holder repeat">
-                    <div class="a f afl  card-panel">
-                        <div class="row">
-                            <div class="col s12 m4" id="description1">
-                                <h1 class="padMe">Revenue vs Expenses</h1>
-
-                                <span>Our graphs allow you to visualize your economic habits easily and compactly. They will permit you to analyze if your economic situation permits you to spend on non-neccessary things. Although a graph with a big spending might look disheathening, it also might be an opportunity to save!</span>
-                            </div>
-                            <div class="col s12 m8" id="myChartcon">
-                                <div class="ct-chart ct-perfect-fourth" id="myChart"></div>
-
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="holder repeat">
-                <div class="a f afr  card-panel">
-                    <b class="padMe">An intelligent messaging app.</b>
-
-                    <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
-                </div>
-            </div>
-            <div class="holder repeat">
-                <div class="a f afl  card-panel">
-                    <b class="padMe">An intelligent messaging app.</b>
-
-                    <p>With our bot, we’re bringing the power of Artificial Intelligence to the most important part of your business: the relationships you have with your customers. Driftbot is able to understand all of the conversations your customers are having with your company, and help get the right message to the right person at the right time. That means no more worrying about sales reps wasting time with support questions, or angry customers going unanswered for days.</p>
-                </div>
-            </div>
-        </div>
 
         <footer class="page-footer teal darken-2">
             <div style="padding-left:20px;padding-right:20px;">
