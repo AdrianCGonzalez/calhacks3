@@ -114,7 +114,7 @@
         </div>
         <script>
             $( "#login" ).submit(function( event ) {
-                event.preventDefault();
+               // event.preventDefault();
             });
         </script>
 
