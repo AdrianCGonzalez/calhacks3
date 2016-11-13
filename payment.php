@@ -430,7 +430,7 @@
         $.ajax({
             url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
-                for(k=0;k<k.length;k++){
+                for(k=0;k<results.length;k++){
                     var descriptionn = "";
                     descriptionn += "<tr>" + "<td>"+results[k].description + "</td>"+"<td>"+results[k].amount + "</td>"+"<td>"+results[k].purchase_date + "</td>"+"</tr>";
                     $("#purchasee").html($("#purchasee").html()+descriptionn);
@@ -462,7 +462,7 @@
             $.ajax({
                 url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/deposits?key=92d167a667478cadc9b5542720b5463d',
                 success: function(results){
-                    for(k=0;k<k.length;k++){
+                    for(k=0;k<results.length;k++){
                         var depositt = "";
                     descriptionn += "<tr>" +"</td>"+"<td>"+results[k].amount + "</td>"+"<td>"+results[k].transaction_date + "</td>"+"</tr>";
                     $("#depositt").html($("#depositt").html()+descriptionn);
