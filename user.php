@@ -142,7 +142,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="padding:0px;">
                     <div class ="col s12 m4">
                         <div class="card-panel">
                             <div class="ct-chart ct-perfect-fourth" id="myPi"></div>
