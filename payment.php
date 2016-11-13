@@ -159,10 +159,11 @@
 
 
                 <div class="row">
-                    <div class="card-panel">
-                        <div class="col s12 m6">
+
+                    <div class="col s12 m6">
+                        <div class="card-panel">
                             <h2>Deposits</h2>
-                            <div style="height:90vh;overflow-y:auto">
+                            <div style="height:80vh;overflow-y:auto">
                                 <table class="higlight bordered" >
                                     <thead>
                                         <tr>
@@ -179,10 +180,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-panel">
-                        <div class="col s12 m6">
+
+                    <div class="col s12 m6">
+                        <div class="card-panel">
                             <h2>Purchases</h2>
-                            <div style="height:90vh;overflow-y:auto">
+                            <div style="height:80vh;overflow-y:auto">
                                 <table class="bordered highlight" >
                                     <thead>
                                         <tr>
