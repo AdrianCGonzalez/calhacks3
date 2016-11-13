@@ -1,9 +1,14 @@
-function makeChart(id,mySeries){
+function makeChart(id,mySeries,myLow){
+if(myLow >100)
+{
+  myLow = myLow-100;
+}
+
 var chart = new Chartist.Line(id, {
   labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
   series: mySeries
 }, {
-  low: 0
+  low: myLow
 });
 
 // Let's put a sequence number aside so we can use it in the event callbacks

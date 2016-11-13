@@ -103,6 +103,7 @@
                                     <span class="card-title">Pay Bill</span>
                                     <p>Bill Pay is quicker and easier than writing and mailing paper checks.
                                       Pay your bills online in minutes!</p>
+                                  <br>
                                 </div>
                                 <div class="card-action">
                                     <a href="#">This is a link</a>
@@ -341,6 +342,7 @@
         var depositMonth = [];
         var netMonth = [];
         var combineDP = [];
+      	var minMon = 2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2;
         $.ajax({
             url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
@@ -377,11 +379,19 @@
                         console.log(depositMonth);
                         for(var k = 0; k < 12 ; k++)
                         {
+                          	if(depositMonth[k] < minMon)
+                            {
+                            	minMon = depositMonth[k];
+                            }
+                          	if(purchaseMonth[k] < minMon)
+                            {
+                            	minMon = purchaseMonth[k];
+                            }
                             netMonth.push(depositMonth[k] - purchaseMonth[k]);
                         }
                         combineDP.push(depositMonth);
                         combineDP.push(purchaseMonth);
-                        makeChart("#myPi",combineDP);
+                        makeChart("#myPi",combineDP,minMon);
 
                     }
                 });
