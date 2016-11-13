@@ -226,10 +226,7 @@
         <div class="contentWrapper">
             <div class="pageWrapper">
 
-                <h2 class="center-align">Empowering Users From Day 1</h2>
-                <div class="col s12 center-align">
-                    <img class="padMe center-align" src="/banner.png" height="100px">
-                </div>
+
             </div>
         </div>
       <!--  <div class="parallax-container valign-wrapper">
@@ -238,6 +235,10 @@
 
         <footer class="page-footer teal darken-2">
             <div style="padding-left:20px;padding-right:20px;">
+                <h2 class="center-align">Empowering Users From Day 1</h2>
+                <div class="col s12 center-align">
+                    <img class="padMe center-align" src="/banner.png" height="100px">
+                </div>
                 <div class="row">
                     <div class="col l9 hide-on-small-only">
                         <h5 class="white-text">Company Bio</h5>
