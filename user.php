@@ -370,8 +370,8 @@
                     for(var j =0;j<results.length;j++)
                     {
                         if(results[j].purchase_date.indexOf("2015-"+(i+1)+"-")==0 ){
-                            sumPurchase += results[i].amount;
-                            console.log(results[i].amount);
+                            sumPurchase += results[j].amount;
+                            console.log(results[j].amount);
                         }
                     }
                     purchaseMonth.push(sumPurchase*33);
@@ -388,7 +388,7 @@
                             for(var j =0;j<results.length;j++)
                             {
                                 if(results[j].transaction_date.indexOf("2015-"+(i+1)+"-")==0 ){
-                                    sumDeposit += results[i].amount;
+                                    sumDeposit += results[j].amount;
                                 }
                             }
                             depositMonth.push(sumDeposit);
