@@ -149,8 +149,6 @@
             <div class="pageWrapper">
 
                 <div class="row hide-on-med-and-down">
-                    <div class="holder repeat">
-                        <div class="a f afl  card-panel">
                             <div class="col s12 m7">
                                 <h1 style="padding-bottom:10px" >Personalized Traveling Based On Your Income</h1>
 
@@ -164,9 +162,6 @@
                             <div class="col s12 m5">
                                 <img style="border-radius: 17px;" class="responsive-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Squirrel_posing.jpg">
                             </div>
-
-                        </div>
-                    </div>
                 </div>
 
                 <div class="row hide-on-large-only">
