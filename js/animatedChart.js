@@ -13,7 +13,7 @@ new Chartist.Line(id, {
     top: 20,
     right: 0,
     bottom: 30,
-    left: 10
+    left: 15
   },
   axisY: {
     onlyInteger: true
