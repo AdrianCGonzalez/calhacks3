@@ -198,8 +198,8 @@ that traveling is still shows promingtly as the dream for a significant portion 
                 <div class="row">
 
                     <div class="col s12 m4" id="description2">
-                        <h1>Line Chart</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros eget mauris blandit accumsan. Suspendisse accumsan blandit commodo. Nulla lobortis metus nec egestas luctus. Nunc ac hendrerit massa, vel blandit mauris. Vestibulum feugiat porta varius. Ut feugiat arcu purus, vitae dignissim erat finibus vel. Donec eu arcu sit amet dui cursus semper. In hac habitasse platea dictumst. Mauris ornare non quam non vehicula. Nunc molestie sagittis ex eget placerat.</p>
+                        <h1>Balance</h1>
+                        <span>We show you the history of your balance for the last 12 months. This will help you visualize your situation and help you understand how we came up with our suggestions. We also show the prediction of short term future finances that allows to determine a plan for your dream vacation. </span>
                     </div>
 
                     <div class="col s12 m8" id="myChart2con">
