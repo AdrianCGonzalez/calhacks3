@@ -182,11 +182,6 @@ that traveling is still shows promingtly as the dream for a significant portion 
 
                 <div class="row">
                     <div class="col s12 m4" id="description1">
-
-
-
-Our graphs allow you to visualize your economic habits easily and compactly. They will permit you to analyze if your economic situation permits you to spend on non-neccessary things. Although a graph with a big spending might look disheathening, it also might be an opportunity to save!
-
                         <h1 class="padMe">Revenue vs Expenses</h1>
 
                         <span>Our graphs allow you to visualize your economic habits easily and compactly. They will permit you to analyze if your economic situation permits you to spend on non-neccessary things. Although a graph with a big spending might look disheathening, it also might be an opportunity to save!</span>
