@@ -195,7 +195,7 @@
 
                     <div class="col s12 m8" id="myChart2con">
                         <div class="ct-chart ct-perfect-fourth" id="myChart2"></div>
-                        <script>makeChart("#myChart2");</script>
+
                     </div>
                 </div>
 
