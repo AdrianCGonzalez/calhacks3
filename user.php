@@ -58,7 +58,7 @@
                 <div class="contentWrapper">
                     <div class="pageWrapper">
                         <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:13px;width:36px;height:36px"></a>
-                        <a href="index.php" class="brand-logo hide-on-med-and-down" style="margin-left:40px">DreamCatcher</a>
+                        <a href="index.php" class="brand-logo hide-on-med-and-down" style="margin-left:40px">CalHacks</a>
                         <ul id="nav-mobile" class="right hide-on-small-only">
                             <li><a href="aboutUs.php">About Us</a></li>
                             <li><a href="index.php"><i class="material-icons">power_settings_new</i></a></li>
@@ -132,11 +132,11 @@
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
                                     <span class="card-title">Payments</span>
-                                    <p>Get updates on your payment habits. Get a detailed description of how well you
-                                        manage your accounts.</p>
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="payment.php">See Recent Payments</a>
+                                    <a href="payment.php">This is a link</a>
 
                                 </div>
                             </div>
@@ -148,9 +148,10 @@
                                     <span class="card-title">Pay Bill</span>
                                     <p>Bill Pay is quicker and easier than writing and mailing paper checks.
                                         Pay your bills online in minutes!</p>
+                                    <br>
                                 </div>
                                 <div class="card-action">
-                                    <a href="payBill.php">Pay Bills Online</a>
+                                    <a href="#payBill.php">This is a link</a>
 
                                 </div>
                             </div>
@@ -160,10 +161,11 @@
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
                                     <span class="card-title">Transfer</span>
-                                    <p>Send your money to other accounts safely and with ease. It's never been easier.</p>
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="transfer.php">Transfer Account Money</a>
+                                    <a href="transfer.php">This is a link</a>
 
                                 </div>
                             </div>
@@ -173,11 +175,11 @@
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
                                     <span class="card-title">Travel</span>
-                                    <p>Get info on trips that you can or could afford this year based on
-                                        your account payments and activities.</p>
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="travel.php">Go Abroad</a>
+                                    <a href="travel.php">This is a link</a>
 
                                 </div>
                             </div>
@@ -208,11 +210,12 @@
 
                             <div id="myChartcon">
                                 <div class="ct-chart ct-perfect-fourth" id="myChart"></div>
-                                <script>makepi("#myChart",[5,10,15],['test','trst','ttst']);</script>
+                                <script>makepi("#myChart",[5,10,15],['Interest','Transfer','Check']);</script>
                             </div>
                         </div>
 
                         <div class="col s12 m8">
+                            <br>
                             <table class="striped bordered">
                                 <thead>
                                     <tr>
@@ -229,7 +232,7 @@
                             </table>
 
                         </div>
-                        <div class="col s12 right"><a href="#modal1" data-target="modal1"  class="modal-trigger waves-effect waves-light btn right">View Full Purchace History</a></div>
+                        <div class="col s12 right"><a href="#modal1" data-target="modal1"  class="modal-trigger waves-effect waves-light btn right">View Full Deposit History</a></div>
                     </div>
                 </div>
 
@@ -243,7 +246,7 @@
                         </div>
 
                         <div class="col s12 m8">
-
+                            <br>
                             <table class="striped bordered">
                                 <thead>
                                     <tr>
@@ -258,7 +261,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="col s12 right"><a href="#modal2" data-target="modal2"  class="modal-trigger waves-effect waves-light btn right">View Full Deposit History</a></div>
+                        <div class="col s12 right"><a href="#modal2" data-target="modal2"  class="modal-trigger waves-effect waves-light btn right">View Full Purchase History</a></div>
                     </div>
                 </div>
             </div>
@@ -428,7 +431,7 @@
                                 minMon = purchaseMonth[k];
                             }
                             netMonth.push(curBal);
-                            curBal = curBal -(depositMonth[11-k] - purchaseMonth[11-k])
+                            curBal = curBal -( purchaseMonth[11-k]-depositMonth[11-k])
                             if(netMonth[k]<minNet)
                             {
                                 minNet = netMonth[k];
@@ -478,7 +481,7 @@
         $.ajax({
             url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/purchases?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
-                for(k=0;k<3;k++){
+                for(k=0;k<4;k++){
                     var descriptionn = "";
                     descriptionn += "<tr>" + "<td>"+results[k].description + "</td>"+"<td>"+results[k].amount + "</td>"+"<td>"+results[k].purchase_date + "</td>"+"</tr>";
                     $("#purchasee").html($("#purchasee").html()+descriptionn);
@@ -507,9 +510,9 @@
             }
         });
         $.ajax({
-            url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/deposits?key=92d167a667478cadc9b5542720b5463d',
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/deposits?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
-                for(u=0;u<3;u++){
+                for(u=0;u<4;u++){
                     var deposittt = "";
                     deposittt += "<tr>"+"<td>"+results[u].amount + "</td>"+"<td>"+results[u].transaction_date + "</td>"+"</tr>";
                     $("#depositt").html($("#depositt").html()+deposittt);
@@ -517,7 +520,7 @@
             }
         });
         $.ajax({
-            url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/purchases?key=92d167a667478cadc9b5542720b5463d',
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
                 for(k=0;k<results.length;k++){
                     var descriptionn = "";
@@ -527,7 +530,7 @@
             }
         });
         $.ajax({
-            url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/deposits?key=92d167a667478cadc9b5542720b5463d',
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/deposits?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
                 for(u=0;u<results.length;u++){
                     var deposittt = "";
