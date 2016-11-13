@@ -29,6 +29,11 @@
             $(document).ready(function(){
                 $('.parallax').parallax();
             });
+             $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+          
         </script>
 
     </head>
@@ -187,7 +192,7 @@
                             </table>
 
                         </div>
-                        <div class="col s12 right">  <a class="waves-effect waves-light btn right" href="#modal1">View Full Purchace History</a></div>
+                        <div class="col s12 right">  <a class="waves-effect waves-light btn right" href="#modal1" data-target="modal1" class="modal-trigger">View Full Purchace History</a></div>
                     </div>
                 </div>
                 <!-- Modal Trigger -->
