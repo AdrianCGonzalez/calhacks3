@@ -162,9 +162,9 @@
                 </div>
             </div>
         </div>
-        <div class="parallax-container valign-wrapper">
+<!--        <div class="parallax-container valign-wrapper">
             <div class="parallax"><img src="couple.jpg" alt="Unsplashed background img 2"></div>
-        </div>
+        </div>-->
         <div class="contentWrapper">
             <div class="pageWrapper">
                 <div class="row hide-on-large-only">
@@ -218,7 +218,13 @@
                 </div>
 
 
-                <div style="border-top:0px;border-right: 1px;border-left: 1px;border-bottom: 1px; border-color:#27c971; border-style: solid;  border-radius:5px 5px 0 0;margin-bottom:10px"></div>
+            </div>
+        </div>
+        <div class="parallax-container valign-wrapper">
+            <div class="parallax"><img src="https://puu.sh/sgyge/8b67b37aeb.jpg" alt="Unsplashed background img 2"></div>
+        </div>
+        <div class="contentWrapper">
+            <div class="pageWrapper">
 
                 <h2 class="center-align">Empowering Users From Day 1</h2>
                 <div class="col s12 center-align">
