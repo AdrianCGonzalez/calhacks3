@@ -150,7 +150,7 @@
                                         Pay your bills online in minutes!</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="payBill.php">Pay Bills Online</a>
+                                    <a href="#payBill.php">Pay Bills Online</a>
 
                                 </div>
                             </div>
@@ -163,7 +163,7 @@
                                     <p>Send your money to other accounts safely and with ease. It's never been easier.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="transfer.php">Transfer Account Money</a>
+                                    <a href="#transfer.php">Transfer Account Money</a>
 
                                 </div>
                             </div>

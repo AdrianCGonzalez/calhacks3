@@ -170,11 +170,14 @@
                                         manage your accounts.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="payment.php">See Recent Payments</a>
+                                    <a href="#payment.php">See Recent Payments</a>
 
                                 </div>
-                                <div style="visibility:hidden" class="corner-ribbon top-right sticky blue">Coming Soon</div>
+                                
                             </div>
+                            <div>
+                                <div style="visibility:hidden" class="corner-ribbon top-right sticky blue">Coming Soon</div>
+                                </div>
                         </div>
 
                         <div class="col l3 m6 s12">
@@ -187,7 +190,7 @@
                                         Pay your bills online in minutes!</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="payBill.php">Pay Bills Online</a>
+                                    <a href="#payBill.php">Pay Bills Online</a>
 
                                 </div>
                                 <div class="corner-ribbon top-right sticky red">Coming Soon</div>
@@ -201,7 +204,7 @@
                                     <p>Send your money to other accounts safely and with ease. It's never been easier.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="transfer.php">Transfer Account Money</a>
+                                    <a href="#transfer.php">Transfer Account Money</a>
 
                                 </div>
                                 <div class="corner-ribbon top-right sticky red">Coming Soon</div>
