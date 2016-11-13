@@ -456,7 +456,7 @@
                         $.ajax({
                             url: 'http://52.161.22.32/travelAPI/?origin=SFO&maxPrice=10000',
                             success: function(results){
-                                myDestinations = JSON.parse("(" + results + ")");
+                                myDestinations = JSON.parse(results);
                                 console.log(myDestinations);
                             }
                         });
