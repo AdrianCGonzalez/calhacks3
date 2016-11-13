@@ -58,7 +58,7 @@
         <nav class="teal darken-2">
             <div class="nav-wrapper">
                 <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:13px;width:36px;height:36px"></a>
-                <a href="index.php" class="brand-logo hide-on-med-and-down" style="margin-left:40px">CalHacks</a>
+                <a href="index.php" class="brand-logo hide-on-med-and-down" style="margin-left:40px">DreamFinder</a>
                 <ul id="nav-mobile" class="right hide-on-small-only">
                     <li><a href="aboutUs.php">About Us</a></li>
                     <li><a href="#modal1" data-target="modal1" class="modal-trigger">Log In</a></li>
@@ -121,7 +121,7 @@
                     <br>
                     <br>
                     <div style="background-color: rgba(25, 25, 25, 0.1);">
-                        <h1 class="header center white-text text-lighten-2">CalHacks</h1>
+                        <h1 class="header center white-text text-lighten-2">DreamFinder</h1>
                     </div>
                     <br>
                 </div>
@@ -130,7 +130,7 @@
                     <br>
                     <br>
                     <div style="background-color: rgba(25, 25, 25, 0.1);">
-                        <h1 class="header center white-text text-lighten-2">CalHacks</h1>
+                        <h1 class="header center white-text text-lighten-2">DreamFinder</h1>
                         <div class="row center">
                             <h4 class="header center white-text text-lighten-2">Team C14</h4>
                         </div>
