@@ -144,13 +144,13 @@
                     </div>
                 </div>
                 <div class="row" style="padding:0px;">
-                    <div class ="col s12 m6">
+                    <div class ="col s12 m6" style="padding:0px;">
                         <div class="card-panel">
                             <div class="ct-chart ct-perfect-fourth" id="myPi"></div>
 
                         </div>
                     </div>
-                    <div class ="col s12 m6">
+                    <div class ="col s12 m6" style="padding:0px;">
                         <div class="card-panel">
                             <div class="ct-chart ct-perfect-fourth" id="myPi2"></div>
 
