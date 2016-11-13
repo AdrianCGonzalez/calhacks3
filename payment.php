@@ -163,7 +163,7 @@
                     <div class="col s12 m6">
                         <div class="card-panel">
                             <h2>Deposits</h2>
-                            <div style="height:80vh;overflow-y:auto">
+                            <div style="height:60vh;overflow-y:auto">
                                 <table class="higlight bordered" >
                                     <thead>
                                         <tr>
@@ -184,7 +184,7 @@
                     <div class="col s12 m6">
                         <div class="card-panel">
                             <h2>Purchases</h2>
-                            <div style="height:80vh;overflow-y:auto">
+                            <div style="height:60vh;overflow-y:auto">
                                 <table class="bordered highlight" >
                                     <thead>
                                         <tr>
@@ -202,29 +202,6 @@
                         </div>
                     </div>
 
-                </div>
-
-                <div class="card-panel">
-                    <div class="row" >
-
-                        <div class="col s12 m6">
-                            <h2>Purchases</h2>
-                            <table class="bordered highlight" style="height:90vh;overflow-y:auto">
-                                <thead>
-                                    <tr>
-                                        <th data-field="id">Description</th>
-                                        <th data-field="price">Item Price</th>
-                                        <th data-field="date">Date Purchased</th>
-                                    </tr>
-                                </thead>
-
-                                <tbody id="purchasee">
-
-                                </tbody>
-                            </table>
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </div>
