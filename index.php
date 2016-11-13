@@ -113,8 +113,7 @@
             </div>
         </div>
         <script>
-            $( "#target" ).submit(function( event ) {
-                alert( "Handler for .submit() called." );
+            $( "#login" ).submit(function( event ) {
                 event.preventDefault();
             });
         </script>
