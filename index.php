@@ -86,15 +86,15 @@
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="material-icons prefix">email</i>
-                            <input id="name" class="validate">
-                            <label for="name">Name</label>
+                            <input id="name" class="validate" placeholder="name">
+                            <label for="name"></label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="material-icons prefix">lock</i>
-                            <input id="comment" type="text" class="validate">
-                            <label for="comment">Password</label>
+                            <input id="comment" type="text" class="validate" placeholder="Password">
+                            <label for="comment"></label>
                         </div>
                     </div>
                     <div class="input-field">
