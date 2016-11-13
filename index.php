@@ -51,7 +51,7 @@
         img {
             border-radius: 17px;
         }
-        footer.page-footer {padding-top: 0px;}
+        footer.page-footer {margin-top: 0px;}
     </style>
 
     <body>
