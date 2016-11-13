@@ -142,17 +142,18 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class ="col s12 m4">
+                        <div class="card-panel">
+                            <div class="ct-chart ct-perfect-fourth" id="myPi"></div>
 
-              <div class ="col s12 m4">
-                    <div class="card-panel">
-                        <div class="ct-chart ct-perfect-fourth" id="myPi"></div>
-
+                        </div>
                     </div>
-                </div>
-                <div class ="col s12 m4">
-                    <div class="card-panel">
-                        <div class="ct-chart ct-perfect-fourth" id="myPi2"></div>
+                    <div class ="col s12 m4">
+                        <div class="card-panel">
+                            <div class="ct-chart ct-perfect-fourth" id="myPi2"></div>
 
+                        </div>
                     </div>
                 </div>
 
@@ -333,7 +334,7 @@
             graphSize();
         });
 
-var purchaseMonth = [];
+        var purchaseMonth = [];
         var depositMonth = [];
         var netMonth = [];
         var combineDP = [];
@@ -440,22 +441,22 @@ var purchaseMonth = [];
 
 
 
-            $.ajax({
-                url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
-                success: function(results){
-                  for(k=0;k<3;k++){
-                  var descriptionn = "";
-                  descriptionn += "<tr>" + "<td>"+results[k].description + "</td>"+"<td>"+results[k].amount + "</td>"+"<td>"+results[k].purchase_date + "</td>"+"</tr>";
-                  $("#purchasee").html($("#purchasee").html()+descriptionn);
+        $.ajax({
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
+            success: function(results){
+                for(k=0;k<3;k++){
+                    var descriptionn = "";
+                    descriptionn += "<tr>" + "<td>"+results[k].description + "</td>"+"<td>"+results[k].amount + "</td>"+"<td>"+results[k].purchase_date + "</td>"+"</tr>";
+                    $("#purchasee").html($("#purchasee").html()+descriptionn);
                 }
-                }
-            });
+            }
+        });
 
-              for(k=0;k<3;k++){
+        for(k=0;k<3;k++){
             $.ajax({
                 url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/deposits?key=92d167a667478cadc9b5542720b5463d',
                 success: function(results){
-                  descriptionn += "<tr>" + "<td>"+results[k].description + "</td>"+"<td>"+results[k].amount + "</td>"+"<td>"+results[k].purchase_date + "</td>"+"</tr>";
+                    descriptionn += "<tr>" + "<td>"+results[k].description + "</td>"+"<td>"+results[k].amount + "</td>"+"<td>"+results[k].purchase_date + "</td>"+"</tr>";
                     $("#depositt").html($("#depositt").html()+descriptionn);
                 }
             });
