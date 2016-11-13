@@ -315,14 +315,14 @@
                     success: function(results){
                         var output = JSON.parse(results);
                         console.log(output);
-                        var itt = Math.round(results.results.length/5);
-                        console.log(results.results.length);
+                        var itt = Math.round(output.results.length/5);
+                        console.log(output.results.length);
                         var content = "";
-                        for(var i = 0;i<results.results.length;i+=itt)
+                        for(var i = 0;i<output.results.length;i+=itt)
                         {
-                            content+='<div class="card-panel"><h3 style="color:#1ab394;">'+results.results[i].destination+'</h3>';
-                            content+='<br><h4 class="right">$'+results.results[i].fare.total_price+'</h4><b>Airline:</b><br><p>'+results.results[i].destination+'</p>';
-                            content+='<b> depart from:</b><br><p>'+results.origin+'</p><b>Description:</b><br>';
+                            content+='<div class="card-panel"><h3 style="color:#1ab394;">'+output.results[i].destination+'</h3>';
+                            content+='<br><h4 class="right">$'+output.results[i].fare.total_price+'</h4><b>Airline:</b><br><p>'+results.results[i].destination+'</p>';
+                            content+='<b> depart from:</b><br><p>'+output.origin+'</p><b>Description:</b><br>';
                             content+='<p> THis place is great cause its great. Words words words words words</p></div>';
 
                             console.log(content);

@@ -119,7 +119,7 @@
                             <br>
                             <br>Undergraduate Student, Bioengineering 4th year<br><br>
 
-                            Worked on optimizing endothelial fate from a new embryonic stem-cell line with dual endothelial and smooth muscle promoters under GFP and RFP for studying real time morphological vascular development and vascularization of tissues. She then progressed to a postdoctoral position at Washington University in St. Louis. </p>
+                            Donec ut vulputate nulla. Cras sit amet dui a elit vestibulum porta vitae a mi. Mauris non consequat sapien. Suspendisse potenti. Pellentesque eget quam ante. Cras porttitor magna in sem maximus, vel imperdiet velit sagittis. Morbi ultrices, lorem nec vestibulum tristique, lorem ante ultricies odio, et mollis eros ligula bibendum quam. </p>
                     </div>
                 </div>
 
@@ -133,7 +133,7 @@
                             <br>
                             <br>Undergraduate Student, Computer Science And Engineering 4th year<br><br>
 
-                            Worked on cardiac stem cell differentiation from embryonic stem cells. Her work won best oral presentation at our UC-Systemwide Bioengineering Symposium, 2009. She accepted a research staff position at Stanford University. </p>
+                            Donec ut vulputate nulla. Cras sit amet dui a elit vestibulum porta vitae a mi. Mauris non consequat sapien. Suspendisse potenti. Pellentesque eget quam ante. Cras porttitor magna in sem maximus, vel imperdiet velit sagittis. Morbi ultrices, lorem nec vestibulum tristique, lorem ante ultricies odio, et mollis eros ligula bibendum quam.</p>
                     </div>
                 </div>
 
@@ -146,8 +146,7 @@
 
                             <br>
                             <br>Alumni, Computer Science And Engineering<br>
-
-                            Characterized the angiogenic and vasculogenic potential of embryonic stem cell derived-endothelial cells at operationally defined stages of differentiation. Her research proposal was awarded a 4 year NRSA (pre-doctoral fellowship) by NIH. She then progressed to postdoctoral position with Jane Grande-Allen at Rice University.</p>
+                            Donec ut vulputate nulla. Cras sit amet dui a elit vestibulum porta vitae a mi. Mauris non consequat sapien. Suspendisse potenti. Pellentesque eget quam ante. Cras porttitor magna in sem maximus, vel imperdiet velit sagittis. Morbi ultrices, lorem nec vestibulum tristique, lorem ante ultricies odio, et mollis eros ligula bibendum quam.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -160,7 +159,7 @@
                             <br>
                             <br>Undergraduate Student, Computer Science And Engineering 4th year<br><br>
 
-                            Worked on optimizing endothelial fate from a new embryonic stem-cell line with dual endothelial and smooth muscle promoters under GFP and RFP for studying real time morphological vascular development and vascularization of tissues. She then progressed to a postdoctoral position at Washington University in St. Louis. </p>
+                            Donec ut vulputate nulla. Cras sit amet dui a elit vestibulum porta vitae a mi. Mauris non consequat sapien. Suspendisse potenti. Pellentesque eget quam ante. Cras porttitor magna in sem maximus, vel imperdiet velit sagittis. Morbi ultrices, lorem nec vestibulum tristique, lorem ante ultricies odio, et mollis eros ligula bibendum quam.</p>
                     </div>
                 </div>
 
@@ -174,7 +173,7 @@
                             <br>
                             <br>Undergraduate Student, Computer Science And Engineering 4th year<br><br>
 
-                            Worked on cardiac stem cell differentiation from embryonic stem cells. Her work won best oral presentation at our UC-Systemwide Bioengineering Symposium, 2009. She accepted a research staff position at Stanford University. </p>
+                            Donec ut vulputate nulla. Cras sit amet dui a elit vestibulum porta vitae a mi. Mauris non consequat sapien. Suspendisse potenti. Pellentesque eget quam ante. Cras porttitor magna in sem maximus, vel imperdiet velit sagittis. Morbi ultrices, lorem nec vestibulum tristique, lorem ante ultricies odio, et mollis eros ligula bibendum quam.</p>
                     </div>
                 </div>
 
