@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name='viewport' content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0"/>
-        <meta http-equiv="refresh" content="45">
+        
         <meta name="apple-touch-fullscreen" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <title>Vacation</title>
@@ -246,7 +246,7 @@
 
                     <div class="col s12 m6">
                         <div class="card-panel">
-                            <h2>Deposits</h2>
+                            
                             <div style="height:60vh;overflow-y:auto">
                                 <table class="higlight bordered" >
                                     <thead>
@@ -267,7 +267,7 @@
 
                     <div class="col s12 m6">
                         <div class="card-panel">
-                            <h2>Purchases</h2>
+                        
                             <div style="height:60vh;overflow-y:auto">
                                 <table class="bordered highlight" >
                                     <thead>
