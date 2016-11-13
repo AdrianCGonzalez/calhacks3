@@ -77,31 +77,23 @@
                 <li><a class="btn-floating green" href="logIn.html"><i class="material-icons">power_settings_new</i></a></li>
             </ul>
         </div>
-        <a href="#modal1" data-target="modal1" class="modal-trigger">Log In</a>
+       
 
         <div id="modal1" class="modal" style="overflow:hidden;">
             <div class="modal-content">
-                <h4 style="text-align:center">Sign In</h4>
-                <form class="col s12">
+                <h4 style="text-align:center">Deposits</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th data-field="id">Amount</th>
+                            <th data-field="name">Transaction Date</th>
 
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">email</i>
-                            <input id="name" class="validate">
-                            <label for="name">Name</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">lock</i>
-                            <input id="comment" type="text" class="validate">
-                            <label for="comment">Password</label>
-                        </div>
-                    </div>
-                    <div class="input-field">
-                        <label class="control-label" for="signin"></label>
-                    </div>
-                </form>
+                        </tr>
+                    </thead>
+
+                    <tbody id="depositt">
+                    </tbody>
+                </table>
             </div>
         </div>
 
@@ -220,7 +212,7 @@
                             </table>
 
                         </div>
-                        <div class="col s12 right"><a href="#"  class="waves-effect waves-light btn right">View Full Purchace History</a></div>
+                        <div class="col s12 right"><a href="#modal1" data-target="modal1"  class="modal-trigger waves-effect waves-light btn right">View Full Purchace History</a></div>
                     </div>
                 </div>
 
@@ -504,6 +496,26 @@
                     var deposittt = "";
                     deposittt += "<tr>"+"<td>"+results[u].amount + "</td>"+"<td>"+results[u].transaction_date + "</td>"+"</tr>";
                     $("#depositt").html($("#depositt").html()+deposittt);
+                }
+            }
+        });
+        $.ajax({
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
+            success: function(results){
+                for(k=0;k<results.length;k++){
+                    var descriptionn = "";
+                    descriptionn += "<tr>" + "<td>"+results[k].description + "</td>"+"<td>"+results[k].amount + "</td>"+"<td>"+results[k].purchase_date + "</td>"+"</tr>";
+                    $("#purchaseeee").html($("#purchaseeee").html()+descriptionn);
+                }
+            }
+        });
+        $.ajax({
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/deposits?key=92d167a667478cadc9b5542720b5463d',
+            success: function(results){
+                for(u=0;u<results.length;u++){
+                    var deposittt = "";
+                    deposittt += "<tr>"+"<td>"+results[u].amount + "</td>"+"<td>"+results[u].transaction_date + "</td>"+"</tr>";
+                    $("#deposittt").html($("#deposittt").html()+deposittt);
                 }
             }
         });
