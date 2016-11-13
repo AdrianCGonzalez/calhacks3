@@ -374,9 +374,9 @@
                         }
                     }
                     purchaseMonth.push(sumPurchase*33);
-                    console.log(sumPurchase);
+                   // console.log(sumPurchase);
                 }
-                //console.log(purchaseMonth);
+                console.log(purchaseMonth);
                 $.ajax({
                     url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/deposits?key=92d167a667478cadc9b5542720b5463d',
                     success: function(results){
@@ -391,9 +391,9 @@
                                 }
                             }
                             depositMonth.push(sumDeposit);
-                            console.log(sumDeposit);
+                            //console.log(sumDeposit);
                         }
-                        //  console.log(depositMonth);
+                         console.log(depositMonth);
                         for(var k = 0; k < 12 ; k++)
                         {
                             if(depositMonth[k] < minMon)
