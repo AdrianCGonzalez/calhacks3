@@ -140,7 +140,7 @@
             </div>
 
             <div class="parallax" style="height:25vh">
-                <img src="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj3/cs194-fb/images/blurry_turtle.jpg" alt="Unsplashed background img 1"></div>
+                <img src="https://puu.sh/sgyfP/967d261f26.jpeg" alt="Unsplashed background img 1"></div>
         </div>
 
         <br>
