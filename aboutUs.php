@@ -441,7 +441,7 @@ var purchaseMonth = [];
         var descriptionn = "";
         var amountt = "";
         var purchase_datee = "";
-        for(k=0,k<3,k++){
+        for(k=0;k<3;k++){
             $.ajax({
                 url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
                 success: function(results){
@@ -450,7 +450,7 @@ var purchaseMonth = [];
                 }
             });
         }
-        for(k=0,k<3,k++){
+        for(k=0;k<3;k++){
             $.ajax({
                 url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
                 success: function(results){
@@ -459,7 +459,7 @@ var purchaseMonth = [];
                 }
             });
         }
-        for(k=0,k<3,k++){
+        for(k=0;k<3;k++){
             $.ajax({
                 url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
                 success: function(results){
