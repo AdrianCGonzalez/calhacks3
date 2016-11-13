@@ -58,7 +58,7 @@
                 <div class="contentWrapper">
                     <div class="pageWrapper">
                         <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:13px;width:36px;height:36px"></a>
-                        <a href="index.php" class="brand-logo hide-on-med-and-down" style="margin-left:40px">DreamFinder</a>
+                        <a href="index.php" class="brand-logo hide-on-med-and-down" style="margin-left:40px">DreamCatcher</a>
                         <ul id="nav-mobile" class="right hide-on-small-only">
                             <li><a href="aboutUs.php">About Us</a></li>
                             <li><a href="index.php"><i class="material-icons">power_settings_new</i></a></li>
@@ -132,7 +132,7 @@
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
                                     <span class="card-title">Payments</span>
-                                    <p>Get updates on your payment habits. Get a detailed destricption of how well you
+                                    <p>Get updates on your payment habits. Get a detailed description of how well you
                                         manage your accounts.</p>
                                 </div>
                                 <div class="card-action">
