@@ -463,9 +463,9 @@
                 url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/deposits?key=92d167a667478cadc9b5542720b5463d',
                 success: function(results){
                     for(u=0;u<results.length;u++){
-                        var depositt = "";
-                    descriptionn += "<tr>"+"<td>"+results[u].amount + "</td>"+"<td>"+results[u].transaction_date + "</td>"+"</tr>";
-                    $("#depositt").html($("#depositt").html()+descriptionn);
+                        var deposittt = "";
+                    deposittt += "<tr>"+"<td>"+results[u].amount + "</td>"+"<td>"+results[u].transaction_date + "</td>"+"</tr>";
+                    $("#depositt").html($("#depositt").html()+deposittt);
                 }
             }
         });
