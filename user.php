@@ -215,6 +215,7 @@
                         </div>
 
                         <div class="col s12 m8">
+                            <br>
                             <table class="striped bordered">
                                 <thead>
                                     <tr>
@@ -231,7 +232,7 @@
                             </table>
 
                         </div>
-                        <div class="col s12 right"><a href="#modal1" data-target="modal1"  class="modal-trigger waves-effect waves-light btn right">View Full Purchace History</a></div>
+                        <div class="col s12 right"><a href="#modal1" data-target="modal1"  class="modal-trigger waves-effect waves-light btn right">View Full Deposit History</a></div>
                     </div>
                 </div>
 
@@ -245,7 +246,7 @@
                         </div>
 
                         <div class="col s12 m8">
-
+<br>
                             <table class="striped bordered">
                                 <thead>
                                     <tr>
@@ -260,7 +261,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="col s12 right"><a href="#modal2" data-target="modal2"  class="modal-trigger waves-effect waves-light btn right">View Full Deposit History</a></div>
+                        <div class="col s12 right"><a href="#modal2" data-target="modal2"  class="modal-trigger waves-effect waves-light btn right">View Full Purchase History</a></div>
                     </div>
                 </div>
             </div>
@@ -480,7 +481,7 @@
         $.ajax({
             url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/purchases?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
-                for(k=0;k<3;k++){
+                for(k=0;k<4;k++){
                     var descriptionn = "";
                     descriptionn += "<tr>" + "<td>"+results[k].description + "</td>"+"<td>"+results[k].amount + "</td>"+"<td>"+results[k].purchase_date + "</td>"+"</tr>";
                     $("#purchasee").html($("#purchasee").html()+descriptionn);
@@ -511,7 +512,7 @@
         $.ajax({
             url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/deposits?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
-                for(u=0;u<3;u++){
+                for(u=0;u<4;u++){
                     var deposittt = "";
                     deposittt += "<tr>"+"<td>"+results[u].amount + "</td>"+"<td>"+results[u].transaction_date + "</td>"+"</tr>";
                     $("#depositt").html($("#depositt").html()+deposittt);
