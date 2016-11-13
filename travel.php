@@ -100,7 +100,7 @@
                             </div>
                         </div>
 
-                        <div class="col l3 m6 s12">
+                        <div class="col l4 m6 s12">
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
                                     <span class="card-title">Pay Bill</span>
@@ -115,7 +115,7 @@
                             </div>
                         </div>
 
-                        <div class="col l3 m6 s12">
+                        <div class="col l4 m6 s12">
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
                                     <span class="card-title">Transfer</span>
@@ -129,7 +129,7 @@
                             </div>
                         </div>
 
-                        <div class="col l3 m6 s12">
+                        <div class="col l4 m6 s12">
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
                                     <span class="card-title">Travel</span>
