@@ -222,7 +222,7 @@
 
                 <h2 class="center-align">Empowering Users From Day 1</h2>
                 <div class="col s12 center-align">
-                    <img class="padMe center-align" src="https://www.drift.com/wp-content/uploads/2016/10/icons.jpg">
+                    <img class="padMe center-align" src="/banner.png">
                 </div>
             </div>
         </div>
