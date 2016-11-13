@@ -458,16 +458,17 @@
                             success: function(results){
                                 myDestinations = JSON.parse(results);
                                 console.log(myDestinations);
+                                var total;
+                                for(var i=0;i<12;i++)
+                                {
+                                    total +=depositMonth[i];
+                                }
+                                var sum = total/12;
+                                var spendingLimit = sum*.3;
+                                console.log(spendingLimit);
                             }
                         });
-                        var total;
-                        for(var i=0;i<12;i++)
-                        {
-                            total +=depositMonth[i];
-                        }
-                        var sum = total/12;
-                        var spendingLimit = sum*.3;
-                        console.log(spendingLimit);
+
                         //  console.log(slope);
                         //  console.log(yIntercept);
                         var plotreg = [];
