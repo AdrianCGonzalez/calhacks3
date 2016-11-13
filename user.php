@@ -239,7 +239,7 @@
                 <div class="card-panel">
                     <div class="row">
                         <div class="col s12 m4">
-                            <h3 class="center-align">Purchaces</h3>
+                            <h3 class="center-align">Purchases</h3>
                             <div id="myChartcon">
                                 <div class="ct-chart ct-perfect-fourth" id="myChart1"></div>
                             </div>
