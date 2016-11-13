@@ -456,12 +456,12 @@
                 var items = [];
                 var iCount= [];
                 for(k=0;k<k.length;k++){
-                    if(items.includes(results.[k].description))
+                    if(items.includes(results[k].description))
                     {
-                        iCount[items.indexOf(results.[k].description)]++;
+                        iCount[items.indexOf(results[k].description)]++;
                     }else
                     {
-                        items.push(results.[k].description);
+                        items.push(results[k].description);
                         iCount.push(1);
                     }
                 }
