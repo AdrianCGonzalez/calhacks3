@@ -309,8 +309,33 @@
 
         <script>
             $( "#lookForThings" ).click(function() {
-
                 $.ajax({
+                    url: 'https://api.sandbox.amadeus.com/v1.2/flights/extensive-search?apikey=ib3sS98XgzI1hGenPDVfnObcP8h6bMgA&origin='+'FRA'+'&destination='+'LON'+'&one-way=false&duration=5',
+                    success: function(results){
+                        var output = results;
+                        console.log(output);
+                        var itt = Math.round(results.results.length/5);
+                        console.log(results.results.length);
+                        var content = "";
+                        for(var i = 0;i<results.results.length;i+=itt)
+                        {
+                            content+='<div class="card-panel"><h3 style="color:#1ab394;">'+results.results[i].destination+'</h3>';
+                            content+='<br><h4 class="right">$'+results.results[i].price+'</h4><b>Airline:</b><br><p>'+results.results[i].destination+'</p>';
+                            content+='<b> depart from:</b><br><p>'+results.origin+'</p><b>Description:</b><br>';
+                            content+='<p> THis place is great cause its great. Words words words words words</p></div>';
+
+                            console.log(content);
+                            console.log(results.results[i].price);
+                            console.log(results.results[i].destination);
+                            console.log(results.results[i].departure_date);
+
+
+                        }
+                        $("#Where").html(content);
+                        console.log('going out of loop');
+                    }
+                });
+                /*$.ajax({
                     url: 'http://52.161.22.32/travelAPI/?option=2&origin='+'SFO'+'&destination='+'LAX',
                     success: function(results){
                         var output = JSON.parse(results);
@@ -331,7 +356,7 @@
                         }
                         $("#Where").html(content);
                     }
-                });
+                });*/
             });
 
 
