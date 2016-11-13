@@ -81,56 +81,30 @@
         <div class="contentWrapper">
             <div class="pageWrapper">
                 <div class="row">
-                    <div class="col l9 m12 card-panel">
+                    <div class="col l8 m12 card-panel">
                         <p>Places you can go</p>
+                    
                         <hr>
-                        <h3> Name Of Place </h3>
-                        <h4>$1000.00</h4>
-                        <p>Airline:</p>     <p>xxxxx</p>
-                        <p> depart from:</p> <p>xxxxxxx</p>
-                        <p>Description:</p> <p> THis place is great cause its great. Words words words words words Nunc ullamcorper lacus nec mi porta, et feugiat diam tempus. Donec bibendum eros nisl, eget vestibulum enim suscipit pulvinar. Sed eget tempor libero. Vestibulum accumsan sed purus in congue. Proin finibus eleifend dolor in efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mauris f</p>
-                        <hr>
-                        <h3> Name Of Place </h3>
-                        <h4>$1000.00</h4>
-                        <p>Airline:</p>     <p>xxxxx</p>
-                        <p> depart from:</p> <p>xxxxxxx</p>
-                        <p>Description:</p> <p> THis place is great cause its great. Words words words words words Nunc ullamcorper lacus nec mi porta, et feugiat diam tempus. Donec bibendum eros nisl, eget vestibulum enim suscipit pulvinar. Sed eget tempor libero. Vestibulum accumsan sed purus in congue. Proin finibus eleifend dolor in efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mauris f</p>
-                        <hr>
-                        <h3> Name Of Place </h3>
-                        <h4>$1000.00</h4>
-                        <p>Airline:</p>     <p>xxxxx</p>
-                        <p> depart from:</p> <p>xxxxxxx</p>
-                        <p>Description:</p> <p> THis place is great cause its great. Words words words words words Nunc ullamcorper lacus nec mi porta, et feugiat diam tempus. Donec bibendum eros nisl, eget vestibulum enim suscipit pulvinar. Sed eget tempor libero. Vestibulum accumsan sed purus in congue. Proin finibus eleifend dolor in efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mauris f</p>
-                        <hr>
-                        <h3> Name Of Place </h3>
-                        <h4>$1000.00</h4>
-                        <p>Airline:</p>     <p>xxxxx</p>
-                        <p> depart from:</p> <p>xxxxxxx</p>
-                        <br>
-                        <p>Description:</p> 
-                        <br>
-                        <p> THis place is great cause its great. Words words words words words Nunc ullamcorper lacus nec mi porta, et feugiat diam tempus. Donec bibendum eros nisl, eget vestibulum enim suscipit pulvinar. Sed eget tempor libero. Vestibulum accumsan sed purus in congue. Proin finibus eleifend dolor in efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mauris f</p>
-                        <hr>
-                        <div class="col l12"><h3 style="color:#1ab394;"> Name Of Place </h3>
-                        <h4 class="right">$1000.00</h4>
-                            </div>
+                        <div class="col l12"><span><h3 style="color:#1ab394;"> Name Of Place </h3>
+                            <h4 class="right">$1000.00</h4></span>
+                        </div>
                         <div class="col l4 m6 s12">
                             <b>Airline:</b>   
                             <br>
                             <p>xxxxxxx</p>
-                            
+
                         </div>
                         <div class="col l4 m6 s12">  
                             <b> depart from:</b>
                             <br>
                             <p>xxxxx</p>
                         </div>
+                        <div class="col s12">
+                            <b>Description:</b><br> 
+                            <p> THis place is great cause its great. Words words words words words Nunc ullamcorper lacus nec mi porta, et feugiat diam tempus. Donec bibendum eros nisl, eget vestibulum enim suscipit pulvinar. Sed eget tempor libero. Vestibulum accumsan sed purus in congue. Proin finibus eleifend dolor in efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mauris f</p>
 
-                        <b>Description:</b><br> 
-                        <p> THis place is great cause its great. Words words words words words Nunc ullamcorper lacus nec mi porta, et feugiat diam tempus. Donec bibendum eros nisl, eget vestibulum enim suscipit pulvinar. Sed eget tempor libero. Vestibulum accumsan sed purus in congue. Proin finibus eleifend dolor in efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mauris f</p>
-                        <hr>
-                    </div>
-                    <div class="col l2 m12">
+                        </div></div>
+                    <div class="col l3 m12">
                         <div class="col m12 card-panel">
 
                             <p>Current Balance:</p>
