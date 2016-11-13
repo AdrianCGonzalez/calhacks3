@@ -71,13 +71,13 @@
         </div>
         <div class="contentWrapper">
             <div class="pageWrapper">
- <h3  style="text-align:center;color:#black;border-bottom: 1px solid rgba(221, 179, 8, 0.2);">Doctoral Students</h3>
+ <h3  style="text-align:center;color:#black;border-bottom: 1px solid rgba(221, 179, 8, 0.2);">About Us</h3>
     <div class="row">
         <div class="col m1"></div>
-        <div class="col m3"> <img data-caption="Drew Glaser, PhD" class=" materialboxed img-circle responsive-img center-block" src="./images/index/drew.png" width="200" height="250px" /> </div>
+        <div class="col m3"> <img data-caption="Michael Brooks" class=" materialboxed img-circle responsive-img center-block" src="michael.jpg" width="200" height="250px" /> </div>
         <div class="col m8">
             <p align="left">
-                <br><b>Drew Glaser, PhD</b>
+                <br><b>Michael Brooks</b>
 
                 <br>
                 <br>Doctoral Student, UC Merced Biological Engineering and Small-scale Technologies (BEST) Graduate Group<br>
@@ -88,13 +88,13 @@
 
     <div class="row">
         <div class="col m1"></div>
-        <div class="col m3"> <img data-caption="Silin Sa, PhD" class=" materialboxed img-circle responsive-img center-block" src="./images/index/sa.png" width="200" height="250px" /> </div>
+        <div class="col m3"> <img data-caption="Esteban Perez" class=" materialboxed img-circle responsive-img center-block" src="esteban.jpg" width="200" height="250px" /> </div>
         <div class="col m8">
             <p align="left">
-                <br><b>Silin Sa, PhD</b>
+                <br><b>Esteban Perez</b>
 
                 <br>
-                <br>Doctoral Student, UC Merced Biological Engineering and Small-scale Technologies (BEST) Graduate Group<br>
+                <br>Undergraduate Student, Computer Science And Engineering<br>
 
                 Worked on cardiac stem cell differentiation from embryonic stem cells. Her work won best oral presentation at our UC-Systemwide Bioengineering Symposium, 2009. She accepted a research staff position at Stanford University. </p>
         </div>
@@ -102,26 +102,26 @@
 
     <div class="row">
         <div class="col m1"></div>
-        <div class="col m3"> <img data-caption="Alicia Blancas, PhD" class=" materialboxed img-circle responsive-img center-block" src="./images/index/alicia.jpg" width="200" height="250px" /> </div>
+        <div class="col m3"> <img data-caption="Alisa Prusa" class=" materialboxed img-circle responsive-img center-block" src="alisa.jpg" width="200" height="250px" /> </div>
         <div class="col m8">
             <p align="left">
-                <br><b>Alicia Blancas, PhD</b>
+                <br><b>Alisa Prusa</b>
 
                 <br>
-                <br>Doctoral Student, NIH NRSA pre-doctoral fellow in UC Merced’s Quantitative and Systems Biology (QSB) Graduate Group<br>
+                <br>Alumni, Computer Science And Engineering<br>
 
                 Characterized the angiogenic and vasculogenic potential of embryonic stem cell derived-endothelial cells at operationally defined stages of differentiation. Her research proposal was awarded a 4 year NRSA (pre-doctoral fellowship) by NIH. She then progressed to postdoctoral position with Jane Grande-Allen at Rice University.</p>
         </div>
-    </div> <h3  style="text-align:center;color:#black;border-bottom: 1px solid rgba(221, 179, 8, 0.2);">Doctoral Students</h3>
+    </div>
     <div class="row">
         <div class="col m1"></div>
-        <div class="col m3"> <img data-caption="Drew Glaser, PhD" class=" materialboxed img-circle responsive-img center-block" src="./images/index/drew.png" width="200" height="250px" /> </div>
+        <div class="col m3"> <img data-caption="Victor Gonzalez" class=" materialboxed img-circle responsive-img center-block" src="victor.jpg" width="200" height="250px" /> </div>
         <div class="col m8">
             <p align="left">
-                <br><b>Drew Glaser, PhD</b>
+                <br><b>Victor Gonzalez</b>
 
                 <br>
-                <br>Doctoral Student, UC Merced Biological Engineering and Small-scale Technologies (BEST) Graduate Group<br>
+                <br>Undergraduate Student, Computer Science And Engineering<br>
 
                 Worked on optimizing endothelial fate from a new embryonic stem-cell line with dual endothelial and smooth muscle promoters under GFP and RFP for studying real time morphological vascular development and vascularization of tissues. She then progressed to a postdoctoral position at Washington University in St. Louis. </p>
         </div>
@@ -129,13 +129,13 @@
 
     <div class="row">
         <div class="col m1"></div>
-        <div class="col m3"> <img data-caption="Silin Sa, PhD" class=" materialboxed img-circle responsive-img center-block" src="./images/index/sa.png" width="200" height="250px" /> </div>
+        <div class="col m3"> <img data-caption="Adrian Gonzalezz" class=" materialboxed img-circle responsive-img center-block" src="adrian.jpg" width="200" height="250px" /> </div>
         <div class="col m8">
             <p align="left">
-                <br><b>Silin Sa, PhD</b>
+                <br><b>Adrian Gonzalezz</b>
 
                 <br>
-                <br>Doctoral Student, UC Merced Biological Engineering and Small-scale Technologies (BEST) Graduate Group<br>
+                <br>Undergraduate Student, Computer Science And Engineering<br>
 
                 Worked on cardiac stem cell differentiation from embryonic stem cells. Her work won best oral presentation at our UC-Systemwide Bioengineering Symposium, 2009. She accepted a research staff position at Stanford University. </p>
         </div>
