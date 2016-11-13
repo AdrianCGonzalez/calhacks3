@@ -151,8 +151,8 @@
                     <div class="row">
                         <div class="card-panel">
 
-                    <div class="col s12 m8" id="myChartcon"  style="height:50px">
-                        <div class="ct-chart ct-perfect-fourth" id="myChart" style="height:50px"></div>
+                    <div class="col s12 m2" id="myChartcon">
+                        <div class="ct-chart ct-perfect-fourth" id="myChart"></div>
                         <script>makepi("#myChart");</script>
                     </div>
                 </div>
@@ -192,8 +192,8 @@
                     <div class="row">
                         <div class="card-panel">
 
-                    <div class="col s12 m2" id="myChartcon"  style="height:50px">
-                        <div class="ct-chart ct-perfect-fourth" id="myChart1" style="height:50px"></div>
+                    <div class="col s12 m2" id="myChartcon">
+                        <div class="ct-chart ct-perfect-fourth" id="myChart1"></div>
                         <script>makepi("#myChart1");</script>
                     </div>
                 </div>
@@ -339,10 +339,20 @@
             $.ajax({
                 url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
                 success: function(results){
+                  var myResults;
+                  for(var i =0;i<results.size;i++)
+                  {
+                    if(results[i].contains("2015-1")){
+                  		myResults.append(results[i]);
+                    }
+                  }
+                  console.log(myResults);
+
                     var queryResult = Enumerable.From(results)
-                    .Where(function (x) { return x.purchase_date == ("2015-1-5")  })
+                    .Where(function (x) { return x.purchase_date == ("2015-1")  })
                     .OrderBy(function (x) { return x.purchase_date })
                     .Select(function (x) { return x.amount})
+                    .Contains(function(x){return x.purcahse_date}
                     .ToArray();
                     console.log(queryResult);
                 }
@@ -357,7 +367,7 @@
       $.ajax({
             url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
-                $("#balance").html("Your balance is "+results.balance + " with " +results.rewards+" reward points!");
+                $("#balance").html("Your balance is "+results.balance.toFixed(2) + " with " +results.rewards+" reward points!");
             }
         });
     </script>
