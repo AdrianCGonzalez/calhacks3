@@ -77,7 +77,6 @@
             <div class="pageWrapper">
 
 
-
                 <div class="card-panel">
                     <div class="col s12">
                         <h3 id="introduction"></h3>
@@ -142,6 +141,9 @@
                         </div>
                     </div>
                 </div>
+                
+                
+<h3  style="text-align:center;color:#black;border-bottom: 1px solid rgba(221, 179, 8, 0.2);">Payment</h3>
                 <div class="row" style="padding:0px;">
                     <div class ="col s12 m6" style="padding:0px;">
                         <div class="card-panel">
@@ -161,16 +163,8 @@
                 <div class="card-panel">
 
                     <div class="row">
-                        <div class="col s12 m4">
-
-                            <div id="myChartcon">
-                                <div class="ct-chart ct-perfect-fourth" id="myChart"></div>
-                                <script>makepi("#myChart",[5,10,15],['test','trst','ttst']);</script>
-                            </div>
-                        </div>
-
-                        <div class="col s12 m8">
-                            <p>Deposits</p>
+                        <div class="col s12 ">
+                            <h2>Deposits</h2>
                             <table>
                                 <thead>
                                     <tr>
@@ -186,21 +180,15 @@
                             </table>
 
                         </div>
-                        <div class="col s12 right"><a href="#"  class="waves-effect waves-light btn right">View Full Purchace History</a></div>
+                        
                     </div>
                 </div>
 
                 <div class="card-panel">
                     <div class="row">
-                        <div class="col s12 m4">
-
-                            <div id="myChartcon">
-                                <div class="ct-chart ct-perfect-fourth" id="myChart1"></div>
-                            </div>
-                        </div>
-
-                        <div class="col s12 m8">
-                            <p>Purchaces</p>
+             
+                        <div class="col s12">
+                            <h2>Purchaces</h2>
                             <table>
                                 <thead>
                                     <tr>
@@ -215,7 +203,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="col s12 right"><a href="#"  class="waves-effect waves-light btn right">View Full Deposit History</a></div>
+                         
                     </div>
                 </div>
             </div>
