@@ -439,8 +439,6 @@
             }
         });
 
-
-
         $.ajax({
             url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
@@ -449,6 +447,26 @@
                     descriptionn += "<tr>" + "<td>"+results[k].description + "</td>"+"<td>"+results[k].amount + "</td>"+"<td>"+results[k].purchase_date + "</td>"+"</tr>";
                     $("#purchasee").html($("#purchasee").html()+descriptionn);
                 }
+            }
+        });
+
+        $.ajax({
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
+            success: function(results){
+                var items = [];
+                var iCount= [];
+                for(k=0;k<k.length;k++){
+                    if(items.includes(results.[k].description))
+                    {
+                        iCount[items.indexOf(results.[k].description)]++;
+                    }else
+                    {
+                        items.push(results.[k].description);
+                        iCount.push(1);
+                    }
+                }
+                console.log(items);
+                console.log(iCount);
             }
         });
 
