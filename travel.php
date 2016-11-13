@@ -156,6 +156,7 @@
 
                             </div>
                             <div class="col l3">
+                                <br>
                                 <h4 class="right">$1000.00</h4>
                             </div>
                         </div>
@@ -183,6 +184,7 @@
 
                             </div>
                             <div class="col l3">
+                                <br>
                                 <h4 class="right">$1000.00</h4>
                             </div>
                         </div>
@@ -210,6 +212,7 @@
 
                             </div>
                             <div class="col l3">
+                                <br>
                                 <h4 class="right">$1000.00</h4>
                             </div>
                         </div>
@@ -237,6 +240,7 @@
 
                             </div>
                             <div class="col l3">
+                                <br>
                                 <h4 class="right">$1000.00</h4>
                             </div>
                         </div>
@@ -259,7 +263,7 @@
                         </div>
                         
                     </div>
-                    <div class="col l4 m12">
+                    <div class="col l3 m12">
                         <div class="col m12 card-panel">
 
                             <p>Current Balance:</p>
