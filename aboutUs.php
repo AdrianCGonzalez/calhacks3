@@ -51,17 +51,17 @@
 
         <nav class="teal darken-2">
             <div class="nav-wrapper">
-    <div class="contentWrapper">
-            <div class="pageWrapper">
-                <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:13px;width:36px;height:36px"></a>
-                <a href="index.php" class="brand-logo hide-on-med-and-down" style="margin-left:40px">CalHacks</a>
-                <ul id="nav-mobile" class="right hide-on-small-only">
-                    <li><a href="aboutUs.php">About Us</a></li>
-                    <li><a href="index.php"><i class="material-icons">power_settings_new</i></a></li>
-                </ul>
+                <div class="contentWrapper">
+                    <div class="pageWrapper">
+                        <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:13px;width:36px;height:36px"></a>
+                        <a href="index.php" class="brand-logo hide-on-med-and-down" style="margin-left:40px">CalHacks</a>
+                        <ul id="nav-mobile" class="right hide-on-small-only">
+                            <li><a href="aboutUs.php">About Us</a></li>
+                            <li><a href="index.php"><i class="material-icons">power_settings_new</i></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-      </div>
-      </div>
         </nav>
 
         <div class="fixed-action-btn hide-on-med-and-up">
@@ -77,8 +77,8 @@
             <div class="pageWrapper">
 
 
-                                                   <a href="#">This is a link</a>
- <div class="card-panel">
+                <a href="#">This is a link</a>
+                <div class="card-panel">
                     <div class="col s12">
                         <h3 id="introduction"></h3>
                         <p id="balance"></p>
@@ -103,8 +103,8 @@
                                 <div class="card-content white-text">
                                     <span class="card-title">Pay Bill</span>
                                     <p>Bill Pay is quicker and easier than writing and mailing paper checks.
-                                      Pay your bills online in minutes!</p>
-                                  <br>
+                                        Pay your bills online in minutes!</p>
+                                    <br>
                                 </div>
                                 <div class="card-action">
                                     <a href="#payBill.php">This is a link</a>
@@ -215,7 +215,7 @@
                                 </thead>
 
                                 <tbody>
-                                     <tr id="description">
+                                    <tr id="description">
 
                                     </tr>
                                     <tr id="amount">
@@ -337,7 +337,7 @@
         var depositMonth = [];
         var netMonth = [];
         var combineDP = [];
-      	var minMon = 2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2;
+        var minMon = 2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2;
         $.ajax({
             url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
@@ -374,13 +374,13 @@
                         console.log(depositMonth);
                         for(var k = 0; k < 12 ; k++)
                         {
-                          	if(depositMonth[k] < minMon)
+                            if(depositMonth[k] < minMon)
                             {
-                            	minMon = depositMonth[k];
+                                minMon = depositMonth[k];
                             }
-                          	if(purchaseMonth[k] < minMon)
+                            if(purchaseMonth[k] < minMon)
                             {
-                            	minMon = purchaseMonth[k];
+                                minMon = purchaseMonth[k];
                             }
                             netMonth.push(depositMonth[k] - purchaseMonth[k]);
                         }
@@ -405,36 +405,36 @@
             }
         });
 
-      var descriptionn = "";
-       var amountt = "";
-       var purchase_datee = "";
-                                        for(k=0,k<3,k++){
-                                             $.ajax({
-            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
-            success: function(results){
-              descriptionn += "<td>"+results.description + "</td>";
-                $("#description").html("<td>"+results.description + "</td>");
-            }
-        });
-                                        }
-          for(k=0,k<3,k++){
-                                             $.ajax({
-            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
-            success: function(results){
-              amountt += "<td>"+results.amount + "</td>";
-                $("#amount").html("<td>"+results.amount + "</td>");
-            }
-        });
-                                        }
-          for(k=0,k<3,k++){
-                                             $.ajax({
-            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
-            success: function(results){
-              purchase_datee += "<td>"+results.purchase_date + "</td>";
-                $("#purchase_date").html("<td>"+results.purchase_date + "</td>");
-            }
-        });
-                                        }
+        var descriptionn = "";
+        var amountt = "";
+        var purchase_datee = "";
+        for(k=0,k<3,k++){
+            $.ajax({
+                url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
+                success: function(results){
+                    descriptionn += "<td>"+results.description + "</td>";
+                    $("#description").html("<td>"+results.description + "</td>");
+                }
+            });
+        }
+        for(k=0,k<3,k++){
+            $.ajax({
+                url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
+                success: function(results){
+                    amountt += "<td>"+results.amount + "</td>";
+                    $("#amount").html("<td>"+results.amount + "</td>");
+                }
+            });
+        }
+        for(k=0,k<3,k++){
+            $.ajax({
+                url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
+                success: function(results){
+                    purchase_datee += "<td>"+results.purchase_date + "</td>";
+                    $("#purchase_date").html("<td>"+results.purchase_date + "</td>");
+                }
+            });
+        }
 
 
     </script>
