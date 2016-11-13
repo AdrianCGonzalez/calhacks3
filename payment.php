@@ -138,8 +138,8 @@
                             </div>
                         </div>
                     </div>
-                 </div>
-<h3  style="text-align:center;color:#black;border-bottom: 1px solid rgba(221, 179, 8, 0.2);">Payment</h3>
+                </div>
+                <h3  style="text-align:center;color:#black;border-bottom: 1px solid rgba(221, 179, 8, 0.2);">Payment</h3>
                 <div class="row" style="padding:0px;">
                     <div class ="col s12 m6" style="padding:0px;">
                         <div class="card-panel">
@@ -161,44 +161,47 @@
                     <div class="row">
                         <div class="col s12 m6">
                             <h2>Deposits</h2>
-                            <table class="higlight bordered" style="height:90vh;overflow-y:auto">
-                                <thead>
-                                    <tr>
-                                        <th data-field="id">Amount</th>
-                                        <th data-field="name">Transaction Date</th>
+                            <div style="height:90vh;overflow-y:auto">
+                                <table class="higlight bordered" >
+                                    <thead>
+                                        <tr>
+                                            <th data-field="id">Amount</th>
+                                            <th data-field="name">Transaction Date</th>
 
-                                    </tr>
-                                </thead>
+                                        </tr>
+                                    </thead>
 
-                                <tbody id="depositt">
+                                    <tbody id="depositt">
 
-                                </tbody>
-                            </table>
-
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <div class="col s12 m6">
                             <h2>Purchases</h2>
-                            <table class="bordered highlight" style="height:90vh;overflow-y:auto">
-                                <thead>
-                                    <tr>
-                                        <th data-field="id">Description</th>
-                                        <th data-field="price">Item Price</th>
-                                        <th data-field="date">Date Purchased</th>
-                                    </tr>
-                                </thead>
+                            <div style="height:90vh;overflow-y:auto">
+                                <table class="bordered highlight" >
+                                    <thead>
+                                        <tr>
+                                            <th data-field="id">Description</th>
+                                            <th data-field="price">Item Price</th>
+                                            <th data-field="date">Date Purchased</th>
+                                        </tr>
+                                    </thead>
 
-                                <tbody id="purchasee">
+                                    <tbody id="purchasee">
 
-                                </tbody>
-                            </table>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                        
+
                     </div>
                 </div>
 
                 <div class="card-panel">
                     <div class="row" >
-             
+
                         <div class="col s12 m6">
                             <h2>Purchases</h2>
                             <table class="bordered highlight" style="height:90vh;overflow-y:auto">
@@ -211,11 +214,11 @@
                                 </thead>
 
                                 <tbody id="purchasee">
-                                 
+
                                 </tbody>
                             </table>
                         </div>
-                         
+
                     </div>
                 </div>
             </div>
@@ -458,12 +461,12 @@
                 makepi("#myChart1",iCount,items);
             }
         });
-        
-            $.ajax({
-                url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/deposits?key=92d167a667478cadc9b5542720b5463d',
-                success: function(results){
-                    for(u=0;u<results.length;u++){
-                        var deposittt = "";
+
+        $.ajax({
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/deposits?key=92d167a667478cadc9b5542720b5463d',
+            success: function(results){
+                for(u=0;u<results.length;u++){
+                    var deposittt = "";
                     deposittt += "<tr>"+"<td>"+results[u].amount + "</td>"+"<td>"+results[u].transaction_date + "</td>"+"</tr>";
                     $("#depositt").html($("#depositt").html()+deposittt);
                 }
