@@ -83,10 +83,16 @@
                 <div class="row">
                     <div class="col l8 m12 card-panel">
                         <p>Places you can go</p>
-                    
+
                         <hr>
-                        <div class="col l12"><span><h3 style="color:#1ab394;"> Name Of Place </h3>
-                            <h4 class="right">$1000.00</h4></span>
+                        <div class="row">
+                            <div class="col l9">
+                                <h3 style="color:#1ab394;"> Name Of Place </h3>
+
+                            </div>
+                            <div class="col l3">
+                                <h4 class="right">$1000.00</h4>
+                            </div>
                         </div>
                         <div class="col l4 m6 s12">
                             <b>Airline:</b>   
