@@ -131,7 +131,7 @@
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
                                     <span class="card-title">Travel</span>
-                                    <p>Get info an trips that you can or could afford this year based on
+                                    <p>Get info on trips that you can or could afford this year based on
                                         your account payments and activities.</p>
                                 </div>
                                 <div class="card-action">
