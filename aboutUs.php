@@ -48,11 +48,11 @@
     </style>
 
     <body>
-         <div class="contentWrapper">
-            <div class="pageWrapper">
+
         <nav class="teal darken-2">
             <div class="nav-wrapper">
-
+    <div class="contentWrapper">
+            <div class="pageWrapper">
                 <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:13px;width:36px;height:36px"></a>
                 <a href="index.php" class="brand-logo hide-on-med-and-down" style="margin-left:40px">CalHacks</a>
                 <ul id="nav-mobile" class="right hide-on-small-only">
@@ -60,10 +60,10 @@
                     <li><a href="index.php"><i class="material-icons">power_settings_new</i></a></li>
                 </ul>
             </div>
-
-        </nav>
-           </div>
       </div>
+      </div>
+        </nav>
+
         <div class="fixed-action-btn hide-on-med-and-up">
             <a class="btn-floating btn-large red">
                 <i class="large material-icons">menu</i>
@@ -77,9 +77,10 @@
             <div class="pageWrapper">
 
 
-                <div class="card-panel">
+                                                   <a href="#">This is a link</a>
+ <div class="card-panel">
                     <div class="col s12">
-                        <h2 id="introduction"></h2>
+                        <h3 id="introduction"></h3>
                         <p id="balance"></p>
                     </div>
                     <div class="row">
@@ -91,7 +92,7 @@
                                         I am convenient because I require little markup to use effectively.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                    <a href="payment.php">This is a link</a>
 
                                 </div>
                             </div>
@@ -106,7 +107,7 @@
                                   <br>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                    <a href="#payBill.php">This is a link</a>
 
                                 </div>
                             </div>
@@ -120,7 +121,7 @@
                                         I am convenient because I require little markup to use effectively.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                    <a href="transfer.php">This is a link</a>
 
                                 </div>
                             </div>
@@ -134,7 +135,7 @@
                                         I am convenient because I require little markup to use effectively.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                    <a href="travel.php">This is a link</a>
 
                                 </div>
                             </div>
@@ -153,10 +154,10 @@
                 <div class="card-panel">
 
                     <div class="row">
-                        <div class="card-panel">
+                        <div class="card-panel col s12 m2">
 
-                            <div class="col s12 m2" id="myChartcon"  style="height:50px">
-                                <div class="ct-chart ct-perfect-fourth" id="myChart" style="height:50px"></div>
+                            <div id="myChartcon">
+                                <div class="ct-chart ct-perfect-fourth" id="myChart"></div>
                                 <script>makepi("#myChart");</script>
                             </div>
                         </div>
@@ -194,9 +195,9 @@
 
                 <div class="card-panel">
                     <div class="row">
-                        <div class="card-panel">
+                        <div class="card-panel col s12 m2">
 
-                            <div class="col s12 m2" id="myChartcon">
+                            <div id="myChartcon">
                                 <div class="ct-chart ct-perfect-fourth" id="myChart1"></div>
                                 <script>makepi("#myChart1");</script>
                             </div>
@@ -214,20 +215,14 @@
                                 </thead>
 
                                 <tbody>
-                                    <tr>
-                                        <td>Alvin</td>
-                                        <td>Eclair</td>
-                                        <td>$0.87</td>
+                                     <tr id="description">
+
                                     </tr>
-                                    <tr>
-                                        <td>Alan</td>
-                                        <td>Jellybean</td>
-                                        <td>$3.76</td>
+                                    <tr id="amount">
+
                                     </tr>
-                                    <tr>
-                                        <td>Jonathan</td>
-                                        <td>Lollipop</td>
-                                        <td>$7.00</td>
+                                    <tr id="purchase_date">
+
                                     </tr>
                                 </tbody>
                             </table>
@@ -409,5 +404,35 @@
                 $("#balance").html("Your balance is "+results.balance + " with " +results.rewards+" reward points!");
             }
         });
+
+
+                                        amount
+                                        purchase_date
+                                        for(k=0,k<3,k++){
+                                             $.ajax({
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
+            success: function(results){
+                $("#description").html("<td>"+results.description + "</td>");
+            }
+        });
+                                        }
+          for(k=0,k<3,k++){
+                                             $.ajax({
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
+            success: function(results){
+                $("#amount").html("<td>"+results.amount + "</td>");
+            }
+        });
+                                        }
+          for(k=0,k<3,k++){
+                                             $.ajax({
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
+            success: function(results){
+                $("#purchase_date").html("<td>"+results.purchase_date + "</td>");
+            }
+        });
+                                        }
+
+
     </script>
 </html>

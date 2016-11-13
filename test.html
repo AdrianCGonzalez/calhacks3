@@ -48,25 +48,29 @@
     </style>
 
     <body>
-        <nav class="teal darken-2">
-            <div class="nav-wrapper">
+        <div class="contentWrapper">
+            <div class="pageWrapper">
+                <nav class="teal darken-2">
+                    <div class="nav-wrapper">
 
-                <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:13px;width:36px;height:36px"></a>
-                <a href="index.php" class="brand-logo hide-on-med-and-down" style="margin-left:40px">CalHacks</a>
-                <ul id="nav-mobile" class="right hide-on-small-only">
-                    <li><a href="aboutUs.php">About Us</a></li>
-                    <li><a href="#modal1" data-target="modal1" class="modal-trigger">Log Out</a></li>
-                </ul>
+                        <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:13px;width:36px;height:36px"></a>
+                        <a href="index.php" class="brand-logo hide-on-med-and-down" style="margin-left:40px">CalHacks</a>
+                        <ul id="nav-mobile" class="right hide-on-small-only">
+                            <li><a href="aboutUs.php">About Us</a></li>
+                            <li><a href="index.php"><i class="material-icons">power_settings_new</i></a></li>
+                        </ul>
+                    </div>
+
+                </nav>
             </div>
-
-        </nav>
+        </div>
         <div class="fixed-action-btn hide-on-med-and-up">
             <a class="btn-floating btn-large red">
                 <i class="large material-icons">menu</i>
             </a>
             <ul>
                 <li><a class="btn-floating red" href="aboutUs.html"><i class="material-icons">perm_identity</i></a></li>
-                <li><a class="btn-floating green" href="logIn.html"><i class="material-icons">vpn_key</i></a></li>
+                <li><a class="btn-floating green" href="logIn.html"><i class="material-icons">power_settings_new</i></a></li>
             </ul>
         </div>
         <div class="contentWrapper">
@@ -88,7 +92,7 @@
                                 </div>
                                 <div class="card-action">
                                     <a href="#">This is a link</a>
-                                    <a href="#">This is a link</a>
+
                                 </div>
                             </div>
                         </div>
@@ -97,12 +101,13 @@
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
                                     <span class="card-title">Pay Bill</span>
-                                    <p>I am a very simple card. I am good at containing small bits of information.
-                                        I am convenient because I require little markup to use effectively.</p>
+                                    <p>Bill Pay is quicker and easier than writing and mailing paper checks.
+                                        Pay your bills online in minutes!</p>
+                                    <br>
                                 </div>
                                 <div class="card-action">
                                     <a href="#">This is a link</a>
-                                    <a href="#">This is a link</a>
+
                                 </div>
                             </div>
                         </div>
@@ -116,7 +121,7 @@
                                 </div>
                                 <div class="card-action">
                                     <a href="#">This is a link</a>
-                                    <a href="#">This is a link</a>
+
                                 </div>
                             </div>
                         </div>
@@ -130,7 +135,7 @@
                                 </div>
                                 <div class="card-action">
                                     <a href="#">This is a link</a>
-                                    <a href="#">This is a link</a>
+
                                 </div>
                             </div>
                         </div>
@@ -138,9 +143,14 @@
                 </div>
 
                 <div class ="col s12 m4">
-                    <div class="card-panel"  style="height:220px">
-                        <div style="height:200px" class="ct-chart ct-perfect-fourth" id="myPi"></div>
-                        <!--<script>makeChart("#myPi");</script>-->
+                    <div class="card-panel">
+                        <div class="ct-chart ct-perfect-fourth" id="myPi"></div>
+
+                    </div>
+                </div>
+                <div class ="col s12 m4">
+                    <div class="card-panel">
+                        <div class="ct-chart ct-perfect-fourth" id="myPi2"></div>
 
                     </div>
                 </div>
@@ -151,7 +161,7 @@
                     <div class="row">
                         <div class="card-panel">
 
-                            <div class="col s12 m8" id="myChartcon"  style="height:50px">
+                            <div class="col s12 m2" id="myChartcon"  style="height:50px">
                                 <div class="ct-chart ct-perfect-fourth" id="myChart" style="height:50px"></div>
                                 <script>makepi("#myChart");</script>
                             </div>
@@ -172,19 +182,19 @@
                                     <tr>
                                         <td>Alvin</td>
                                         <td>Eclair</td>
-                                        <td>$0.87</td>
+
                                     </tr>
                                     <tr>
                                         <td>Alan</td>
                                         <td>Jellybean</td>
-                                        <td>$3.76</td>
+
                                     </tr>
 
                                 </tbody>
                             </table>
 
                         </div>
-                        <div class="col s12 right"><a href="#"  class="waves-effect waves-light btn right">View Full Payment History</a></div>
+                        <div class="col s12 right"><a href="#"  class="waves-effect waves-light btn right">View Full Purchace History</a></div>
                     </div>
                 </div>
 
@@ -192,8 +202,8 @@
                     <div class="row">
                         <div class="card-panel">
 
-                            <div class="col s12 m2" id="myChartcon"  style="height:50px">
-                                <div class="ct-chart ct-perfect-fourth" id="myChart1" style="height:50px"></div>
+                            <div class="col s12 m2" id="myChartcon">
+                                <div class="ct-chart ct-perfect-fourth" id="myChart1"></div>
                                 <script>makepi("#myChart1");</script>
                             </div>
                         </div>
@@ -228,7 +238,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="col s12 right"><a href="#"  class="waves-effect waves-light btn right">View Full Payment History</a></div>
+                        <div class="col s12 right"><a href="#"  class="waves-effect waves-light btn right">View Full Deposit History</a></div>
                     </div>
                 </div>
             </div>
@@ -338,6 +348,26 @@
         var depositMonth = [];
         var netMonth = [];
         var combineDP = [];
+        var minMon = 2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2;
+        var minNet = 2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2;
+        var curBal = 0;
+        $.ajax({
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/customer?key=92d167a667478cadc9b5542720b5463d',
+            success: function(results){
+                $("#introduction").html("Welcome "+results.first_name + " " +results.last_name+"!");
+            }
+        });
+        $.ajax({
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc?key=92d167a667478cadc9b5542720b5463d',
+            success: function(results){
+
+                curBal = results.balance;
+                console.log(curBal);
+                curBal /=100;
+                console.log(curBal);
+                $("#balance").html("Your balance is "+curBal + " with " +results.rewards+" reward points!");
+            }
+        });
         $.ajax({
             url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
@@ -374,30 +404,37 @@
                         console.log(depositMonth);
                         for(var k = 0; k < 12 ; k++)
                         {
-                            netMonth.push(depositMonth[k] - purchaseMonth[k]);
+                            if(depositMonth[k] < minMon)
+                            {
+                                minMon = depositMonth[k];
+                            }
+                            if(purchaseMonth[k] < minMon)
+                            {
+                                minMon = purchaseMonth[k];
+                            }
+                            curBal = curBal -(depositMonth[11-k] - purchaseMonth[11-k])
+                            netMonth.push(curBal);
+                            if(netMonth[k]<minNet)
+                            {
+                                minNet = netMonth[k];
+                            }
+
                         }
-                        combineDP.push(depositMonth);
+                        var temp = [];
+                        temp.push(netMonth);
+                        console.log(netMonth);
                         combineDP.push(purchaseMonth);
-                        makeChart("#myPi",combineDP);
+                        combineDP.push(temp);
+                        combineDP.push(temp);
+                        combineDP.push(temp);
+                        combineDP.push(depositMonth);
+                        makeChart("#myPi",combineDP,minMon);
+                        makeChart("#myPi2",temp,minNet);
 
                     }
                 });
             }
-        })
-
-
-
-        $.ajax({
-            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/customer?key=92d167a667478cadc9b5542720b5463d',
-            success: function(results){
-                $("#introduction").html("Welcome "+results.first_name + " " +results.last_name+"!");
-            }
         });
-        $.ajax({
-            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc?key=92d167a667478cadc9b5542720b5463d',
-            success: function(results){
-                $("#balance").html("Your balance is "+results.balance + " with " +results.rewards+" reward points!");
-            }
-        });
+
     </script>
 </html>
