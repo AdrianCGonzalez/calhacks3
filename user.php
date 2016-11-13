@@ -405,8 +405,9 @@
                             {
                                 minMon = purchaseMonth[k];
                             }
-                            curBal = curBal -( purchaseMonth[11-k]-depositMonth[11-k])
                             netMonth.push(curBal);
+                            curBal = curBal -( purchaseMonth[11-k]-depositMonth[11-k])
+
                             if(netMonth[k]<minNet)
                             {
                                 minNet = netMonth[k];
