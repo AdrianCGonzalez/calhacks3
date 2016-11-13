@@ -84,7 +84,7 @@
         <div id="modal1" class="modal" style="overflow:hidden;">
             <div class="modal-content">
                 <h4 style="text-align:center">Sign In</h4>
-                <form id ="login" action="user.php" class="col s12">
+                <form action="user.php" class="col s12">
 
                     <div class="row">
                         <div class="input-field col s12">
@@ -113,7 +113,7 @@
             </div>
         </div>
         <script>
-            $( "#login" ).submit(function( event ) {
+            $( "#trigger" ).submit(function( event ) {
                // event.preventDefault();
             });
         </script>
