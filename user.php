@@ -509,7 +509,7 @@
             }
         });
         $.ajax({
-            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/deposits?key=92d167a667478cadc9b5542720b5463d',
+            url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/deposits?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
                 for(u=0;u<3;u++){
                     var deposittt = "";
@@ -519,7 +519,7 @@
             }
         });
         $.ajax({
-            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
+            url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/purchases?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
                 for(k=0;k<results.length;k++){
                     var descriptionn = "";
@@ -529,7 +529,7 @@
             }
         });
         $.ajax({
-            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/deposits?key=92d167a667478cadc9b5542720b5463d',
+            url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/deposits?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
                 for(u=0;u<results.length;u++){
                     var deposittt = "";
