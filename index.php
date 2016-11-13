@@ -398,14 +398,13 @@
                                 minMon = purchaseMonth[k];
                             }
                             netMonth.push(curBal);
-                            curBal = curBal -( purchaseMonth[11-k]-depositMonth[11-k])
+                            curBal = curBal -(depositMonth[11-k] - purchaseMonth[11-k])
                             if(netMonth[k]<minNet)
                             {
                                 minNet = netMonth[k];
                             }
                         }
                         netMonth = netMonth.reverse();
-                        console.log(netMonth);
                         var regre = [];
                         for(var i =0;i<12;i++)
                         {
