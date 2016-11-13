@@ -406,7 +406,7 @@
                                 minMon = purchaseMonth[k];
                             }
                             netMonth.push(curBal);
-                            curBal = curBal -( purchaseMonth[11-k]-depositMonth[11-k])
+                            curBal = curBal -( depositMonth[11-k] -purchaseMonth[11-k])
 
                             if(netMonth[k]<minNet)
                             {
@@ -445,7 +445,7 @@
                         //    console.log(netMonth);
                         combineDP.push(purchaseMonth);
                         combineDP.push(depositMonth);
-                        makeChart("#myPi",combineDP,minMon);
+                        makeChart("#myPi",combineDP,minMon,'month',amount);
                         makeChart("#myPi2",temp,minNet);
                     }
                 });

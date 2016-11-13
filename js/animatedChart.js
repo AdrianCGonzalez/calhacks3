@@ -1,4 +1,4 @@
-function makeChart(id,mySeries,myLow){
+function makeChart(id,mySeries,myLow,lxa,lya){
 if(myLow >100)
 {
   myLow = myLow-100;
@@ -21,7 +21,7 @@ new Chartist.Line(id, {
   plugins: [
     Chartist.plugins.ctAxisTitle({
       axisX: {
-        axisTitle: 'Months',
+        axisTitle: lxa,
         axisClass: 'ct-axis-title',
         offset: {
           x: 0,
@@ -30,7 +30,7 @@ new Chartist.Line(id, {
         textAnchor: 'middle'
       },
       axisY: {
-        axisTitle: 'Balance',
+        axisTitle: lya,
         axisClass: 'ct-axis-title',
         offset: {
           x: 0,
