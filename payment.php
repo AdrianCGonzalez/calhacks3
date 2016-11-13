@@ -467,7 +467,7 @@
                     descriptionn += "<tr>" +"</td>"+"<td>"+results[k].amount + "</td>"+"<td>"+results[k].transaction_date + "</td>"+"</tr>";
                     $("#depositt").html($("#depositt").html()+descriptionn);
                 }
-            };
-        }
+            }
+        });
     </script>
 </html>
