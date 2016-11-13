@@ -374,7 +374,7 @@
                         }
                     }
                     purchaseMonth.push(sumPurchase*33);
-                    //console.log(sumPurchase);
+                    console.log(sumPurchase);
                 }
                 //console.log(purchaseMonth);
                 $.ajax({
@@ -391,7 +391,7 @@
                                 }
                             }
                             depositMonth.push(sumDeposit);
-                            //  console.log(sumDeposit);
+                            console.log(sumDeposit);
                         }
                         //  console.log(depositMonth);
                         for(var k = 0; k < 12 ; k++)
@@ -412,7 +412,7 @@
                             }
 
                         }
-
+                        console.log(netMonth);
                         var regre = [];
                         for(var i =0;i<12;i++)
                         {
@@ -421,14 +421,14 @@
                             temp1.push(netMonth[i]);
                             regre.push(temp1);
                         }
-                        console.log(regre);
+                       // console.log(regre);
 
                         var data = regre;
                         var result = regression('linear', data);
                         var slope = result.equation[0];
                         var yIntercept = result.equation[1];
-                        console.log(slope);
-                        console.log(yIntercept);
+                      //  console.log(slope);
+                      //  console.log(yIntercept);
                         var plotreg = [];
                         plotreg.push(yIntercept);
                         for(var i = 1;i<12;i++)
@@ -475,15 +475,15 @@
                     if(items.indexOf(results[k].description) >-1)
                     {
                         iCount[items.indexOf(results[k].description)]++;
-                        console.log("found it "+items);
+                   ////     console.log("found it "+items);
                     }else
                     {
                         items.push(results[k].description);
                         iCount.push(1);
                     }
                 }
-                console.log("description "+items);
-                console.log(iCount);
+              //  console.log("description "+items);
+              //  console.log(iCount);
                 makepi("#myChart1",iCount,items);
             }
         });
