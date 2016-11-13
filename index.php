@@ -146,10 +146,10 @@
                     <div class="col s12 m7">
                         <h1 style="padding-bottom:10px" >Personalized Traveling Based On Your Income</h1>
 
-                        <span>The world is a book, and those who do not travel read only a page.
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;The world is a book, and those who do not travel read only a page.
 Of course, if books were as expensive as traveling is, they would be 100000%  more expensive (don't quote us on this). Nevertheless, traveling IS a lot of stress. It requires possibly coordinating vacation time for multiple people, school, money, responsibilities, children, and a mirad of things that can go wrong.<br>
-	Nevertheless, our entirly innacurate polls with few data points show<br>
-that traveling is still shows promingtly as the dream for a significant portion of Americans. Our objective is to make the process of planning this traveling easier. Using your bank information to extrapolate information about your socioeconomical status, we are able to give recommendations for places that you can afford to go and have a good time without worrying too much about money.<br>	 Don't worry though, we know sometimes life gets rough and SF train station may not be your dream destination. We include a way for you to set a goal, and using top machine learning algorithms (again, don't quote us) we produce a realistic timeline and recommendations that will allow you to achieve your dream vacation. We are Dreamcatcher. Thank you for your time :).
+	&nbsp;&nbsp;&nbsp;&nbsp;Nevertheless, our entirly innacurate polls with few data points show<br>
+that traveling is still shows promingtly as the dream for a significant portion of Americans. Our objective is to make the process of planning this traveling easier. Using your bank information to extrapolate information about your socioeconomical status, we are able to give recommendations for places that you can afford to go and have a good time without worrying too much about money.<br>	 &nbsp;&nbsp;&nbsp;&nbsp;Don't worry though, we know sometimes life gets rough and SF train station may not be your dream destination. We include a way for you to set a goal, and using top machine learning algorithms (again, don't quote us) we produce a realistic timeline and recommendations that will allow you to achieve your dream vacation. We are Dreamcatcher. Thank you for your time :).
 
 </span>
                     </div>
@@ -168,10 +168,10 @@ that traveling is still shows promingtly as the dream for a significant portion 
                         </div>
                     </div>
                     <div class="col s12 m7">
-                        <span>The world is a book, and those who do not travel read only a page.
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;The world is a book, and those who do not travel read only a page.
 Of course, if books were as expensive as traveling is, they would be 100000%  more expensive (don't quote us on this). Nevertheless, traveling IS a lot of stress. It requires possibly coordinating vacation time for multiple people, school, money, responsibilities, children, and a mirad of things that can go wrong.<br>
-	Nevertheless, our entirly innacurate polls with few data points show
-that traveling is still shows promingtly as the dream for a significant portion of Americans. Our objective is to make the process of planning this traveling easier. Using your bank information to extrapolate information about your socioeconomical status, we are able to give recommendations for places that you can afford to go and have a good time without worrying too much about money.	<br> Don't worry though, we know sometimes life gets rough and SF train station may not be your dream destination. We include a way for you to set a goal, and using top machine learning algorithms (again, don't quote us) we produce a realistic timeline and recommendations that will allow you to achieve your dream vacation. We are Dreamcatcher. Thank you for your time :).
+	&nbsp;&nbsp;&nbsp;&nbsp;Nevertheless, our entirly innacurate polls with few data points show
+that traveling is still shows promingtly as the dream for a significant portion of Americans. Our objective is to make the process of planning this traveling easier. Using your bank information to extrapolate information about your socioeconomical status, we are able to give recommendations for places that you can afford to go and have a good time without worrying too much about money.	&nbsp;&nbsp;&nbsp;&nbsp;<br> Don't worry though, we know sometimes life gets rough and SF train station may not be your dream destination. We include a way for you to set a goal, and using top machine learning algorithms (again, don't quote us) we produce a realistic timeline and recommendations that will allow you to achieve your dream vacation. We are Dreamcatcher. Thank you for your time :).
 
 </span>
                     </div>
