@@ -76,7 +76,7 @@
                 <div class="card-panel">
                     <div class="col s12">
                         <h2 id="introduction"></h2>
-                      <p id="balance"></p>
+                        <p id="balance"></p>
                     </div>
                     <div class="row">
                         <div class="col l3 m6 s12">
@@ -140,7 +140,7 @@
                 <div class ="col s12 m4">
                     <div class="card-panel"  style="height:220px">
                         <div style="height:200px" class="ct-chart ct-perfect-fourth" id="myPi"></div>
-                        <script>makeChart("#myPi");</script>
+                        <!--<script>makeChart("#myPi");</script>-->
 
                     </div>
                 </div>
@@ -151,14 +151,14 @@
                     <div class="row">
                         <div class="card-panel">
 
-                    <div class="col s12 m8" id="myChartcon"  style="height:50px">
-                        <div class="ct-chart ct-perfect-fourth" id="myChart" style="height:50px"></div>
-                        <script>makepi("#myChart");</script>
-                    </div>
-                </div>
+                            <div class="col s12 m8" id="myChartcon"  style="height:50px">
+                                <div class="ct-chart ct-perfect-fourth" id="myChart" style="height:50px"></div>
+                                <script>makepi("#myChart");</script>
+                            </div>
+                        </div>
 
                         <div class="col s12 m10">
-                          <p>Deposits</p>
+                            <p>Deposits</p>
                             <table>
                                 <thead>
                                     <tr>
@@ -192,14 +192,14 @@
                     <div class="row">
                         <div class="card-panel">
 
-                    <div class="col s12 m2" id="myChartcon"  style="height:50px">
-                        <div class="ct-chart ct-perfect-fourth" id="myChart1" style="height:50px"></div>
-                        <script>makepi("#myChart1");</script>
-                    </div>
-                </div>
+                            <div class="col s12 m2" id="myChartcon"  style="height:50px">
+                                <div class="ct-chart ct-perfect-fourth" id="myChart1" style="height:50px"></div>
+                                <script>makepi("#myChart1");</script>
+                            </div>
+                        </div>
 
                         <div class="col s12 m10">
-                          <p>Purchaces</p>
+                            <p>Purchaces</p>
                             <table>
                                 <thead>
                                     <tr>
@@ -334,41 +334,66 @@
             graphSize();
         });
 
-      	for(var i  =0;i<12;i++)
-        {
-            $.ajax({
-                url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
-                success: function(results){
-                  var sumPurchase = 0;
-                    console.log(results);
-                  for(var i =0;i<results.size;i++)
-                  {
-                      console.log(results[i].puchase_date);
-                    if(results[i].purchase_date.contains("2015-1")){
-                        console.log("found");
-                  		sumPurchase+= sumPurchase+results[i].amount;
-                    }
-                  }
-                  console.log(results.size);
+        var purchaseMonth = [];
+        var depositMonth = [];
+        var netMonth = [];
+        var combineDP = [];
+        $.ajax({
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
+            success: function(results){
 
-                 /*   var queryResult = Enumerable.From(results)
-                    .Where(function (x) { return x.purchase_date == ("2015-1")  })
-                    .OrderBy(function (x) { return x.purchase_date })
-                    .Select(function (x) { return x.amount})
-                    .Contains(function(x){return x.purcahse_date}
-                    .ToArray();
-                    console.log(queryResult);
-                }*/
+                for(var i  =0;i<12;i++)
+                {
+                    var sumPurchase = 0;
+                    for(var j =0;j<results.length;j++)
+                    {
+                        if(results[j].purchase_date.indexOf("2015-"+(i+1)+"-")==0 ){
+                            sumPurchase += results[i].amount;
+                        }
+                    }
+                    purchaseMonth.push(sumPurchase*33);
+                    console.log(sumPurchase);
+                }
+                console.log(purchaseMonth);
+                $.ajax({
+                    url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/deposits?key=92d167a667478cadc9b5542720b5463d',
+                    success: function(results){
+
+                        for(var i  =0;i<12;i++)
+                        {
+                            var sumDeposit = 0;
+                            for(var j =0;j<results.length;j++)
+                            {
+                                if(results[j].transaction_date.indexOf("2015-"+(i+1)+"-")==0 ){
+                                    sumDeposit += results[i].amount;
+                                }
+                            }
+                            depositMonth.push(sumDeposit);
+                            console.log(sumDeposit);
+                        }
+                        console.log(depositMonth);
+                        for(var k = 0; k < 12 ; k++)
+                        {
+                            netMonth.push(depositMonth[k] - purchaseMonth[k]);
+                        }
+                        combineDP.push(depositMonth);
+                        combineDP.push(purchaseMonth);
+                        makeChart("#myPi",combineDP);
+
+                    }
+                });
             }
-            });
-        }
+        })
+
+
+
         $.ajax({
             url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/customer?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
                 $("#introduction").html("Welcome "+results.first_name + " " +results.last_name+"!");
             }
         });
-      $.ajax({
+        $.ajax({
             url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
                 $("#balance").html("Your balance is "+results.balance + " with " +results.rewards+" reward points!");
