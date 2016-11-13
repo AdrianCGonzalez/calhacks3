@@ -136,13 +136,117 @@
                             <br><p>+1 (209) 722-8022</p>
 
                             <p>Call us for support</p>
+                        </div>
+                    </div>
+<hr>
+                      <div class="row">
+                            <div class="col l9">
+                                <h3 style="color:#1ab394;"> Name Of Place </h3>
+
+                            </div>
+                            <div class="col l3">
+                                <h4 class="right">$1000.00</h4>
+                            </div>
+                        </div>
+                        <div class="col l4 m6 s12">
+                            <b>Airline:</b>   
+                            <br>
+                            <p>xxxxxxx</p>
 
                         </div>
+                        <div class="col l4 m6 s12">  
+                            <b> depart from:</b>
+                            <br>
+                            <p>xxxxx</p>
+                        </div>
+                        <div class="col s12">
+                            <b>Description:</b><br> 
+                            <p> THis place is great cause its great. Words words words words words Nunc ullamcorper lacus nec mi porta, et feugiat diam tempus. Donec bibendum eros nisl, eget vestibulum enim suscipit pulvinar. Sed eget tempor libero. Vestibulum accumsan sed purus in congue. Proin finibus eleifend dolor in efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mauris f</p>
 
+                        </div></div>
+                    <div class="col l3 m12">
+                        <div class="col m12 card-panel">
+
+                            <p>Current Balance:</p>
+                            <br>
+                            <p> How much do you plan on spending on this trip? (reccomended 3% gross income)</p>
+                            <br>
+
+
+                        </div>
+                        <div class="col m12 card-panel">
+
+                            <p>Cart Summary</p>
+                            <br><p>Total</p><p>$10000.00</p>
+                            <hr>
+                            <p> How much do you plan on spending on this trip? (reccomended 3% gross income)</p>
+                            <br>
+
+
+                        </div>
+                        <div class="col m12 card-panel">
+
+                            <p>Support</p>
+                            <br><p>+1 (209) 722-8022</p>
+
+                            <p>Call us for support</p>
+                        </div>
                     </div>
+<hr>
+                  <div class="row">
+                            <div class="col l9">
+                                <h3 style="color:#1ab394;"> Name Of Place </h3>
+
+                            </div>
+                            <div class="col l3">
+                                <h4 class="right">$1000.00</h4>
+                            </div>
+                        </div>
+                        <div class="col l4 m6 s12">
+                            <b>Airline:</b>   
+                            <br>
+                            <p>xxxxxxx</p>
+
+                        </div>
+                        <div class="col l4 m6 s12">  
+                            <b> depart from:</b>
+                            <br>
+                            <p>xxxxx</p>
+                        </div>
+                        <div class="col s12">
+                            <b>Description:</b><br> 
+                            <p> THis place is great cause its great. Words words words words words Nunc ullamcorper lacus nec mi porta, et feugiat diam tempus. Donec bibendum eros nisl, eget vestibulum enim suscipit pulvinar. Sed eget tempor libero. Vestibulum accumsan sed purus in congue. Proin finibus eleifend dolor in efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed mauris f</p>
+
+                        </div></div>
+                    <div class="col l3 m12">
+                        <div class="col m12 card-panel">
+
+                            <p>Current Balance:</p>
+                            <br>
+                            <p> How much do you plan on spending on this trip? (reccomended 3% gross income)</p>
+                            <br>
 
 
+                        </div>
+                        <div class="col m12 card-panel">
 
+                            <p>Cart Summary</p>
+                            <br><p>Total</p><p>$10000.00</p>
+                            <hr>
+                            <p> How much do you plan on spending on this trip? (reccomended 3% gross income)</p>
+                            <br>
+
+
+                        </div>
+                        <div class="col m12 card-panel">
+
+                            <p>Support</p>
+                            <br><p>+1 (209) 722-8022</p>
+
+                            <p>Call us for support</p>
+                        </div>
+                    </div>
+<hr>
                 </div>
 
             </div>
