@@ -140,7 +140,7 @@
             </div>
 
             <div class="parallax" style="height:25vh">
-                <img src="couple.jpg" alt="Unsplashed background img 1"></div>
+                <img src="aus.PNG" alt="Unsplashed background img 1"></div>
         </div>
 
         <br>
@@ -160,7 +160,7 @@
                                 </span>
                             </div>
                             <div class="col s12 m5">
-                                <img style="border-radius: 17px;" class="responsive-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Squirrel_posing.jpg">
+                                <img style="border-radius: 17px;" class="responsive-img" src="couple.jpg">
                             </div>
                 </div>
 
