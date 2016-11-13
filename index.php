@@ -162,9 +162,9 @@
                 </div>
             </div>
         </div>
-<!--        <div class="parallax-container valign-wrapper">
+        <div class="parallax-container valign-wrapper">
             <div class="parallax"><img src="couple.jpg" alt="Unsplashed background img 2"></div>
-        </div>-->
+        </div>
         <div class="contentWrapper">
             <div class="pageWrapper">
                 <div class="row hide-on-large-only">
@@ -232,9 +232,9 @@
                 </div>
             </div>
         </div>
-        <div class="parallax-container valign-wrapper">
+      <!--  <div class="parallax-container valign-wrapper">
             <div class="parallax"><img src="https://puu.sh/sgyge/8b67b37aeb.jpg" alt="Unsplashed background img 2"></div>
-        </div>
+        </div>-->
         <div class="contentWrapper">
             <div class="pageWrapper">
                 <h1 class="padMe">Here's how we're different.</h1>
