@@ -156,9 +156,10 @@
                 </div>
 
 
-                <div class="card-panel">
 
-                    <div class="row">
+
+                <div class="row">
+                    <div class="card-panel">
                         <div class="col s12 m6">
                             <h2>Deposits</h2>
                             <div style="height:90vh;overflow-y:auto">
@@ -177,6 +178,8 @@
                                 </table>
                             </div>
                         </div>
+                    </div>
+                    <div class="card-panel">
                         <div class="col s12 m6">
                             <h2>Purchases</h2>
                             <div style="height:90vh;overflow-y:auto">
@@ -195,8 +198,8 @@
                                 </table>
                             </div>
                         </div>
-
                     </div>
+
                 </div>
 
                 <div class="card-panel">
