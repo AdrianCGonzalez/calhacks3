@@ -332,9 +332,9 @@
                 success: function(results){
 
                     curBal = results.balance;
-                    console.log(curBal);
+                    // console.log(curBal);
                     curBal /=100;
-                    console.log(curBal);
+                    //console.log(curBal);
 
                     $("#balance").html("Your balance is "+Math.round(curBal * 100) / 100 + " with " +results.rewards+" reward points!");
                 }
@@ -342,7 +342,7 @@
             $.ajax({
                 url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/purchases?key=92d167a667478cadc9b5542720b5463d',
                 success: function(results){
-                    console.log("purchases");
+                    //   console.log("purchases");
                     for(var i  =0;i<12;i++)
                     {
                         var sumPurchase = 0;
@@ -350,13 +350,13 @@
                         {
                             if(results[j].purchase_date.indexOf("2015-"+(i+1)+"-")==0 ){
                                 sumPurchase += results[j].amount;
-                                console.log(results[j].amount);
+                                //  console.log(results[j].amount);
                             }
                         }
                         purchaseMonth.push(sumPurchase*33);
-                        console.log(sumPurchase);
+                        // console.log(sumPurchase);
                     }
-                    console.log(purchaseMonth);
+                    // console.log(purchaseMonth);
                     $.ajax({
                         url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/deposits?key=92d167a667478cadc9b5542720b5463d',
                         success: function(results){
@@ -373,7 +373,7 @@
                                 depositMonth.push(sumDeposit);
                                 //console.log(sumDeposit);
                             }
-                            console.log(depositMonth);
+                            //     console.log(depositMonth);
                             for(var k = 0; k < 12 ; k++)
                             {
                                 if(depositMonth[k] < minMon)
@@ -394,7 +394,7 @@
 
                             }
                             netMonth = netMonth.reverse();
-                            console.log(netMonth);
+                            //   console.log(netMonth);
                             var regre = [];
                             for(var i =0;i<12;i++)
                             {
@@ -424,37 +424,51 @@
                             //    console.log(netMonth);
                             combineDP.push(purchaseMonth);
                             combineDP.push(depositMonth);
-                           // makeChart("#myPi",combineDP,minMon);
-                          //  makeChart("#myPi2",temp,minNet);
+
+                            $.ajax({
+                                url: 'http://52.161.22.32/travelAPI/?origin=SFO&maxPrice=10000',
+                                success: function(results){
+                                    var output = JSON.parse(results);
+                                    console.log(output);
+                                }
+                            });
+
+
+
+
+
+
+                            // makeChart("#myPi",combineDP,minMon);
+                            //  makeChart("#myPi2",temp,minNet);
+                        }
+                        });
+                    }
+                           });
+
+
+                    $.ajax({
+                        url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/purchases?key=92d167a667478cadc9b5542720b5463d',
+                        success: function(results){
+                            var items = [];
+                            var iCount= [];
+                            for(k=0;k<results.length;k++){
+                                if(items.indexOf(results[k].description) >-1)
+                                {
+                                    iCount[items.indexOf(results[k].description)]++;
+                                    ////     console.log("found it "+items);
+                                }else
+                                {
+                                    items.push(results[k].description);
+                                    iCount.push(1);
+                                }
+                            }
+                            //  console.log("description "+items);
+                            //  console.log(iCount);
+                            // makepi("#myChart1",iCount,items);
                         }
                     });
-                }
-            });
 
-
-            $.ajax({
-                url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/purchases?key=92d167a667478cadc9b5542720b5463d',
-                success: function(results){
-                    var items = [];
-                    var iCount= [];
-                    for(k=0;k<results.length;k++){
-                        if(items.indexOf(results[k].description) >-1)
-                        {
-                            iCount[items.indexOf(results[k].description)]++;
-                            ////     console.log("found it "+items);
-                        }else
-                        {
-                            items.push(results[k].description);
-                            iCount.push(1);
-                        }
-                    }
-                    //  console.log("description "+items);
-                    //  console.log(iCount);
-                   // makepi("#myChart1",iCount,items);
-                }
-            });
-
-            /* for(k=0;k<3;k++){
+                    /* for(k=0;k<3;k++){
             $.ajax({
                 url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/deposits?key=92d167a667478cadc9b5542720b5463d',
                 success: function(results){
