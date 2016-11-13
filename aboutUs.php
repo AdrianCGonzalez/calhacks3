@@ -165,7 +165,7 @@
 
                             <div id="myChartcon">
                                 <div class="ct-chart ct-perfect-fourth" id="myChart"></div>
-                                <script>makepi("#myChart");</script>
+                                <script>makepi("#myChart",[5,10,15],['test','trst','ttst']);</script>
                             </div>
                         </div>
 
@@ -206,7 +206,7 @@
 
                             <div id="myChartcon">
                                 <div class="ct-chart ct-perfect-fourth" id="myChart1"></div>
-                                <script>makepi("#myChart1");</script>
+                                <script>makepi("#myChart1",[5,10,15],['test','trst','ttst']);</script>
                             </div>
                         </div>
 
