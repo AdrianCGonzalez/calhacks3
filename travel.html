@@ -3,7 +3,6 @@
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name='viewport' content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0"/>
-        <meta http-equiv="refresh" content="45">
         <meta name="apple-touch-fullscreen" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <title>Vacation</title>
@@ -317,7 +316,24 @@
                         alert(results );
                         var output = JSON.parse(results);
                         console.log(output);
-                        $("#introduction").html("Welcome "+results.first_name + " " +results.last_name+"!");
+                        var itt = Math.round(results.results.length/5);
+                        console.log(results.results.length);
+                        var content = "";
+                        for(var i = 0;i<results.results.length;i+=itt)
+                        {
+                            content+='<div class="card-panel"><h3 style="color:#1ab394;">'+results.results[i].destination+'</h3>';
+                            content+='<br><h4 class="right">$'+results.results[i].fare.total_price+'</h4><b>Airline:</b><br><p>'+results.results[i].destination+'</p>';
+                            content+='<b> depart from:</b><br><p>'+results.origin+'</p><b>Description:</b><br>';
+                            content+='<p> THis place is great cause its great. Words words words words words</p></div>';
+
+                            console.log(content);
+                            console.log(results.results[i].price);
+                            console.log(results.results[i].destination);
+                            console.log(results.results[i].departure_date);
+
+
+                        }
+                        $("#Where").html(content);
                     }
                 });
             });
