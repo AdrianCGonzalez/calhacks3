@@ -158,10 +158,10 @@
 
                 <div class="card-panel">
 
-                    <div class="row" style="height:90vh;overflow-y:auto">
-                        <div class="col s12 ">
+                    <div class="row">
+                        <div class="col s12 m6">
                             <h2>Deposits</h2>
-                            <table class="higlight bordered">
+                            <table class="higlight bordered" style="height:90vh;overflow-y:auto">
                                 <thead>
                                     <tr>
                                         <th data-field="id">Amount</th>
@@ -176,16 +176,32 @@
                             </table>
 
                         </div>
+                        <div class="col s12 m6">
+                            <h2>Purchases</h2>
+                            <table class="bordered highlight" style="height:90vh;overflow-y:auto">
+                                <thead>
+                                    <tr>
+                                        <th data-field="id">Description</th>
+                                        <th data-field="price">Item Price</th>
+                                        <th data-field="date">Date Purchased</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody id="purchasee">
+
+                                </tbody>
+                            </table>
+                        </div>
                         
                     </div>
                 </div>
 
                 <div class="card-panel">
-                    <div class="row" style="height:90vh;overflow-y:auto">
+                    <div class="row" >
              
-                        <div class="col s12">
+                        <div class="col s12 m6">
                             <h2>Purchases</h2>
-                            <table class="bordered highlight">
+                            <table class="bordered highlight" style="height:90vh;overflow-y:auto">
                                 <thead>
                                     <tr>
                                         <th data-field="id">Description</th>
