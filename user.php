@@ -29,7 +29,7 @@
             $(document).ready(function(){
                 $('.parallax').parallax();
             });
-                 $(document).ready(function(){
+            $(document).ready(function(){
                 // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
                 $('.modal-trigger').leanModal();
             });
@@ -78,29 +78,34 @@
             </ul>
         </div>
         <a href="#modal1" data-target="modal1" class="modal-trigger">Log In</a>
-        <div id="modal1" class="modal" style="overflow:hidden;">
-<div class="modal-content">
-<h4 style="text-align:center">Sign In</h4>
-<form class="col s12">
 
-<div class="row">
-<div class="input-field col s12">
-<i class="material-icons prefix">email</i>
-<input id="name" class="validate">
-<label for="name">Name</label>
-</div>
-</div>
-<div class="row">
-<div class="input-field col s12">
-<i class="material-icons prefix">lock</i>
-<input id="comment" type="text" class="validate">
-<label for="comment">Password</label>
-</div>
-</div>
-<div class="input-field">
-<label class="control-label" for="signin"></label>
-        
-        
+        <div id="modal1" class="modal" style="overflow:hidden;">
+            <div class="modal-content">
+                <h4 style="text-align:center">Sign In</h4>
+                <form class="col s12">
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">email</i>
+                            <input id="name" class="validate">
+                            <label for="name">Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">lock</i>
+                            <input id="comment" type="text" class="validate">
+                            <label for="comment">Password</label>
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <label class="control-label" for="signin"></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
         <div class="contentWrapper">
             <div class="pageWrapper">
 
@@ -209,7 +214,7 @@
                                 </thead>
 
                                 <tbody id="depositt">
-                            
+
 
                                 </tbody>
                             </table>
@@ -240,7 +245,7 @@
                                 </thead>
 
                                 <tbody id="purchasee">
-                                
+
                                 </tbody>
                             </table>
                         </div>
@@ -372,7 +377,7 @@
         $.ajax({
             url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/purchases?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
- console.log("purchases");
+                console.log("purchases");
                 for(var i  =0;i<12;i++)
                 {
                     var sumPurchase = 0;
@@ -402,7 +407,7 @@
                             depositMonth.push(sumDeposit);
                             //console.log(sumDeposit);
                         }
-                         console.log(depositMonth);
+                        console.log(depositMonth);
                         for(var k = 0; k < 12 ; k++)
                         {
                             if(depositMonth[k] < minMon)
@@ -430,13 +435,13 @@
                             temp1.push(netMonth[i]);
                             regre.push(temp1);
                         }
-                       // console.log(regre);
+                        // console.log(regre);
                         var data = regre;
                         var result = regression('linear', data);
                         var slope = result.equation[0];
                         var yIntercept = result.equation[1];
-                      //  console.log(slope);
-                      //  console.log(yIntercept);
+                        //  console.log(slope);
+                        //  console.log(yIntercept);
                         var plotreg = [];
                         plotreg.push(yIntercept);
                         for(var i = 1;i<12;i++)
@@ -480,23 +485,23 @@
                     if(items.indexOf(results[k].description) >-1)
                     {
                         iCount[items.indexOf(results[k].description)]++;
-                   ////     console.log("found it "+items);
+                        ////     console.log("found it "+items);
                     }else
                     {
                         items.push(results[k].description);
                         iCount.push(1);
                     }
                 }
-              //  console.log("description "+items);
-              //  console.log(iCount);
+                //  console.log("description "+items);
+                //  console.log(iCount);
                 makepi("#myChart1",iCount,items);
             }
         });
         $.ajax({
-                url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/deposits?key=92d167a667478cadc9b5542720b5463d',
-                success: function(results){
-                    for(u=0;u<3;u++){
-                        var deposittt = "";
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/deposits?key=92d167a667478cadc9b5542720b5463d',
+            success: function(results){
+                for(u=0;u<3;u++){
+                    var deposittt = "";
                     deposittt += "<tr>"+"<td>"+results[u].amount + "</td>"+"<td>"+results[u].transaction_date + "</td>"+"</tr>";
                     $("#depositt").html($("#depositt").html()+deposittt);
                 }
