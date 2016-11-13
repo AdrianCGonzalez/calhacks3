@@ -452,20 +452,23 @@
                         var slope = result.equation[0];
                         var yIntercept = result.equation[1];
 
+                        var total = 0;
+                        for(var i=0;i<12;i++)
+                        {
+                            total += depositMonth[i];
+                        }
+
+                        var spendingLimit = total*.03;
+                        console.log(spendingLimit);
+
+
                         var myDestinations ;
                         $.ajax({
-                            url: 'http://52.161.22.32/travelAPI/?origin=SFO&maxPrice=10000',
+                            url: 'http://52.161.22.32/travelAPI/?origin=SFO&maxPrice='+spendingLimit,
                             success: function(results){
                                 myDestinations = JSON.parse(results);
                                 console.log(myDestinations);
-                                var total = 0;
-                                for(var i=0;i<12;i++)
-                                {
-                                    total += depositMonth[i];
-                                }
 
-                                var spendingLimit = total*.03;
-                                console.log(spendingLimit);
                             }
                         });
 
