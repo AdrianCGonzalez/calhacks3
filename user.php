@@ -77,7 +77,7 @@
             <div class="pageWrapper">
 
 
-                <a href="#">This is a link</a>
+
                 <div class="card-panel">
                     <div class="col s12">
                         <h3 id="introduction"></h3>
@@ -143,13 +143,13 @@
                     </div>
                 </div>
                 <div class="row" style="padding:0px;">
-                    <div class ="col s12 m4">
+                    <div class ="col s12 m6">
                         <div class="card-panel">
                             <div class="ct-chart ct-perfect-fourth" id="myPi"></div>
 
                         </div>
                     </div>
-                    <div class ="col s12 m4">
+                    <div class ="col s12 m6">
                         <div class="card-panel">
                             <div class="ct-chart ct-perfect-fourth" id="myPi2"></div>
 
