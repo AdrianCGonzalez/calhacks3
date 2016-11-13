@@ -344,7 +344,7 @@
         var minNet = 2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2;
         var curBal = 0;
         $.ajax({
-            url: 'http://api.reimaginebanking.com/accounts/'+UserID+'?key=92d167a667478cadc9b5542720b5463d',
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549dde?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
                 curBal = results.balance;
                 console.log(curBal);
@@ -372,7 +372,7 @@
                 }
                 console.log(purchaseMonth);
                 $.ajax({
-                    url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/deposits?key=92d167a667478cadc9b5542720b5463d',
+                    url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549dde/deposits?key=92d167a667478cadc9b5542720b5463d',
                     success: function(results){
                         for(var i  =0;i<12;i++)
                         {
