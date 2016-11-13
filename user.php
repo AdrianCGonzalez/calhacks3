@@ -371,6 +371,7 @@
                     {
                         if(results[j].purchase_date.indexOf("2015-"+(i+1)+"-")==0 ){
                             sumPurchase += results[i].amount;
+                            console.log(results[i].amount);
                         }
                     }
                     purchaseMonth.push(sumPurchase*33);
