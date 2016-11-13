@@ -414,6 +414,7 @@
                             }
 
                         }
+                        netMonth = netMonth.reverse();
                         console.log(netMonth);
                         var regre = [];
                         for(var i =0;i<12;i++)
