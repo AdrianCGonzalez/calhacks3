@@ -56,16 +56,12 @@
     <body>
         <nav class="teal darken-2">
             <div class="nav-wrapper">
-                <div class="contentWrapper">
-                    <div class="pageWrapper">
                         <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:13px;width:36px;height:36px"></a>
                         <a href="index.php" class="brand-logo hide-on-med-and-down" style="margin-left:40px">CalHacks</a>
                         <ul id="nav-mobile" class="right hide-on-small-only">
                             <li><a href="aboutUs.php">About Us</a></li>
                             <li><a href="#modal1" data-target="modal1" class="modal-trigger">Log In</a></li>
                         </ul>
-                    </div>
-                </div>
             </div>
         </nav>
 
