@@ -354,7 +354,7 @@
 
                 curBal = results.balance;
                 console.log(curBal);
-                //curBal /=100;
+                curBal /=100;
                 console.log(curBal);
 
                 $("#balance").html("Your balance is "+Math.round(curBal * 100) / 100 + " with " +results.rewards+" reward points!");
