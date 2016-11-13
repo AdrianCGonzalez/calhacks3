@@ -109,7 +109,7 @@
                         </tr>
                     </thead>
 
-                    <tbody id="purchaseee">
+                    <tbody id="purchaseeee">
 
                     </tbody>
                 </table>>
@@ -465,8 +465,8 @@
                         //    console.log(netMonth);
                         combineDP.push(purchaseMonth);
                         combineDP.push(depositMonth);
-                        makeChart("#myPi",combineDP,minMon);
-                        makeChart("#myPi2",temp,minNet);
+                        makeChart("#myPi",combineDP,minMon,'month','amount');
+                        makeChart("#myPi2",temp,minNet,'month','balance');
                     }
                 });
             }
