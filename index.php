@@ -163,7 +163,7 @@
             </div>
         </div>
         <div class="parallax-container valign-wrapper">
-            <div class="parallax"><img src="couple.jpg" alt="Unsplashed background img 2"></div>
+            <div class="parallax"><img src="beach.jpg" alt="Unsplashed background img 2"></div>
         </div>
         <div class="contentWrapper">
             <div class="pageWrapper">
