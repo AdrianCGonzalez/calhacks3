@@ -87,11 +87,11 @@
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
                                     <span class="card-title">Payments</span>
-                                    <p>I am a very simple card. I am good at containing small bits of information.
-                                        I am convenient because I require little markup to use effectively.</p>
+                                    <p>Get updates on your payment habits. Get a detailed destricption of how well you
+                                        manage your accounts.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                    <a href="#">See Recent Payments</a>
 
                                 </div>
                             </div>
@@ -103,10 +103,9 @@
                                     <span class="card-title">Pay Bill</span>
                                     <p>Bill Pay is quicker and easier than writing and mailing paper checks.
                                       Pay your bills online in minutes!</p>
-                                  <br>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                    <a href="#">Pay Bills Online</a>
 
                                 </div>
                             </div>
@@ -116,11 +115,10 @@
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
                                     <span class="card-title">Transfer</span>
-                                    <p>I am a very simple card. I am good at containing small bits of information.
-                                        I am convenient because I require little markup to use effectively.</p>
+                                    <p>Send your money to other accounts safely and with ease. It's never been easier.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                    <a href="#">Transfer Account Money</a>
 
                                 </div>
                             </div>
@@ -130,11 +128,11 @@
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
                                     <span class="card-title">Travel</span>
-                                    <p>I am a very simple card. I am good at containing small bits of information.
-                                        I am convenient because I require little markup to use effectively.</p>
+                                    <p>Get info an trips that you can or could afford this year based on
+                                        your account payments and activities.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                    <a href="#">Go Abroad</a>
 
                                 </div>
                             </div>

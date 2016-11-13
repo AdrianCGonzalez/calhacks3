@@ -148,7 +148,6 @@
                                     <span class="card-title">Pay Bill</span>
                                     <p>Bill Pay is quicker and easier than writing and mailing paper checks.
                                         Pay your bills online in minutes!</p>
-                                    <br>
                                 </div>
                                 <div class="card-action">
                                     <a href="#payBill.php">Pay Bills Online</a>
@@ -161,7 +160,7 @@
                             <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
                                     <span class="card-title">Transfer</span>
-                                    <p>Send your money to other accounts will ease. It's never been easier.</p>
+                                    <p>Send your money to other accounts safely and with ease. It's never been easier.</p>
                                 </div>
                                 <div class="card-action">
                                     <a href="transfer.php">Transfer Account Money</a>
