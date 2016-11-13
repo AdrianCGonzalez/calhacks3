@@ -93,7 +93,7 @@
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="material-icons prefix">lock</i>
-                            <input id="comment" type="text" class="validate" placeholder="Password">
+                            <input id="comment" type="password" class="validate" placeholder="Password">
                             <label for="comment"></label>
                         </div>
                     </div>
