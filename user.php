@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -181,25 +180,42 @@
                                     </tr>
                                 </thead>
 
-                                <tbody>
-                                    <tr>
-                                        <td>Alvin</td>
-                                        <td>Eclair</td>
+                                <tbody id="depositt">
 
-                                    </tr>
-                                    <tr>
-                                        <td>Alan</td>
-                                        <td>Jellybean</td>
-
-                                    </tr>
 
                                 </tbody>
                             </table>
 
                         </div>
-                        <div class="col s12 right"><a href="#"  class="waves-effect waves-light btn right">View Full Purchace History</a></div>
+                        <div class="col s12 right">  <a class="waves-effect waves-light btn right" href="#modal1">View Full Purchace History</a></div>
                     </div>
                 </div>
+                <!-- Modal Trigger -->
+
+
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal bottom-sheet">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <table class="bordered highlight">
+                            <thead>
+                                <tr>
+                                    <th data-field="id">Description</th>
+                                    <th data-field="price">Item Price</th>
+                                    <th data-field="date">Date Purchased</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="purchaseee">
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                </div>
+
 
                 <div class="card-panel">
                     <div class="row">
@@ -221,10 +237,8 @@
                                     </tr>
                                 </thead>
 
-                                <tbody id="purchasee">
-                                    <tr id="description"></tr>
-                                    <tr id="amount"></tr>
-                                    <tr id="purchase_date"></tr>
+                                <tbody id="depositt">
+
                                 </tbody>
                             </table>
                         </div>
@@ -279,7 +293,6 @@
             var myScroll = $(this).scrollTop();
             inAnimate(myScroll);
         });
-
         function inAnimate(myScroll)
         {
             $( ".holder" ).each(function() {
@@ -287,7 +300,6 @@
                 var myAlign = $(this).position().left;
                 var myWidth = $(this).width()
                 var diff = myScroll+( $(window).height()*.9 );
-
                 if(($(this).position().top) <= diff && $(this).position().top >= ( myScroll-$(this).height())){
                     if(element.children().hasClass("f")){
                         element.children().addClass("fi");
@@ -299,7 +311,6 @@
                     {
                         element.children().addClass("ac");
                     }
-
                 }else if($(this).hasClass("repeat"))
                 {
                     outAnimate(element);
@@ -318,7 +329,6 @@
             if(element.children().hasClass("g")){
                 element.children().removeClass("gr");
             }
-
         }
         initializeAnimation();
         var myScroll = $(this).scrollTop();
@@ -334,7 +344,6 @@
         $(window).resize(function(){
             graphSize();
         });
-
         var purchaseMonth = [];
         var depositMonth = [];
         var netMonth = [];
@@ -351,19 +360,17 @@
         $.ajax({
             url: 'http://api.reimaginebanking.com/accounts/'+UserID+'?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
-
                 curBal = results.balance;
                 console.log(curBal);
                 curBal /=100;
                 console.log(curBal);
-
                 $("#balance").html("Your balance is "+Math.round(curBal * 100) / 100 + " with " +results.rewards+" reward points!");
             }
         });
         $.ajax({
             url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/purchases?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
- console.log("purchases");
+                console.log("purchases");
                 for(var i  =0;i<12;i++)
                 {
                     var sumPurchase = 0;
@@ -381,7 +388,6 @@
                 $.ajax({
                     url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/deposits?key=92d167a667478cadc9b5542720b5463d',
                     success: function(results){
-
                         for(var i  =0;i<12;i++)
                         {
                             var sumDeposit = 0;
@@ -394,7 +400,7 @@
                             depositMonth.push(sumDeposit);
                             //console.log(sumDeposit);
                         }
-                         console.log(depositMonth);
+                        console.log(depositMonth);
                         for(var k = 0; k < 12 ; k++)
                         {
                             if(depositMonth[k] < minMon)
@@ -407,12 +413,10 @@
                             }
                             netMonth.push(curBal);
                             curBal = curBal -( purchaseMonth[11-k]-depositMonth[11-k])
-
                             if(netMonth[k]<minNet)
                             {
                                 minNet = netMonth[k];
                             }
-
                         }
                         netMonth = netMonth.reverse();
                         console.log(netMonth);
@@ -424,21 +428,19 @@
                             temp1.push(netMonth[i]);
                             regre.push(temp1);
                         }
-                       // console.log(regre);
-
+                        // console.log(regre);
                         var data = regre;
                         var result = regression('linear', data);
                         var slope = result.equation[0];
                         var yIntercept = result.equation[1];
-                      //  console.log(slope);
-                      //  console.log(yIntercept);
+                        //  console.log(slope);
+                        //  console.log(yIntercept);
                         var plotreg = [];
                         plotreg.push(yIntercept);
                         for(var i = 1;i<12;i++)
                         {
                             plotreg.push(plotreg[i-1]+slope);
                         }
-
                         var temp = [];
                         temp.push(netMonth);
                         temp.push(plotreg);
@@ -457,7 +459,6 @@
                 $("#introduction").html("Welcome "+results.first_name + " " +results.last_name+"!");
             }
         });
-
         $.ajax({
             url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/purchases?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
@@ -468,7 +469,6 @@
                 }
             }
         });
-
         $.ajax({
             url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/purchases?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
@@ -478,29 +478,37 @@
                     if(items.indexOf(results[k].description) >-1)
                     {
                         iCount[items.indexOf(results[k].description)]++;
-                   ////     console.log("found it "+items);
+                        ////     console.log("found it "+items);
                     }else
                     {
                         items.push(results[k].description);
                         iCount.push(1);
                     }
                 }
-              //  console.log("description "+items);
-              //  console.log(iCount);
+                //  console.log("description "+items);
+                //  console.log(iCount);
                 makepi("#myChart1",iCount,items);
             }
         });
-
-        /* for(k=0;k<3;k++){
-            $.ajax({
-                url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/deposits?key=92d167a667478cadc9b5542720b5463d',
-                success: function(results){
-                    descriptionn += "<tr>" + "<td>"+results[k].description + "</td>"+"<td>"+results[k].amount + "</td>"+"<td>"+results[k].purchase_date + "</td>"+"</tr>";
-                    $("#depositt").html($("#depositt").html()+descriptionn);
+        $.ajax({
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/deposits?key=92d167a667478cadc9b5542720b5463d',
+            success: function(results){
+                for(u=0;u<results.length;u++){
+                    var deposittt = "";
+                    deposittt += "<tr>"+"<td>"+results[u].amount + "</td>"+"<td>"+results[u].transaction_date + "</td>"+"</tr>";
+                    $("#depositt").html($("#depositt").html()+deposittt);
                 }
-            });
-        }*/
-
-
+            }
+        });
+        $.ajax({
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
+            success: function(results){
+                for(k=0;k<results.length;k++){
+                    var descriptionn = "";
+                    descriptionn += "<tr>" + "<td>"+results[k].description + "</td>"+"<td>"+results[k].amount + "</td>"+"<td>"+results[k].purchase_date + "</td>"+"</tr>";
+                    $("#purchaseee").html($("#purchaseee").html()+descriptionn);
+                }
+            }
+        });
     </script>
 </html>
