@@ -161,13 +161,13 @@
 
                     <div class="row">
                         <div class="col s12 m2">
-<div class="valign-wrapper">
-                            <div id="myChartcon" class="valign">
+
+                            <div id="myChartcon">
                                 <div class="ct-chart ct-perfect-fourth" id="myChart"></div>
                                 <script>makepi("#myChart");</script>
                             </div>
                         </div>
-                      </div>
+
                         <div class="col s12 m10">
                             <p>Deposits</p>
                             <table>
@@ -202,13 +202,13 @@
                 <div class="card-panel">
                     <div class="row">
                         <div class="col s12 m2">
-<div class="valign-wrapper">
-                            <div id="myChartcon" class="valign">
+
+                            <div id="myChartcon">
                                 <div class="ct-chart ct-perfect-fourth" id="myChart1"></div>
                                 <script>makepi("#myChart1");</script>
                             </div>
                         </div>
-                      </div>
+
                         <div class="col s12 m10">
                             <p>Purchaces</p>
                             <table>
@@ -220,16 +220,10 @@
                                     </tr>
                                 </thead>
 
-                                <tbody>
-                                    <tr id="description">
-
-                                    </tr>
-                                    <tr id="amount">
-
-                                    </tr>
-                                    <tr id="purchase_date">
-
-                                    </tr>
+                                <tbody id="purchasee">
+                                    <tr id="description"></tr>
+                                    <tr id="amount"></tr>
+                                    <tr id="purchase_date"></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -451,26 +445,8 @@ var purchaseMonth = [];
             $.ajax({
                 url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
                 success: function(results){
-                    descriptionn += "<td>"+results.description + "</td>";
-                    $("#description").html("<td>"+results.description + "</td>");
-                }
-            });
-        }
-        for(k=0;k<3;k++){
-            $.ajax({
-                url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
-                success: function(results){
-                    amountt += "<td>"+results.amount + "</td>";
-                    $("#amount").html("<td>"+results.amount + "</td>");
-                }
-            });
-        }
-        for(k=0;k<3;k++){
-            $.ajax({
-                url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
-                success: function(results){
-                    purchase_datee += "<td>"+results.purchase_date + "</td>";
-                    $("#purchase_date").html("<td>"+results.purchase_date + "</td>");
+                  descriptionn += "<tr>" + "<td>"+results.description + "</td>"+"<td>"+results.amount + "</td>"+"<td>"+results.purchase_date + "</td>"+"</tr>";
+                    $("#purchasee").html($("#purchasee").html()+descriptionn);
                 }
             });
         }
