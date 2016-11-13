@@ -116,6 +116,7 @@
 <hr>
                     </div>
                     <div class="col l3 m12 card-panel">
+                    <div class="col m12 card-panel">
 
                         <p>Current Balance:</p>
                         <br>
@@ -124,7 +125,7 @@
 
 
                     </div>
-                    <div class="col l3 m12 card-panel">
+                    <div class="col m12 card-panel">
 
                         <p>Cart Summary</p>
                         <br><p>Total</p><p>$10000.00</p>
@@ -134,7 +135,7 @@
 
 
                     </div>
-                    <div class="col l3 m12 card-panel">
+                    <div class="col m12 card-panel">
 
                         <p>Support</p>
                         <br><p>+1 (209) 722-8022</p>
