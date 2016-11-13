@@ -154,7 +154,7 @@
                 <div class="card-panel">
 
                     <div class="row">
-                        <div class="card-panel col s12 m2">
+                        <div class="col s12 m2">
 
                             <div id="myChartcon">
                                 <div class="ct-chart ct-perfect-fourth" id="myChart"></div>
@@ -195,7 +195,7 @@
 
                 <div class="card-panel">
                     <div class="row">
-                        <div class="card-panel col s12 m2">
+                        <div class="col s12 m2">
 
                             <div id="myChartcon">
                                 <div class="ct-chart ct-perfect-fourth" id="myChart1"></div>
@@ -333,11 +333,30 @@
             graphSize();
         });
 
-        var purchaseMonth = [];
+var purchaseMonth = [];
         var depositMonth = [];
         var netMonth = [];
         var combineDP = [];
         var minMon = 2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2;
+        var minNet = 2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2;
+        var curBal = 0;
+        $.ajax({
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/customer?key=92d167a667478cadc9b5542720b5463d',
+            success: function(results){
+                $("#introduction").html("Welcome "+results.first_name + " " +results.last_name+"!");
+            }
+        });
+        $.ajax({
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc?key=92d167a667478cadc9b5542720b5463d',
+            success: function(results){
+
+                curBal = results.balance;
+                console.log(curBal);
+                curBal /=100;
+                console.log(curBal);
+                $("#balance").html("Your balance is "+curBal + " with " +results.rewards+" reward points!");
+            }
+        });
         $.ajax({
             url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549ddc/purchases?key=92d167a667478cadc9b5542720b5463d',
             success: function(results){
@@ -382,11 +401,25 @@
                             {
                                 minMon = purchaseMonth[k];
                             }
-                            netMonth.push(depositMonth[k] - purchaseMonth[k]);
+                            curBal = curBal -(depositMonth[11-k] - purchaseMonth[11-k])
+                            netMonth.push(curBal);
+                            if(netMonth[k]<minNet)
+                            {
+                                minNet = netMonth[k];
+                            }
+
                         }
-                        combineDP.push(depositMonth);
+                        var temp = [];
+                        temp.push(netMonth);
+                        console.log(netMonth);
                         combineDP.push(purchaseMonth);
+                        combineDP.push(temp);
+                        combineDP.push(temp);
+                        combineDP.push(temp);
+                        combineDP.push(temp);
+                        combineDP.push(depositMonth);
                         makeChart("#myPi",combineDP,minMon);
+                        makeChart("#myPi2",temp,minNet);
 
                     }
                 });

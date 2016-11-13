@@ -8,7 +8,8 @@ var chart = new Chartist.Line(id, {
   labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
   series: mySeries
 }, {
-  low: myLow
+  low: myLow,
+  showArea: true
 });
 
 // Let's put a sequence number aside so we can use it in the event callbacks
