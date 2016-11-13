@@ -106,7 +106,6 @@
                                     <span class="card-title">Pay Bill</span>
                                     <p>Bill Pay is quicker and easier than writing and mailing paper checks.
                                         Pay your bills online in minutes!</p>
-                                    <br>
                                 </div>
                                 <div class="card-action">
                                     <a href="#payBill.php">Pay Bills Online</a>
