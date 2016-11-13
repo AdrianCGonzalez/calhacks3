@@ -143,9 +143,15 @@
                     </div>
                 </div>
 
-                <div class ="col s12 m4">
+              <div class ="col s12 m4">
                     <div class="card-panel">
                         <div class="ct-chart ct-perfect-fourth" id="myPi"></div>
+
+                    </div>
+                </div>
+                <div class ="col s12 m4">
+                    <div class="card-panel">
+                        <div class="ct-chart ct-perfect-fourth" id="myPi2"></div>
 
                     </div>
                 </div>
@@ -155,13 +161,13 @@
 
                     <div class="row">
                         <div class="col s12 m2">
-
-                            <div id="myChartcon">
+<div class="valign-wrapper">
+                            <div id="myChartcon" class="valign">
                                 <div class="ct-chart ct-perfect-fourth" id="myChart"></div>
                                 <script>makepi("#myChart");</script>
                             </div>
                         </div>
-
+                      </div>
                         <div class="col s12 m10">
                             <p>Deposits</p>
                             <table>
@@ -196,13 +202,13 @@
                 <div class="card-panel">
                     <div class="row">
                         <div class="col s12 m2">
-
-                            <div id="myChartcon">
+<div class="valign-wrapper">
+                            <div id="myChartcon" class="valign">
                                 <div class="ct-chart ct-perfect-fourth" id="myChart1"></div>
                                 <script>makepi("#myChart1");</script>
                             </div>
                         </div>
-
+                      </div>
                         <div class="col s12 m10">
                             <p>Purchaces</p>
                             <table>
