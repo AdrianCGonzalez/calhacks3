@@ -165,7 +165,7 @@
                     <div class="row">
                         <div class="col s12 ">
                             <h2>Deposits</h2>
-                            <table>
+                            <table class="higlight bordered">
                                 <thead>
                                     <tr>
                                         <th data-field="id">Amount</th>
@@ -189,7 +189,7 @@
              
                         <div class="col s12">
                             <h2>Purchaces</h2>
-                            <table>
+                            <table class="bordered highlight">
                                 <thead>
                                     <tr>
                                         <th data-field="id">Description</th>
