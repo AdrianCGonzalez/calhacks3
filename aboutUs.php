@@ -50,96 +50,133 @@
     <body>
         <nav class="teal darken-2">
             <div class="nav-wrapper">
-
-                <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:13px;width:36px;height:36px"></a>
-                <a href="index.php" class="brand-logo hide-on-med-and-down" style="margin-left:40px">CalHacks</a>
-                <ul id="nav-mobile" class="right hide-on-small-only">
-                    <li><a href="aboutUs.php">About Us</a></li>
-                    <li><a href="#modal1" data-target="modal1" class="modal-trigger">Log Out</a></li>
-                </ul>
+                <div class="contentWrapper">
+                    <div class="pageWrapper">
+                        <a href="index.php" class="brand-logo"> <img src="http://www.calhacks.io/assets/img/sittingbear.png" style="margin-top:13px;width:36px;height:36px"></a>
+                        <a href="index.php" class="brand-logo hide-on-med-and-down" style="margin-left:40px">CalHacks</a>
+                        <ul id="nav-mobile" class="right hide-on-small-only">
+                            <li><a href="aboutUs.php">About Us</a></li>
+                            <li><a href="#modal1" data-target="modal1" class="modal-trigger">Log In</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
         </nav>
+
+
         <div class="fixed-action-btn hide-on-med-and-up">
             <a class="btn-floating btn-large red">
                 <i class="large material-icons">menu</i>
             </a>
             <ul>
-                <li><a class="btn-floating red" href="aboutUs.html"><i class="material-icons">perm_identity</i></a></li>
-                <li><a class="btn-floating green" href="logIn.html"><i class="material-icons">vpn_key</i></a></li>
+                <li><a class="btn-floating red" href="aboutUs.php"><i class="material-icons">perm_identity</i></a></li>
+                <li><li><a href="#modal1" data-target="modal1" class=" btn-floating red modal-trigger"><i class="material-icons">vpn_key</i></a></li>
             </ul>
+        </div>
+
+
+        <div id="modal1" class="modal" style="overflow:hidden;">
+            <div class="modal-content">
+                <h4 style="text-align:center">Sign In</h4>
+                <form class="col s12">
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">email</i>
+                            <input id="name" class="validate">
+                            <label for="name">Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">lock</i>
+                            <input id="comment" type="text" class="validate">
+                            <label for="comment">Password</label>
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <label class="control-label" for="signin"></label>
+
+                        <div style="text-align:center">
+                            <button id="signin" name="signin" class="btn waves-effect waves-light btn-success" type="submit">Sign In</button>
+                        </div>
+                        <br>
+
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="contentWrapper">
             <div class="pageWrapper">
- <h3  style="text-align:center;color:#black;border-bottom: 1px solid rgba(221, 179, 8, 0.2);">About Us</h3>
-    <div class="row">
-        <div class="col m1"></div>
-        <div class="col m3"> <img data-caption="Michael Brooks" class=" materialboxed img-circle responsive-img center-block" src="michael.jpg" width="200" height="250px" /> </div>
-        <div class="col m8">
-            <p align="left">
-                <br><b>Michael Brooks</b>
+                <h3  style="text-align:center;color:#black;border-bottom: 1px solid rgba(221, 179, 8, 0.2);">About Us</h3>
+                <div class="row">
+                    <div class="col m1"></div>
+                    <div class="col m3"> <img data-caption="Michael Brooks" class=" materialboxed img-circle responsive-img center-block" src="michael.jpg" width="200" height="250px" /> </div>
+                    <div class="col m8">
+                        <p align="left">
+                            <br><b>Michael Brooks</b>
 
-                <br>
-                <br>Undergraduate Student, Bioengineering 4th year<br><br>
+                            <br>
+                            <br>Undergraduate Student, Bioengineering 4th year<br><br>
 
-                Worked on optimizing endothelial fate from a new embryonic stem-cell line with dual endothelial and smooth muscle promoters under GFP and RFP for studying real time morphological vascular development and vascularization of tissues. She then progressed to a postdoctoral position at Washington University in St. Louis. </p>
-        </div>
-    </div>
+                            Worked on optimizing endothelial fate from a new embryonic stem-cell line with dual endothelial and smooth muscle promoters under GFP and RFP for studying real time morphological vascular development and vascularization of tissues. She then progressed to a postdoctoral position at Washington University in St. Louis. </p>
+                    </div>
+                </div>
 
-    <div class="row">
-        <div class="col m1"></div>
-        <div class="col m3"> <img data-caption="Esteban Perez" class=" materialboxed img-circle responsive-img center-block" src="esteban.jpg" width="200" height="250px" /> </div>
-        <div class="col m8">
-            <p align="left">
-                <br><b>Esteban Perez</b>
+                <div class="row">
+                    <div class="col m1"></div>
+                    <div class="col m3"> <img data-caption="Esteban Perez" class=" materialboxed img-circle responsive-img center-block" src="esteban.jpg" width="200" height="250px" /> </div>
+                    <div class="col m8">
+                        <p align="left">
+                            <br><b>Esteban Perez</b>
 
-                <br>
-                <br>Undergraduate Student, Computer Science And Engineering 4th year<br><br>
+                            <br>
+                            <br>Undergraduate Student, Computer Science And Engineering 4th year<br><br>
 
-                Worked on cardiac stem cell differentiation from embryonic stem cells. Her work won best oral presentation at our UC-Systemwide Bioengineering Symposium, 2009. She accepted a research staff position at Stanford University. </p>
-        </div>
-    </div>
+                            Worked on cardiac stem cell differentiation from embryonic stem cells. Her work won best oral presentation at our UC-Systemwide Bioengineering Symposium, 2009. She accepted a research staff position at Stanford University. </p>
+                    </div>
+                </div>
 
-    <div class="row">
-        <div class="col m1"></div>
-        <div class="col m3"> <img data-caption="Alisa Prusa" class=" materialboxed img-circle responsive-img center-block" src="alisa.jpg" width="200" height="250px" /> </div>
-        <div class="col m8">
-            <p align="left">
-                <br><b>Alisa Prusa</b>
+                <div class="row">
+                    <div class="col m1"></div>
+                    <div class="col m3"> <img data-caption="Alisa Prusa" class=" materialboxed img-circle responsive-img center-block" src="alisa.jpg" width="200" height="250px" /> </div>
+                    <div class="col m8">
+                        <p align="left">
+                            <br><b>Alisa Prusa</b>
 
-                <br>
-                <br>Alumni, Computer Science And Engineering<br>
+                            <br>
+                            <br>Alumni, Computer Science And Engineering<br>
 
-                Characterized the angiogenic and vasculogenic potential of embryonic stem cell derived-endothelial cells at operationally defined stages of differentiation. Her research proposal was awarded a 4 year NRSA (pre-doctoral fellowship) by NIH. She then progressed to postdoctoral position with Jane Grande-Allen at Rice University.</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col m1"></div>
-        <div class="col m3"> <img data-caption="Victor Gonzalez" class=" materialboxed img-circle responsive-img center-block" src="victor.jpg" width="200" height="250px" /> </div>
-        <div class="col m8">
-            <p align="left">
-                <br><b>Victor Gonzalez</b>
+                            Characterized the angiogenic and vasculogenic potential of embryonic stem cell derived-endothelial cells at operationally defined stages of differentiation. Her research proposal was awarded a 4 year NRSA (pre-doctoral fellowship) by NIH. She then progressed to postdoctoral position with Jane Grande-Allen at Rice University.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col m1"></div>
+                    <div class="col m3"> <img data-caption="Victor Gonzalez" class=" materialboxed img-circle responsive-img center-block" src="victor.jpg" width="200" height="250px" /> </div>
+                    <div class="col m8">
+                        <p align="left">
+                            <br><b>Victor Gonzalez</b>
 
-                <br>
-                <br>Undergraduate Student, Computer Science And Engineering 4th year<br><br>
+                            <br>
+                            <br>Undergraduate Student, Computer Science And Engineering 4th year<br><br>
 
-                Worked on optimizing endothelial fate from a new embryonic stem-cell line with dual endothelial and smooth muscle promoters under GFP and RFP for studying real time morphological vascular development and vascularization of tissues. She then progressed to a postdoctoral position at Washington University in St. Louis. </p>
-        </div>
-    </div>
+                            Worked on optimizing endothelial fate from a new embryonic stem-cell line with dual endothelial and smooth muscle promoters under GFP and RFP for studying real time morphological vascular development and vascularization of tissues. She then progressed to a postdoctoral position at Washington University in St. Louis. </p>
+                    </div>
+                </div>
 
-    <div class="row">
-        <div class="col m1"></div>
-        <div class="col m3"> <img data-caption="Adrian Gonzalezz" class=" materialboxed img-circle responsive-img center-block" src="adrian.jpg" width="200" height="250px" /> </div>
-        <div class="col m8">
-            <p align="left">
-                <br><b>Adrian Gonzalezz</b>
+                <div class="row">
+                    <div class="col m1"></div>
+                    <div class="col m3"> <img data-caption="Adrian Gonzalezz" class=" materialboxed img-circle responsive-img center-block" src="adrian.jpg" width="200" height="250px" /> </div>
+                    <div class="col m8">
+                        <p align="left">
+                            <br><b>Adrian Gonzalezz</b>
 
-                <br>
-                <br>Undergraduate Student, Computer Science And Engineering 4th year<br><br>
+                            <br>
+                            <br>Undergraduate Student, Computer Science And Engineering 4th year<br><br>
 
-                Worked on cardiac stem cell differentiation from embryonic stem cells. Her work won best oral presentation at our UC-Systemwide Bioengineering Symposium, 2009. She accepted a research staff position at Stanford University. </p>
-        </div>
-    </div>
+                            Worked on cardiac stem cell differentiation from embryonic stem cells. Her work won best oral presentation at our UC-Systemwide Bioengineering Symposium, 2009. She accepted a research staff position at Stanford University. </p>
+                    </div>
+                </div>
 
 
             </div>
