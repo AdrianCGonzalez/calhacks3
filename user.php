@@ -91,7 +91,7 @@
                         </tr>
                     </thead>
 
-                    <tbody id="depositt">
+                    <tbody id="deposittt">
                     </tbody>
                 </table>
             </div>
@@ -187,6 +187,7 @@
 
                     <div class="row">
                         <div class="col s12 m4">
+<h3>Deposits</h3>
 
                             <div id="myChartcon">
                                 <div class="ct-chart ct-perfect-fourth" id="myChart"></div>
@@ -195,8 +196,7 @@
                         </div>
 
                         <div class="col s12 m8">
-                            <p>Deposits</p>
-                            <table>
+                                                <table>
                                 <thead>
                                     <tr>
                                         <th data-field="id">Amount</th>
@@ -219,14 +219,14 @@
                 <div class="card-panel">
                     <div class="row">
                         <div class="col s12 m4">
-
+<h3>Purchaces</h3>
                             <div id="myChartcon">
                                 <div class="ct-chart ct-perfect-fourth" id="myChart1"></div>
                             </div>
                         </div>
 
                         <div class="col s12 m8">
-                            <p>Purchaces</p>
+                            
                             <table>
                                 <thead>
                                     <tr>
