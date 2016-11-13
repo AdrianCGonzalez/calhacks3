@@ -215,7 +215,6 @@
                         </div>
 
                         <div class="col s12 m8">
-                            <br>
                             <table class="striped bordered">
                                 <thead>
                                     <tr>
@@ -232,7 +231,7 @@
                             </table>
 
                         </div>
-                        <div class="col s12 right"><a href="#modal1" data-target="modal1"  class="modal-trigger waves-effect waves-light btn right">View Full Deposit History</a></div>
+                        <div class="col s12 right"><a href="#modal1" data-target="modal1"  class="modal-trigger waves-effect waves-light btn right">View Full Purchace History</a></div>
                     </div>
                 </div>
 
@@ -246,7 +245,7 @@
                         </div>
 
                         <div class="col s12 m8">
-<br>
+
                             <table class="striped bordered">
                                 <thead>
                                     <tr>
@@ -261,7 +260,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="col s12 right"><a href="#modal2" data-target="modal2"  class="modal-trigger waves-effect waves-light btn right">View Full Purchase History</a></div>
+                        <div class="col s12 right"><a href="#modal2" data-target="modal2"  class="modal-trigger waves-effect waves-light btn right">View Full Deposit History</a></div>
                     </div>
                 </div>
             </div>

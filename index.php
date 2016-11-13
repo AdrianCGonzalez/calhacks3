@@ -28,7 +28,7 @@
             $(document).ready(function(){
                 $('.parallax').parallax();
             });
-               $(document).ready(function(){
+            $(document).ready(function(){
                 // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
                 $('.modal-trigger').leanModal();
             });
@@ -73,37 +73,37 @@
         </div>
 
 
-<div id="modal1" class="modal" style="overflow:hidden;">
-<div class="modal-content">
-<h4 style="text-align:center">Sign In</h4>
-<form class="col s12">
+        <div id="modal1" class="modal" style="overflow:hidden;">
+            <div class="modal-content">
+                <h4 style="text-align:center">Sign In</h4>
+                <form class="col s12">
 
-<div class="row">
-<div class="input-field col s12">
-<i class="material-icons prefix">email</i>
-<input id="name" class="validate">
-<label for="name">Name</label>
-</div>
-</div>
-<div class="row">
-<div class="input-field col s12">
-<i class="material-icons prefix">lock</i>
-<input id="comment" type="text" class="validate">
-<label for="comment">Password</label>
-</div>
-</div>
-<div class="input-field">
-<label class="control-label" for="signin"></label>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">email</i>
+                            <input id="name" class="validate">
+                            <label for="name">Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">lock</i>
+                            <input id="comment" type="text" class="validate">
+                            <label for="comment">Password</label>
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <label class="control-label" for="signin"></label>
 
-<div style="text-align:center">
-<button id="signin" name="signin" class="btn waves-effect waves-light btn-success" type="submit">Sign In</button>
-</div>
-  <br>
+                        <div style="text-align:center">
+                            <button id="signin" name="signin" class="btn waves-effect waves-light btn-success" type="submit">Sign In</button>
+                        </div>
+                        <br>
 
-</div>
-</form>
-</div>
-</div>
+                    </div>
+                </form>
+            </div>
+        </div>
 
 
         <div id="index-banner" class="parallax-container">
@@ -176,7 +176,7 @@
                     </div>
                     <div class="col s12 m8" id="myChartcon">
                         <div class="ct-chart ct-perfect-fourth" id="myChart"></div>
-                        <script>makeChart("#myChart");</script>
+
                     </div>
 
 
@@ -333,6 +333,95 @@
             $("#myChart2").height($("#description2").height());
             $("#myChart2con").height($("#description2").height()+10);
         }
+
+        $.ajax({
+            url: 'http://api.reimaginebanking.com/accounts/58279be1360f81f104549dde/purchases?key=92d167a667478cadc9b5542720b5463d',
+            success: function(results){
+                console.log("purchases");
+                for(var i  =0;i<12;i++)
+                {
+                    var sumPurchase = 0;
+                    for(var j =0;j<results.length;j++)
+                    {
+                        if(results[j].purchase_date.indexOf("2015-"+(i+1)+"-")==0 ){
+                            sumPurchase += results[j].amount;
+                            console.log(results[j].amount);
+                        }
+                    }
+                    purchaseMonth.push(sumPurchase*33);
+                    console.log(sumPurchase);
+                }
+                console.log(purchaseMonth);
+                $.ajax({
+                    url: 'http://api.reimaginebanking.com/accounts/'+UserID+'/deposits?key=92d167a667478cadc9b5542720b5463d',
+                    success: function(results){
+                        for(var i  =0;i<12;i++)
+                        {
+                            var sumDeposit = 0;
+                            for(var j =0;j<results.length;j++)
+                            {
+                                if(results[j].transaction_date.indexOf("2015-"+(i+1)+"-")==0 ){
+                                    sumDeposit += results[j].amount;
+                                }
+                            }
+                            depositMonth.push(sumDeposit);
+                            //console.log(sumDeposit);
+                        }
+                        console.log(depositMonth);
+                        for(var k = 0; k < 12 ; k++)
+                        {
+                            if(depositMonth[k] < minMon)
+                            {
+                                minMon = depositMonth[k];
+                            }
+                            if(purchaseMonth[k] < minMon)
+                            {
+                                minMon = purchaseMonth[k];
+                            }
+                            netMonth.push(curBal);
+                            curBal = curBal -( purchaseMonth[11-k]-depositMonth[11-k])
+                            if(netMonth[k]<minNet)
+                            {
+                                minNet = netMonth[k];
+                            }
+                        }
+                        netMonth = netMonth.reverse();
+                        console.log(netMonth);
+                        var regre = [];
+                        for(var i =0;i<12;i++)
+                        {
+                            var temp1 = [];
+                            temp1.push(i);
+                            temp1.push(netMonth[i]);
+                            regre.push(temp1);
+                        }
+                        // console.log(regre);
+                        var data = regre;
+                        var result = regression('linear', data);
+                        var slope = result.equation[0];
+                        var yIntercept = result.equation[1];
+                        //  console.log(slope);
+                        //  console.log(yIntercept);
+                        var plotreg = [];
+                        plotreg.push(yIntercept);
+                        for(var i = 1;i<12;i++)
+                        {
+                            plotreg.push(plotreg[i-1]+slope);
+                        }
+                        var temp = [];
+                        temp.push(netMonth);
+                        temp.push(plotreg);
+                        //    console.log(netMonth);
+                        combineDP.push(purchaseMonth);
+                        combineDP.push(depositMonth);
+                        makeChart("#myChart",combineDP,minMon,'month','amount');
+                        makeChart("#myChart2",temp,minNet,'month','balance');
+                    }
+                });
+            }
+        });
+
+
         graphSize();
         $(window).resize(function(){
             graphSize();
