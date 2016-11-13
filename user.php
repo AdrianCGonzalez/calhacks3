@@ -150,7 +150,7 @@
                                         Pay your bills online in minutes!</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#payBill.php">Pay Bills Online</a>
+                                    <a href="payBill.php">Pay Bills Online</a>
 
                                 </div>
                             </div>

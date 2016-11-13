@@ -108,7 +108,7 @@
                                         Pay your bills online in minutes!</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#payBill.php">Pay Bills Online</a>
+                                    <a href="payBill.php">Pay Bills Online</a>
 
                                 </div>
                             </div>
@@ -135,7 +135,7 @@
                                         your account payments and activities.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="travel.php">Go Abroad</a>
+                                    <a href="#travel.php">Go Abroad</a>
 
                                 </div>
                             </div>

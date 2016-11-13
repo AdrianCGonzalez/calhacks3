@@ -91,7 +91,7 @@
                                         manage your accounts.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="payment.php">See Recent Payments</a>
+                                    <a href="#payment.php">See Recent Payments</a>
 
                                 </div>
                             </div>
@@ -105,7 +105,7 @@
                                         Pay your bills online in minutes!</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#payBill.php">Pay Bills Online</a>
+                                    <a href="payBill.php">Pay Bills Online</a>
 
                                 </div>
                             </div>
