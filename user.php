@@ -446,8 +446,8 @@
                         //    console.log(netMonth);
                         combineDP.push(purchaseMonth);
                         combineDP.push(depositMonth);
-                        makeChart("#myPi",combineDP,minMon,'month',amount);
-                        makeChart("#myPi2",temp,minNet);
+                        makeChart("#myPi",combineDP,minMon,'month','amount');
+                        makeChart("#myPi2",temp,minNet,'month','balance');
                     }
                 });
             }
