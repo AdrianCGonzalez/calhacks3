@@ -223,22 +223,13 @@
         <div class="parallax-container valign-wrapper">
             <div class="parallax"><img src="https://puu.sh/sgyge/8b67b37aeb.jpg" alt="Unsplashed background img 2"></div>
         </div>
-        <div class="contentWrapper">
-            <div class="pageWrapper">
-
-
-            </div>
-        </div>
       <!--  <div class="parallax-container valign-wrapper">
             <div class="parallax"><img src="https://puu.sh/sgyge/8b67b37aeb.jpg" alt="Unsplashed background img 2"></div>
         </div>-->
 
         <footer class="page-footer teal darken-2">
             <div style="padding-left:20px;padding-right:20px;">
-                <h2 class="center-align">Empowering Users From Day 1</h2>
-                <div class="col s12 center-align">
-                    <img class="padMe center-align" src="/banner.png" height="100px">
-                </div>
+
                 <div class="row">
                     <div class="col l9 hide-on-small-only">
                         <h5 class="white-text">Company Bio</h5>
@@ -255,6 +246,9 @@
                     </div>
                 </div>
             </div>
+            <div class="col s12 center-align">
+                    <img class="padMe center-align" src="/banner.png" height="100px">
+                </div>
             <div class="footer-copyright">
                 <div class="container center">
                     <span class="hide-on-small-only">Powered by: nessie, aMaDEUS, Microsoft Azure Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">CodeForFood</a> </span>©2016 Code For Food<span class="hide-on-med-and-down">All rights reserved.</span>
