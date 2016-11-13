@@ -119,7 +119,7 @@
                             <br>
                             <br>Undergraduate Student, Bioengineering 4th year<br><br>
 
-                             Donec ut vulputate nulla. Cras sit amet dui a elit vestibulum porta vitae a mi. Mauris non consequat sapien. Suspendisse potenti. Pellentesque eget quam ante. Cras porttitor magna in sem maximus, vel imperdiet velit sagittis. Morbi ultrices, lorem nec vestibulum tristique, lorem ante ultricies odio, et mollis eros ligula bibendum quam. </p>
+                            Donec ut vulputate nulla. Cras sit amet dui a elit vestibulum porta vitae a mi. Mauris non consequat sapien. Suspendisse potenti. Pellentesque eget quam ante. Cras porttitor magna in sem maximus, vel imperdiet velit sagittis. Morbi ultrices, lorem nec vestibulum tristique, lorem ante ultricies odio, et mollis eros ligula bibendum quam. </p>
                     </div>
                 </div>
 
@@ -146,8 +146,7 @@
 
                             <br>
                             <br>Alumni, Computer Science And Engineering<br>
-
-                            Characterized the angiogenic and vasculogenic potential of embryonic stem cell derived-endothelial cells at operationally defined stages of differentiation. Her research proposal was awarded a 4 year NRSA (pre-doctoral fellowship) by NIH. She then progressed to postdoctoral position with Jane Grande-Allen at Rice University.</p>
+                            Donec ut vulputate nulla. Cras sit amet dui a elit vestibulum porta vitae a mi. Mauris non consequat sapien. Suspendisse potenti. Pellentesque eget quam ante. Cras porttitor magna in sem maximus, vel imperdiet velit sagittis. Morbi ultrices, lorem nec vestibulum tristique, lorem ante ultricies odio, et mollis eros ligula bibendum quam.</p>
                     </div>
                 </div>
                 <div class="row">
